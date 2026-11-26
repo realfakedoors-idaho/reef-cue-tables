@@ -1,0 +1,104 @@
+{
+  "tau": 0.24,
+  "dz": 4000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 3.15,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at 1.17N 103.75E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 2.922,
+      "model_clear_par_kwh": 2.806,
+      "model_minus_power_pct": -4.0,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 3.034,
+      "model_clear_par_kwh": 2.984,
+      "model_minus_power_pct": -1.6,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 3.101,
+      "model_clear_par_kwh": 3.097,
+      "model_minus_power_pct": -0.1,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 3.076,
+      "model_clear_par_kwh": 3.07,
+      "model_minus_power_pct": -0.2,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 2.962,
+      "model_clear_par_kwh": 2.937,
+      "model_minus_power_pct": -0.8,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 2.846,
+      "model_clear_par_kwh": 2.838,
+      "model_minus_power_pct": -0.3,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 2.876,
+      "model_clear_par_kwh": 2.879,
+      "model_minus_power_pct": 0.1,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 2.945,
+      "model_clear_par_kwh": 3.017,
+      "model_minus_power_pct": 2.4,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 2.898,
+      "model_clear_par_kwh": 3.105,
+      "model_minus_power_pct": 7.2,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 2.912,
+      "model_clear_par_kwh": 3.046,
+      "model_minus_power_pct": 4.6,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 2.941,
+      "model_clear_par_kwh": 2.873,
+      "model_minus_power_pct": -2.3,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 2.866,
+      "model_clear_par_kwh": 2.75,
+      "model_minus_power_pct": -4.0,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "sunda",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": 1.17,
+    "lon": 103.75,
+    "tz_h": 7
+  }
+}

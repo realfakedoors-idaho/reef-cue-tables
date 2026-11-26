@@ -1,0 +1,66 @@
+{
+  "locale_id": "gulf_of_thailand_west",
+  "site": {
+    "lat": 10.1,
+    "lon": 99.83,
+    "tz_h": 7
+  },
+  "ref_depth_m": 4.0,
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "units": {
+    "par_clear_surface": "kWh/m2/day (POWER CLRSKY_SFC_PAR_TOT; model where blank)",
+    "par_surface_l1": "kWh/m2/day",
+    "kd_par": "1/m",
+    "par_depth_l1": "kWh/m2/day at ref_depth_m"
+  },
+  "levels": "data/light_abstraction_key.csv; the *_level columns give each value's level",
+  "level_reached": 1,
+  "days": 3653,
+  "surface_l1_days": 3653,
+  "depth_l1_days": 3530,
+  "kd_l1_months": 116,
+  "cloud_climatology_allsky_over_clearsky": {
+    "1": 0.809,
+    "2": 0.876,
+    "3": 0.893,
+    "4": 0.84,
+    "5": 0.797,
+    "6": 0.714,
+    "7": 0.702,
+    "8": 0.713,
+    "9": 0.709,
+    "10": 0.715,
+    "11": 0.725,
+    "12": 0.754
+  },
+  "k490_monthly_climatology_per_m": {
+    "1": 0.0706,
+    "2": 0.0663,
+    "3": 0.0606,
+    "4": 0.0545,
+    "5": 0.0519,
+    "6": 0.057,
+    "7": 0.0526,
+    "8": 0.0514,
+    "9": 0.0477,
+    "10": 0.0585,
+    "11": 0.0761,
+    "12": 0.0811
+  },
+  "clear_fit": {
+    "tau": 0.2,
+    "dz": 4000.0,
+    "rms_monthly_error_pct": 2.33,
+    "flagged": false
+  },
+  "note": "",
+  "caveats": [
+    "NASA POWER all-sky PAR is a satellite product (CERES SYN1deg, 1 degree cell), not a radiometer at the reef.",
+    "K490 is the median of the MODIS 4 km pixels in a 1 x 1 degree box around the reference point: a reef in clear water next to a turbid coast reads too murky, and shallow bright bottoms can bias it.",
+    "Kd(PAR) from K490 uses the Morel et al. (2007) form, quoted from memory: check it before relying on it.",
+    "Moonlight is not here: it stays a labelled model (level 4, astronomy)."
+  ]
+}

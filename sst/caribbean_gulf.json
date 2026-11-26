@@ -1,0 +1,16 @@
+{
+  "locale_id": "caribbean_gulf",
+  "ref_lat": 27.9,
+  "ref_lon": -93.58,
+  "cell_lat": 27.875,
+  "cell_lon": -93.625,
+  "probe_box_deg": 0.13,
+  "dataset": "OISST v2.1 (ncdcOisst21Agg_LonPM180, sst) via coastwatch.pfeg.noaa.gov ERDDAP",
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "rows": 3653,
+  "fetched_utc": "2026-11-09T22:08:05Z",
+  "level": 4
+}

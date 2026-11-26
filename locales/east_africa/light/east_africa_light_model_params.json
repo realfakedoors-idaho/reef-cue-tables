@@ -1,0 +1,104 @@
+{
+  "tau": 0.28,
+  "dz": 20000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 1.98,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at -22.08N 43.23E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 3.91,
+      "model_clear_par_kwh": 3.808,
+      "model_minus_power_pct": -2.6,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 3.689,
+      "model_clear_par_kwh": 3.619,
+      "model_minus_power_pct": -1.9,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 3.305,
+      "model_clear_par_kwh": 3.273,
+      "model_minus_power_pct": -0.9,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 2.767,
+      "model_clear_par_kwh": 2.752,
+      "model_minus_power_pct": -0.6,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 2.285,
+      "model_clear_par_kwh": 2.278,
+      "model_minus_power_pct": -0.3,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 2.045,
+      "model_clear_par_kwh": 2.029,
+      "model_minus_power_pct": -0.8,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 2.133,
+      "model_clear_par_kwh": 2.129,
+      "model_minus_power_pct": -0.2,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 2.489,
+      "model_clear_par_kwh": 2.532,
+      "model_minus_power_pct": 1.7,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 2.944,
+      "model_clear_par_kwh": 3.059,
+      "model_minus_power_pct": 3.9,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 3.397,
+      "model_clear_par_kwh": 3.495,
+      "model_minus_power_pct": 2.9,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 3.773,
+      "model_clear_par_kwh": 3.757,
+      "model_minus_power_pct": -0.4,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 3.952,
+      "model_clear_par_kwh": 3.842,
+      "model_minus_power_pct": -2.8,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "east_africa",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": -22.08,
+    "lon": 43.23,
+    "tz_h": 3
+  }
+}

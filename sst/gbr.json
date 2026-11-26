@@ -1,0 +1,16 @@
+{
+  "locale_id": "gbr",
+  "ref_lat": -18.99,
+  "ref_lon": 146.85,
+  "cell_lat": -18.875,
+  "cell_lon": 146.875,
+  "probe_box_deg": 0.13,
+  "dataset": "OISST v2.1 (ncdcOisst21Agg_LonPM180, sst) via coastwatch.pfeg.noaa.gov ERDDAP",
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "rows": 3653,
+  "fetched_utc": "2026-11-06T21:37:56Z",
+  "level": 4
+}

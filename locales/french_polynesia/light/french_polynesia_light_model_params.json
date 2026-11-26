@@ -1,0 +1,104 @@
+{
+  "tau": 0.28,
+  "dz": 21000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 1.07,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at -17.5N -149.83E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 3.844,
+      "model_clear_par_kwh": 3.771,
+      "model_minus_power_pct": -1.9,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 3.712,
+      "model_clear_par_kwh": 3.658,
+      "model_minus_power_pct": -1.4,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 3.392,
+      "model_clear_par_kwh": 3.399,
+      "model_minus_power_pct": 0.2,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 2.933,
+      "model_clear_par_kwh": 2.962,
+      "model_minus_power_pct": 1.0,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 2.52,
+      "model_clear_par_kwh": 2.54,
+      "model_minus_power_pct": 0.8,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 2.311,
+      "model_clear_par_kwh": 2.316,
+      "model_minus_power_pct": 0.2,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 2.413,
+      "model_clear_par_kwh": 2.414,
+      "model_minus_power_pct": 0.0,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 2.764,
+      "model_clear_par_kwh": 2.784,
+      "model_minus_power_pct": 0.7,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 3.198,
+      "model_clear_par_kwh": 3.239,
+      "model_minus_power_pct": 1.3,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 3.554,
+      "model_clear_par_kwh": 3.579,
+      "model_minus_power_pct": 0.7,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 3.775,
+      "model_clear_par_kwh": 3.747,
+      "model_minus_power_pct": -0.7,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 3.854,
+      "model_clear_par_kwh": 3.786,
+      "model_minus_power_pct": -1.8,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "french_polynesia",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": -17.5,
+    "lon": -149.83,
+    "tz_h": -10
+  }
+}

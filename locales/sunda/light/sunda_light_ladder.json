@@ -1,0 +1,66 @@
+{
+  "locale_id": "sunda",
+  "site": {
+    "lat": 1.17,
+    "lon": 103.75,
+    "tz_h": 7
+  },
+  "ref_depth_m": 4.0,
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "units": {
+    "par_clear_surface": "kWh/m2/day (POWER CLRSKY_SFC_PAR_TOT; model where blank)",
+    "par_surface_l1": "kWh/m2/day",
+    "kd_par": "1/m",
+    "par_depth_l1": "kWh/m2/day at ref_depth_m"
+  },
+  "levels": "data/light_abstraction_key.csv; the *_level columns give each value's level",
+  "level_reached": 1,
+  "days": 3653,
+  "surface_l1_days": 3653,
+  "depth_l1_days": 3469,
+  "kd_l1_months": 114,
+  "cloud_climatology_allsky_over_clearsky": {
+    "1": 0.734,
+    "2": 0.793,
+    "3": 0.789,
+    "4": 0.759,
+    "5": 0.727,
+    "6": 0.723,
+    "7": 0.739,
+    "8": 0.719,
+    "9": 0.718,
+    "10": 0.73,
+    "11": 0.692,
+    "12": 0.69
+  },
+  "k490_monthly_climatology_per_m": {
+    "1": 0.1824,
+    "2": 0.1492,
+    "3": 0.1507,
+    "4": 0.1787,
+    "5": 0.2383,
+    "6": 0.2772,
+    "7": 0.2843,
+    "8": 0.2446,
+    "9": 0.2186,
+    "10": 0.188,
+    "11": 0.1967,
+    "12": 0.1811
+  },
+  "clear_fit": {
+    "tau": 0.24,
+    "dz": 4000.0,
+    "rms_monthly_error_pct": 3.15,
+    "flagged": false
+  },
+  "note": "",
+  "caveats": [
+    "NASA POWER all-sky PAR is a satellite product (CERES SYN1deg, 1 degree cell), not a radiometer at the reef.",
+    "K490 is the median of the MODIS 4 km pixels in a 1 x 1 degree box around the reference point: a reef in clear water next to a turbid coast reads too murky, and shallow bright bottoms can bias it.",
+    "Kd(PAR) from K490 uses the Morel et al. (2007) form, quoted from memory: check it before relying on it.",
+    "Moonlight is not here: it stays a labelled model (level 4, astronomy)."
+  ]
+}

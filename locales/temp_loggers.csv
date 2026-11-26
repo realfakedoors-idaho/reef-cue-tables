@@ -1,0 +1,23 @@
+locale_id,series_id,source_id,site,lat,lon,km_from_ref,depth_m,path,date_col,temp_col,filter_col,filter_val,timebase,note
+french_polynesia,MCR_LTER1_10m,T26,Moorea LTER1 (north shore fore reef),-17.475,-149.837,2.9,10,data/external/mcr_moorea/bcodmo_918318_v1_seawater_temp_10m.csv,ISO_Date,Temperature,Site,LTER1,local date,daily means; gaps filled from LTER0 or LTER2 sensors (Data_Source column)
+french_polynesia,MCR_LTER2_10m,T26,Moorea LTER2 (north shore fore reef),-17.472,-149.808,3.9,10,data/external/mcr_moorea/bcodmo_918318_v1_seawater_temp_10m.csv,ISO_Date,Temperature,Site,LTER2,local date,daily means; gaps filled from LTER0 sensor (Data_Source column)
+gbr,FLOFL1,T25,Florence Bay,-19.1222,146.8801,15.0,3.1,data/external/aims_loggers/FLOFL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,FLOSL1,T25,Florence Bay,-19.1225,146.8816,15.1,8.9,data/external/aims_loggers/FLOSL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,GBMMPFL,T25,Geoffrey Bay,-19.1548,146.8685,18.4,2.0,data/external/aims_loggers/GBMMPFL_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,GBMMPSL,T25,Geoffrey Bay,-19.1549,146.8685,18.4,5.0,data/external/aims_loggers/GBMMPSL_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,GBSL3,T25,Geoffrey Bay,-19.1548,146.8692,18.4,7.0,data/external/aims_loggers/GBSL3_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,HAVFL1,T25,Havannah Island,-18.8472,146.5428,36.0,2.0,data/external/aims_loggers/HAVFL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,HAVSL1,T25,Havannah Island,-18.8475,146.5427,36.0,5.0,data/external/aims_loggers/HAVSL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,HAVSL2,T25,Havannah Island,-18.8315,146.5374,37.3,8.0,data/external/aims_loggers/HAVSL2_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,JBRCHS6M,T25,John Brewer,-18.6461,147.0447,43.4,6.0,data/external/aims_loggers/JBRCHS6M_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,JBRSL1,T25,John Brewer,-18.6188,147.0815,47.9,8.0,data/external/aims_loggers/JBRSL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,MIRSL1,T25,Middle Reef,-19.2011,146.8209,23.7,7.0,data/external/aims_loggers/MIRSL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,NELFL1,T25,Nelly Bay,-19.1715,146.8475,20.2,2.4,data/external/aims_loggers/NELFL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,NELSL1,T25,Nelly Bay,-19.1722,146.8484,20.3,5.1,data/external/aims_loggers/NELSL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,ORPHFL3,T25,Orpheus Island,-18.7556,146.4958,45.5,3.5,data/external/aims_loggers/ORPHFL3_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,PANFL1,T25,Pandora Reef,-18.8164,146.4341,47.8,2.0,data/external/aims_loggers/PANFL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,PANSL1,T25,Pandora Reef,-18.8168,146.4346,47.8,7.8,data/external/aims_loggers/PANSL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+gbr,PANSL2,T25,Pandora Reef,-18.8116,146.43,48.4,5.6,data/external/aims_loggers/PANSL2_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+wa_spring,SCOTTNR1,T25,Scott Reef,-13.9851,121.8769,14.9,7.4,data/external/aims_loggers/SCOTTNR1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+wa_spring,SCOTTSL1,T25,Scott Reef,-14.0793,121.948,19.2,8.3,data/external/aims_loggers/SCOTTSL1_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"
+wa_spring,SCOTTSL2,T25,Scott Reef,-14.1884,121.799,13.5,8.6,data/external/aims_loggers/SCOTTSL2_daily.csv,date_utc,temp_c,,,UTC date,"AIMS temperature logger, qc_val with qc_flag 1-2, daily mean"

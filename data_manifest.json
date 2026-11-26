@@ -1,0 +1,482 @@
+{
+ "pinned_utc": "2026-11-10T21:07:52Z",
+ "commit": "54e23bf",
+ "audit": {
+  "report": "report.json",
+  "rows": 10585,
+  "locales": 29,
+  "tiers": "ABC",
+  "n_defects": 0,
+  "usno_units": 299,
+  "usno_upper95_defect_rate": 0.01
+ },
+ "hash": "sha256 over the bytes with CRLF folded to LF",
+ "files": {
+  "data/external/oisst_locales/arabian_gulf.csv": {
+   "sha256": "e91133a7c7b7d70a2731cf2bfcf7905c0be4c866d3a930a707799f3e19da0866",
+   "bytes": 61753,
+   "audited": true
+  },
+  "data/external/oisst_locales/caribbean_gulf.csv": {
+   "sha256": "ffc0d6eb31a99e18be8bbb1ef86174a58003a54ecff78fa8b16d80bceaeddc90",
+   "bytes": 61725,
+   "audited": true
+  },
+  "data/external/oisst_locales/caribbean_reef.csv": {
+   "sha256": "7be6c604f67db36d20bb3696a8cc26fa6d1cee8680622709d7390f32494f4df1",
+   "bytes": 61760,
+   "audited": true
+  },
+  "data/external/oisst_locales/chagos.csv": {
+   "sha256": "0e21b7bd1d871b2800dd8acdcda5dd5a11fc179fd7a9c84e19c7ced4283af82b",
+   "bytes": 61745,
+   "audited": true
+  },
+  "data/external/oisst_locales/coral_triangle.csv": {
+   "sha256": "749ca29a7c5e74db899d67fe1784a385c17c0a780c7b7ebab343f86adf25d626",
+   "bytes": 61719,
+   "audited": true
+  },
+  "data/external/oisst_locales/east_africa.csv": {
+   "sha256": "f39be7eaa371f5894603dcda10f7a8bfce125db833836b0aa4ba1c1833a71cd5",
+   "bytes": 61757,
+   "audited": true
+  },
+  "data/external/oisst_locales/eastern_pacific.csv": {
+   "sha256": "1eed0fe9ba5098a3d844dbef9ee2575580126921949e98f313db9cda4aab57cb",
+   "bytes": 61723,
+   "audited": true
+  },
+  "data/external/oisst_locales/french_polynesia.csv": {
+   "sha256": "27726c2720062f21074448d49a9713d01361ff9d769f111a61434d93c503fa31",
+   "bytes": 61713,
+   "audited": true
+  },
+  "data/external/oisst_locales/gbr.csv": {
+   "sha256": "84e190830a335e5ae727c7d19907b8c2c22e65ee116d0bca061831de75ecb0f8",
+   "bytes": 61718,
+   "audited": true
+  },
+  "data/external/oisst_locales/gulf_of_mannar.csv": {
+   "sha256": "3bf6b4604ffe2a3bfda57b1a4142681ce0df02021d3f5d8eb56ad29af0206398",
+   "bytes": 61718,
+   "audited": true
+  },
+  "data/external/oisst_locales/gulf_of_thailand_east.csv": {
+   "sha256": "3154b2881965cea804d44add8f3d35b737fb614f09ff000f64074c8a1d52fcc6",
+   "bytes": 61743,
+   "audited": true
+  },
+  "data/external/oisst_locales/gulf_of_thailand_west.csv": {
+   "sha256": "2b010786ebbfac6bde385bcec4bfbb0d4777064673c70c5e6ae61b50d65f8e2e",
+   "bytes": 61735,
+   "audited": true
+  },
+  "data/external/oisst_locales/hawaii.csv": {
+   "sha256": "6f4b7aa1610ba253b5ddfc867fe58e79349d098289bba05a38d7ac78cb7f68d6",
+   "bytes": 61748,
+   "audited": true
+  },
+  "data/external/oisst_locales/maldives_mar_apr.csv": {
+   "sha256": "3b7d03a4c7914f5c884a6cf61f5425a3b4173f602b580da273df062fa4a5d49d",
+   "bytes": 61761,
+   "audited": true
+  },
+  "data/external/oisst_locales/maldives_oct_dec.csv": {
+   "sha256": "3b7d03a4c7914f5c884a6cf61f5425a3b4173f602b580da273df062fa4a5d49d",
+   "bytes": 61761,
+   "audited": true
+  },
+  "data/external/oisst_locales/marianas.csv": {
+   "sha256": "c455b99c7e5b4aaa6e8c4f03796e18e5bf21898fdf1bd3dcaa39fca7a28677fe",
+   "bytes": 61766,
+   "audited": true
+  },
+  "data/external/oisst_locales/mascarene.csv": {
+   "sha256": "eae99061edf821177bd36e127ba5c94408ab27f09ec7d0e263952ebc489d27f8",
+   "bytes": 61747,
+   "audited": true
+  },
+  "data/external/oisst_locales/melanesia.csv": {
+   "sha256": "a9780ff8da26f83db35475a2401ed837d3514454dd94c3ff47e855c90435764f",
+   "bytes": 61763,
+   "audited": true
+  },
+  "data/external/oisst_locales/palau_autumn.csv": {
+   "sha256": "19e615e38a0515e6d04a96a7002966d2448377feb3c3ffb1262dc8367c6d5a3b",
+   "bytes": 61740,
+   "audited": true
+  },
+  "data/external/oisst_locales/palau_spring.csv": {
+   "sha256": "8ce7891639bf96d8f1414eb5c9faff007b5be409f16a1df7b965c9c660f7c8c8",
+   "bytes": 61755,
+   "audited": true
+  },
+  "data/external/oisst_locales/red_sea_aqaba.csv": {
+   "sha256": "06d8002f0aa819a12bef966675b52385ff5ca2d0835a26f304db8025507dc741",
+   "bytes": 61762,
+   "audited": true
+  },
+  "data/external/oisst_locales/red_sea_central.csv": {
+   "sha256": "1c3bf6c05b886107ebf582e5aa3b3506b494f69d35c5fde91fe4c4da24fb4a29",
+   "bytes": 61776,
+   "audited": true
+  },
+  "data/external/oisst_locales/red_sea_north.csv": {
+   "sha256": "cf193eaa15f2d3d5c4c2ea3f30bc9436a05811fb840b38ae12caa425d24603e2",
+   "bytes": 61764,
+   "audited": true
+  },
+  "data/external/oisst_locales/samoa_tonga.csv": {
+   "sha256": "f7427cda41038a5ebfa68c4e1075c02f578e69601a791c0019a89156d5329937",
+   "bytes": 61743,
+   "audited": true
+  },
+  "data/external/oisst_locales/sunda.csv": {
+   "sha256": "deb43f074c3c1a5e23644ae8885143529cc2aed8536ca8d3a759274dcb25d136",
+   "bytes": 61742,
+   "audited": true
+  },
+  "data/external/oisst_locales/taiwan.csv": {
+   "sha256": "f501dda0efa38dc2eff1cf4fe226275f8144fd89ca8c5c006f91b69684f994db",
+   "bytes": 61720,
+   "audited": true
+  },
+  "data/external/oisst_locales/temperate_japan.csv": {
+   "sha256": "296c460060156116e2d8d53093edb511fa04fe6bef81efffd184e47a6f623472",
+   "bytes": 61761,
+   "audited": true
+  },
+  "data/external/oisst_locales/wa_spring.csv": {
+   "sha256": "37143446bd7a9c57b81c51d6407c1f58dabfcfc86eddb7d9f064875b5a2d0386",
+   "bytes": 61752,
+   "audited": true
+  },
+  "data/external/oisst_locales/western_australia.csv": {
+   "sha256": "9b7771678686715629ef62c1041c2f0c8a039a2e4889193699e69616544ae169",
+   "bytes": 61739,
+   "audited": true
+  },
+  "data/locales/arabian_gulf/cue_table_2027.csv": {
+   "sha256": "58d33173982508fde5b7501026e5d90780a6a8210d47056f2e11758f44c0271d",
+   "bytes": 33100,
+   "audited": true
+  },
+  "data/locales/arabian_gulf/light/arabian_gulf_light_ladder_daily.csv": {
+   "sha256": "d525983b0a13a85b6c3ab8e347570f2f08495ca746c136db7f5e2e7b7c25e9aa",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/caribbean_gulf/cue_table_2027.csv": {
+   "sha256": "871887bdda331ae96517f8b5fbbffc6bd778755cdccbdb19208eab0b11d17eb5",
+   "bytes": 40352,
+   "audited": true
+  },
+  "data/locales/caribbean_gulf/light/caribbean_gulf_light_ladder_daily.csv": {
+   "sha256": "c02c46485a33bc520fbbf415af1aa1de114d381ab999b3e40c444ecc06758d73",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/caribbean_reef/cue_table_2027.csv": {
+   "sha256": "fd5779de2fc51b2d2e17f2d484fb61b5c932ffd11e2a92ab496b32cfa9c12814",
+   "bytes": 40694,
+   "audited": true
+  },
+  "data/locales/caribbean_reef/light/caribbean_reef_light_ladder_daily.csv": {
+   "sha256": "1097b15f3fe676dc2fea69f3e61ba91f2f8326c3508d2782371ab148124db17f",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/chagos/cue_table_2027.csv": {
+   "sha256": "e62751622d459af9c5f6fc96ecbd277edc92a05fba18f38e9fd9cc2d245e0029",
+   "bytes": 33121,
+   "audited": true
+  },
+  "data/locales/chagos/light/chagos_light_ladder_daily.csv": {
+   "sha256": "626ef807a497ee8577591c660b99c1a787268310cba6a7c22686683d49884d2c",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/coral_triangle/cue_table_2027.csv": {
+   "sha256": "927d6e57ec18b8b6e8fac98a5a9fc5edcaf58fb6a8272c329b7b9a0a1978aa47",
+   "bytes": 40205,
+   "audited": true
+  },
+  "data/locales/coral_triangle/light/coral_triangle_light_ladder_daily.csv": {
+   "sha256": "093107aea521a11339a9686aafbdd659d8513c790a807d7341257a1957d4acef",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/east_africa/cue_table_2027.csv": {
+   "sha256": "38f9e027716c522c55d6c11fb005ed2fb6ea85fca81d388686c4599dd0db652b",
+   "bytes": 33089,
+   "audited": true
+  },
+  "data/locales/east_africa/light/east_africa_light_ladder_daily.csv": {
+   "sha256": "65a6cdf8f3d837edc9f36139aa317459655a0288504b82d1abba189fe630b69b",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/eastern_pacific/cue_table_2027.csv": {
+   "sha256": "9a35833471eb215257f19ca81456343614439b4f836187e3a194cdfbdf0560f8",
+   "bytes": 38513,
+   "audited": true
+  },
+  "data/locales/eastern_pacific/light/eastern_pacific_light_ladder_daily.csv": {
+   "sha256": "ef663a277334462bfc09b9b080ef3b61ced7053661a4eee6d7b877c6f2ec0032",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/french_polynesia/cue_table_2027.csv": {
+   "sha256": "4975c2b64395915bc33aef0c665d40e363df8e49b3e91f06c0998317d6505a84",
+   "bytes": 38468,
+   "audited": true
+  },
+  "data/locales/french_polynesia/light/french_polynesia_light_ladder_daily.csv": {
+   "sha256": "24a44d85a9dd42d05e76443cdca8cfcac5551107f59ed1d8b41b28e04a143872",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/french_polynesia/temp_ladder_2027.csv": {
+   "sha256": "38aaeb86ac2ead5e928aaf6a477caebfeef274ef4460e21de4606c593938ed2c",
+   "bytes": 18123,
+   "audited": false
+  },
+  "data/locales/gbr/cue_table_2027.csv": {
+   "sha256": "faea6408255e8045f048ffd979cfe1e5b450b8656b7d2363a7be6f251382680f",
+   "bytes": 42102,
+   "audited": true
+  },
+  "data/locales/gbr/light/gbr_light_ladder_daily.csv": {
+   "sha256": "c6bc4efa88ca304904d503591cb8e2fffe19f0ef4cc681cbac2e94053ecfe5f9",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/gbr/temp_ladder_2027.csv": {
+   "sha256": "2e63a6de71213fba1b2eb94f9784fd4b46b332d23e3af8b3b469ac2459907cd2",
+   "bytes": 15565,
+   "audited": false
+  },
+  "data/locales/gulf_of_mannar/cue_table_2027.csv": {
+   "sha256": "64f27e29400d9712cfcdbb8b18783b58f43667469e9583311c53d02fcd9657a2",
+   "bytes": 33113,
+   "audited": true
+  },
+  "data/locales/gulf_of_mannar/light/gulf_of_mannar_light_ladder_daily.csv": {
+   "sha256": "22b1102d5285dc0579bf5d7d64aa104294c42aa29dc773178b5fd37a66be2478",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/gulf_of_thailand_east/cue_table_2027.csv": {
+   "sha256": "25df40f04b0f9e8be7b345237277161082b526f1a9a13e16bb959249d8c22d53",
+   "bytes": 40327,
+   "audited": true
+  },
+  "data/locales/gulf_of_thailand_east/light/gulf_of_thailand_east_light_ladder_daily.csv": {
+   "sha256": "eb150c1e1793a9fd758f75e9c73402cddbc0853213930371611545a1c3547d1f",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/gulf_of_thailand_west/cue_table_2027.csv": {
+   "sha256": "a7a945a49c376350dfd73ab30f988ac79218d5b17096a28dabdf31b90a0a3495",
+   "bytes": 40314,
+   "audited": true
+  },
+  "data/locales/gulf_of_thailand_west/light/gulf_of_thailand_west_light_ladder_daily.csv": {
+   "sha256": "e7883be3fbcd5718d6fe0040325636da878eed66ac9c00f8768c9b9fe1697063",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/hawaii/cue_table_2027.csv": {
+   "sha256": "437c0b36731bf6499c7dc6225c54e877ab7d4d76f8c6c582a6d96f66ee27261d",
+   "bytes": 39845,
+   "audited": true
+  },
+  "data/locales/hawaii/light/hawaii_light_ladder_daily.csv": {
+   "sha256": "dd63abdf9bca6ef9b83f75798f94ebee4fcb5a4292f5e0811f502e2b42c0d6e8",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/locale_profiles.csv": {
+   "sha256": "b7a26a5829398e885d049e0bd80e2a9dc696917cb1baae3cb1e1ad2e44ecc6e8",
+   "bytes": 11746,
+   "audited": true
+  },
+  "data/locales/maldives_mar_apr/cue_table_2027.csv": {
+   "sha256": "afd36c322bac43fcd39bdc56d94d41afbf328fd2b787da3898c3abeabbdf899f",
+   "bytes": 40296,
+   "audited": true
+  },
+  "data/locales/maldives_mar_apr/light/maldives_mar_apr_light_ladder_daily.csv": {
+   "sha256": "ac47c3245fef73f3c2d78990a36cf69320b332f4c4d4564090871a1980c80f65",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/maldives_oct_dec/cue_table_2027.csv": {
+   "sha256": "53723ef9fc47208c3b9f9a2af702ee17a7a8678855535e0356cd4cfcaf6daab2",
+   "bytes": 40228,
+   "audited": true
+  },
+  "data/locales/maldives_oct_dec/light/maldives_oct_dec_light_ladder_daily.csv": {
+   "sha256": "ac47c3245fef73f3c2d78990a36cf69320b332f4c4d4564090871a1980c80f65",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/marianas/cue_table_2027.csv": {
+   "sha256": "e871cf79cbd0ac82d8235bbe574bbafaaa04de4b0d30c12b9507d0d4cf1d9315",
+   "bytes": 40588,
+   "audited": true
+  },
+  "data/locales/marianas/light/marianas_light_ladder_daily.csv": {
+   "sha256": "412f9471328967a1c67ebcdef88a9aaf6618b64e57f8e38945fbb879ec1614f1",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/mascarene/cue_table_2027.csv": {
+   "sha256": "c5c5030e09e82989a46a81473d2c0703b0f94bd5e4d7ff487a01c14e89916652",
+   "bytes": 40248,
+   "audited": true
+  },
+  "data/locales/mascarene/light/mascarene_light_ladder_daily.csv": {
+   "sha256": "137f83a011ccbdaaec1a66c889f70fbdaad3cb81f28b47f987c4f26272eecd30",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/melanesia/cue_table_2027.csv": {
+   "sha256": "c59d7e80c19d764753b4bc0ceb47a19e7974afa38613c46a57422f0e0f08e74a",
+   "bytes": 40340,
+   "audited": true
+  },
+  "data/locales/melanesia/light/melanesia_light_ladder_daily.csv": {
+   "sha256": "96af79c9e742580225d74108b6e1fd1483f1d712b1416b66a2805e5af4c50294",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/palau_autumn/cue_table_2027.csv": {
+   "sha256": "4a5504b0e1cc63a84c7e472e0ce341756d67b59f6906e90a49faa3ee4d795a5c",
+   "bytes": 34943,
+   "audited": true
+  },
+  "data/locales/palau_autumn/light/palau_autumn_light_ladder_daily.csv": {
+   "sha256": "34ec018afdaf2fad4cc4b4979f1f994d83874f559d5fb9baad1d5e6f37c76564",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/palau_spring/cue_table_2027.csv": {
+   "sha256": "6ae1daf845d93371d48035d63f41a516c08c7043a908965feeb51b0ff1e15a41",
+   "bytes": 40300,
+   "audited": true
+  },
+  "data/locales/palau_spring/light/palau_spring_light_ladder_daily.csv": {
+   "sha256": "4662ca2e579101c6e1b7ddab3760568871304382b7be33f8ac993bb5f42c6b58",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/red_sea_aqaba/cue_table_2027.csv": {
+   "sha256": "e4118cffbb1db05fbf9e4d8da70db70c35c9e99f8668806559074109c951a49e",
+   "bytes": 40060,
+   "audited": true
+  },
+  "data/locales/red_sea_aqaba/light/red_sea_aqaba_light_ladder_daily.csv": {
+   "sha256": "1aafa30c5da8dbd2e23f69767aa2f8def10f50bac47a5be4473e7d9878362307",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/red_sea_central/cue_table_2027.csv": {
+   "sha256": "ccebadde8775c1207eb646367e5516623afd837b1f1a46ccdb51e1e989b31dd8",
+   "bytes": 40243,
+   "audited": true
+  },
+  "data/locales/red_sea_central/light/red_sea_central_light_ladder_daily.csv": {
+   "sha256": "2c9a952fd5a10ea793f547676a3ab53d07f4a0a6206612c7e6f35ca19e64dcb1",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/red_sea_north/cue_table_2027.csv": {
+   "sha256": "9eef98056f6b29cf60f7bc47f18b5483a875fccb55d06838ca8c670ca374dbee",
+   "bytes": 33097,
+   "audited": true
+  },
+  "data/locales/red_sea_north/light/red_sea_north_light_ladder_daily.csv": {
+   "sha256": "3da2cf2a2286a08f2aa0f7a7f6588edb3eade02e368c407c7cbf656de91d05c7",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/samoa_tonga/cue_table_2027.csv": {
+   "sha256": "82808d3cc585a8294facedd3b0670781fd1f77a377ac33bdf8351ada9c62fba7",
+   "bytes": 34950,
+   "audited": true
+  },
+  "data/locales/samoa_tonga/light/samoa_tonga_light_ladder_daily.csv": {
+   "sha256": "2de8ec27ae57be3e17bad90e4df72d39e17f63f495fd3a9f38c9bf33badea3bd",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/sunda/cue_table_2027.csv": {
+   "sha256": "5fcee3f1b2802ad9cb869f35faba66def5ed75d1a4acc197cc6e38fdc32b262b",
+   "bytes": 40335,
+   "audited": true
+  },
+  "data/locales/sunda/light/sunda_light_ladder_daily.csv": {
+   "sha256": "20c87e0bfee0aa94bdf449f987a7232ff8f5ef8dc69bfcce8f759b95b02f20e7",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/taiwan/cue_table_2027.csv": {
+   "sha256": "ead384e73622873598d896e22b138fcba3a18daa42416ced1907709e8bb58b06",
+   "bytes": 40201,
+   "audited": true
+  },
+  "data/locales/taiwan/light/taiwan_light_ladder_daily.csv": {
+   "sha256": "8791778d26ff29b5c0b8d92c52e0e3b122f36680a563f426777886b29549749c",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/temperate_japan/cue_table_2027.csv": {
+   "sha256": "b3b166e4c4feb10828a1f76c4dd294f193e49595709a14cd789eb45a55e9075f",
+   "bytes": 40111,
+   "audited": true
+  },
+  "data/locales/temperate_japan/light/temperate_japan_light_ladder_daily.csv": {
+   "sha256": "954357c4883f44568f0e4b1483ecc634851f8c3d4737359e0738301d2cde6734",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/wa_spring/cue_table_2027.csv": {
+   "sha256": "c8f061a71009afd9910ac8789d95214e20b93691fb5b7c17a7e869054ea605a0",
+   "bytes": 33117,
+   "audited": true
+  },
+  "data/locales/wa_spring/light/wa_spring_light_ladder_daily.csv": {
+   "sha256": "c58b840b9a49b7f23c4d51543a9cf0bfe4eb35b623925bed22dbf5a2a8e24f3f",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/locales/western_australia/cue_table_2027.csv": {
+   "sha256": "5aa3f124b7ba7e5180068356690afc93c0c832ed59bcc88a6e9e9a884110c2db",
+   "bytes": 40369,
+   "audited": true
+  },
+  "data/locales/western_australia/light/western_australia_light_ladder_daily.csv": {
+   "sha256": "56573fc6d4b13a80042f128ae15c7c35fa98c025ce27936394febf7296f41f92",
+   "bytes": 164490,
+   "audited": false
+  },
+  "data/spawn_calendar_2026-11-01.csv": {
+   "sha256": "64d7dc8cafe0fed21e1d792b712c260f34b2c71e62665760ac6e85a01cc9e5f8",
+   "bytes": 343051,
+   "audited": false
+  },
+  "data/spawn_calendar_2026-11-01.meta.json": {
+   "sha256": "94e225f80308f8807007f1a8fe9f46d7959a0058d86303d61c9dc70802b63eef",
+   "bytes": 1529,
+   "audited": false
+  },
+  "data/reference/cue_params.json": {
+   "sha256": "155ec1cb6381eb12989210e04a5e197891ecfbfb05cec0fc2ca3d20f4e547edd",
+   "bytes": 1176,
+   "audited": false
+  }
+ },
+ "public_reference": "reference/okinawa: tank_site set to the Okinawa reference reef and the calendar regenerated for it (spawn_calendar.py), so it carries no tank's location; these three files are pinned, not audited"
+}

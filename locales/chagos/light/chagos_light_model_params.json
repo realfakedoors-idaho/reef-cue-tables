@@ -1,0 +1,104 @@
+{
+  "tau": 0.28,
+  "dz": 19000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 2.39,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at -5.33N 72.22E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 3.504,
+      "model_clear_par_kwh": 3.382,
+      "model_minus_power_pct": -3.5,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 3.555,
+      "model_clear_par_kwh": 3.476,
+      "model_minus_power_pct": -2.2,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 3.508,
+      "model_clear_par_kwh": 3.468,
+      "model_minus_power_pct": -1.1,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 3.298,
+      "model_clear_par_kwh": 3.295,
+      "model_minus_power_pct": -0.1,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 3.003,
+      "model_clear_par_kwh": 3.048,
+      "model_minus_power_pct": 1.5,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 2.833,
+      "model_clear_par_kwh": 2.894,
+      "model_minus_power_pct": 2.1,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 2.869,
+      "model_clear_par_kwh": 2.957,
+      "model_minus_power_pct": 3.0,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 3.112,
+      "model_clear_par_kwh": 3.187,
+      "model_minus_power_pct": 2.4,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 3.348,
+      "model_clear_par_kwh": 3.412,
+      "model_minus_power_pct": 1.9,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 3.492,
+      "model_clear_par_kwh": 3.489,
+      "model_minus_power_pct": -0.1,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 3.515,
+      "model_clear_par_kwh": 3.422,
+      "model_minus_power_pct": -2.6,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 3.495,
+      "model_clear_par_kwh": 3.346,
+      "model_minus_power_pct": -4.3,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "chagos",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": -5.33,
+    "lon": 72.22,
+    "tz_h": 5
+  }
+}

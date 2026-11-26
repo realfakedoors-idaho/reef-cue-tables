@@ -1,0 +1,16 @@
+{
+  "locale_id": "arabian_gulf",
+  "ref_lat": 24.92,
+  "ref_lon": 54.9,
+  "cell_lat": 24.875,
+  "cell_lon": 54.875,
+  "probe_box_deg": 0.13,
+  "dataset": "OISST v2.1 (ncdcOisst21Agg_LonPM180, sst) via coastwatch.pfeg.noaa.gov ERDDAP",
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "rows": 3653,
+  "fetched_utc": "2026-11-09T22:52:04Z",
+  "level": 4
+}

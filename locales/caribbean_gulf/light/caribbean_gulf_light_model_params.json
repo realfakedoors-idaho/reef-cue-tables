@@ -1,0 +1,104 @@
+{
+  "tau": 0.16,
+  "dz": 3000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 5.11,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at 27.9N -93.58E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 1.963,
+      "model_clear_par_kwh": 1.802,
+      "model_minus_power_pct": -8.2,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 2.363,
+      "model_clear_par_kwh": 2.286,
+      "model_minus_power_pct": -3.3,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 2.877,
+      "model_clear_par_kwh": 2.842,
+      "model_minus_power_pct": -1.2,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 3.23,
+      "model_clear_par_kwh": 3.375,
+      "model_minus_power_pct": 4.5,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 3.514,
+      "model_clear_par_kwh": 3.699,
+      "model_minus_power_pct": 5.3,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 3.614,
+      "model_clear_par_kwh": 3.827,
+      "model_minus_power_pct": 5.9,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 3.573,
+      "model_clear_par_kwh": 3.775,
+      "model_minus_power_pct": 5.7,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 3.394,
+      "model_clear_par_kwh": 3.531,
+      "model_minus_power_pct": 4.0,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 3.04,
+      "model_clear_par_kwh": 3.077,
+      "model_minus_power_pct": 1.2,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 2.574,
+      "model_clear_par_kwh": 2.502,
+      "model_minus_power_pct": -2.8,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 2.072,
+      "model_clear_par_kwh": 1.948,
+      "model_minus_power_pct": -6.0,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 1.809,
+      "model_clear_par_kwh": 1.674,
+      "model_minus_power_pct": -7.5,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "caribbean_gulf",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": 27.9,
+    "lon": -93.58,
+    "tz_h": -6
+  }
+}

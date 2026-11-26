@@ -1,0 +1,16 @@
+{
+  "locale_id": "sunda",
+  "ref_lat": 1.17,
+  "ref_lon": 103.75,
+  "cell_lat": 1.125,
+  "cell_lon": 103.625,
+  "probe_box_deg": 0.13,
+  "dataset": "OISST v2.1 (ncdcOisst21Agg_LonPM180, sst) via coastwatch.pfeg.noaa.gov ERDDAP",
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "rows": 3653,
+  "fetched_utc": "2026-11-06T21:35:21Z",
+  "level": 4
+}

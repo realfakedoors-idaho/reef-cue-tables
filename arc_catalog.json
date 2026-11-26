@@ -1,0 +1,3663 @@
+{
+ "version": 1,
+ "generated_utc": "2026-11-10T00:37:20Z",
+ "built_from": {
+  "meta_table_sha256": "a9020c7f9623cbd8495469c23385cf58e9f47df2db954fa245892f4d54b58fe5",
+  "meta_table_generated_utc": "2026-10-29T16:54:27Z",
+  "calendar": "spawn_calendar_2026-11-01.csv"
+ },
+ "arcs": [
+  {
+   "id": "okinawa-jaza-composite",
+   "kind": "temp",
+   "name": "Okinawa JAZA multi-year composite",
+   "location": {
+    "site_id": "okinawa_ref",
+    "name": "Okinawa reference site",
+    "lat": 26.2,
+    "lon": 127.7
+   },
+   "granularity": "daily climatology",
+   "samples": 2922,
+   "years": 3,
+   "span": {
+    "start": "2020-01-01",
+    "end": "2027-12-31"
+   },
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/meta_table.csv",
+    "figure4_output/annual_composite.csv"
+   ],
+   "ref": {
+    "file": "data/meta_table.csv",
+    "key": "date",
+    "columns": [
+     "jaza_comp_mean_c",
+     "jaza_comp_low_c",
+     "jaza_comp_high_c",
+     "jaza_comp_fit_c"
+    ]
+   },
+   "note": "One typical year repeated on every date; fit_c is the smoothed curve the current calendar uses.",
+   "basis_detail": null
+  },
+  {
+   "id": "okinawa-jaza-trace",
+   "kind": "temp",
+   "name": "Okinawa JAZA single-year trace",
+   "location": {
+    "site_id": "okinawa_ref",
+    "name": "Okinawa reference site",
+    "lat": 26.2,
+    "lon": 127.7
+   },
+   "granularity": "daily",
+   "samples": 879,
+   "years": null,
+   "span": {
+    "start": "2020-04-04",
+    "end": "2022-09-28"
+   },
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/meta_table.csv",
+    "figure4_output/temperature_trace.csv"
+   ],
+   "ref": {
+    "file": "data/meta_table.csv",
+    "key": "date",
+    "columns": [
+     "jaza_trace_c",
+     "jaza_trace_n"
+    ]
+   },
+   "note": "Dated observations, so it has gaps.",
+   "basis_detail": null
+  },
+  {
+   "id": "okinawa-noaa-sst",
+   "kind": "temp",
+   "name": "Okinawa NOAA Coral Reef Watch sea surface",
+   "location": {
+    "site_id": "okinawa_ref",
+    "name": "Okinawa reference site",
+    "lat": 26.2,
+    "lon": 127.7
+   },
+   "granularity": "daily",
+   "samples": 1096,
+   "years": null,
+   "span": {
+    "start": "2020-01-01",
+    "end": "2022-12-31"
+   },
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/meta_table.csv",
+    "data/external/noaa_crw_sst_okinawa.csv"
+   ],
+   "ref": {
+    "file": "data/meta_table.csv",
+    "key": "date",
+    "columns": [
+     "noaa_sst_c"
+    ]
+   },
+   "note": "Satellite sea-surface temperature, not a probe in the water.",
+   "basis_detail": null
+  },
+  {
+   "id": "naha-jma-air",
+   "kind": "temp",
+   "name": "Naha JMA air temperature",
+   "location": {
+    "site_id": "okinawa_ref",
+    "name": "Okinawa reference site",
+    "lat": 26.2,
+    "lon": 127.7
+   },
+   "granularity": "daily",
+   "samples": 2493,
+   "years": null,
+   "span": {
+    "start": "2020-01-01",
+    "end": "2026-10-28"
+   },
+   "basis": "observed",
+   "water": false,
+   "sources": [
+    "data/meta_table.csv",
+    "data/external/jma_naha_daily.csv"
+   ],
+   "ref": {
+    "file": "data/meta_table.csv",
+    "key": "date",
+    "columns": [
+     "jma_naha_temp_mean_c",
+     "jma_naha_temp_max_c",
+     "jma_naha_temp_min_c"
+    ]
+   },
+   "note": "AIR temperature at the Naha station. Listed for completeness; water is what a tank follows.",
+   "basis_detail": null
+  },
+  {
+   "id": "davies-reef-monthly",
+   "kind": "temp",
+   "name": "Davies Reef 1998-2015 average",
+   "location": {
+    "site_id": "davies_reef",
+    "name": "Davies Reef, central GBR",
+    "lat": -18.83,
+    "lon": 147.63
+   },
+   "granularity": "monthly (1st of month)",
+   "samples": 12,
+   "years": null,
+   "span": {
+    "start": "1998-01",
+    "end": "1998-12"
+   },
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "dryad_lookup: Dryad lookup dates (wild-equivalent Nov-Dec)"
+   ],
+   "ref": {
+    "file": "data/pseudosync/pseudosync_reference.csv",
+    "key": [
+     "source_id",
+     "variable",
+     "native_month"
+    ],
+    "where": [
+     {
+      "source_id": "dryad_lookup",
+      "variable": "davies_reef_avg_temp_c"
+     }
+    ]
+   },
+   "note": "Wild reef temperature. Southern hemisphere: needs a season offset.",
+   "basis_detail": [
+    "Davies Reef 1998-2015 average, 1st of month (Dryad Data_1)"
+   ]
+  },
+  {
+   "id": "seasim-davies-offset",
+   "kind": "temp",
+   "name": "SeaSim tank, six-month-offset Davies profile",
+   "location": {
+    "site_id": "aims_seasim",
+    "name": "AIMS SeaSim, Townsville",
+    "lat": -19.27,
+    "lon": 147.06
+   },
+   "granularity": "monthly (1st of month)",
+   "samples": 12,
+   "years": null,
+   "span": {
+    "start": "2022-01",
+    "end": "2022-12"
+   },
+   "basis": "tank-programmed",
+   "water": true,
+   "sources": [
+    "dryad_tank: Dryad out-of-season tank dates (May-June)"
+   ],
+   "ref": {
+    "file": "data/pseudosync/pseudosync_reference.csv",
+    "key": [
+     "source_id",
+     "variable",
+     "native_month"
+    ],
+    "where": [
+     {
+      "source_id": "dryad_tank",
+      "variable": "davies_reef_offset_temp_c"
+     }
+    ]
+   },
+   "note": "What a published tank actually ran, already shifted onto the Okinawa season.",
+   "basis_detail": [
+    "6-month-offset Davies profile used in the tank, 1st of month (Dryad Data_1)"
+   ]
+  },
+  {
+   "id": "spawn-calendar-temp",
+   "kind": "temp",
+   "name": "Current spawn calendar (what the conductor follows today)",
+   "location": {
+    "site_id": "okinawa_ref",
+    "name": "Okinawa reference site",
+    "lat": 26.2,
+    "lon": 127.7
+   },
+   "granularity": "daily",
+   "samples": 365,
+   "years": null,
+   "span": {
+    "start": "2026-11-01",
+    "end": "2027-10-31"
+   },
+   "basis": "planned",
+   "water": true,
+   "sources": [
+    "spawn_calendar_2026-11-01.csv",
+    "cue_params.json"
+   ],
+   "ref": {
+    "file": "spawn_calendar_2026-11-01.csv",
+    "key": "date",
+    "columns": [
+     "target_c"
+    ]
+   },
+   "note": "Okinawa JAZA fit with the calendar's season offset applied. Choosing this keeps today's behaviour.",
+   "basis_detail": null
+  },
+  {
+   "id": "okinawa-astronomical",
+   "kind": "light",
+   "name": "Okinawa computed sun and moon",
+   "location": {
+    "site_id": "okinawa_ref",
+    "name": "Okinawa reference site",
+    "lat": 26.2,
+    "lon": 127.7
+   },
+   "granularity": "daily",
+   "samples": 2922,
+   "years": null,
+   "span": {
+    "start": "2020-01-01",
+    "end": "2027-12-31"
+   },
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/meta_table.csv"
+   ],
+   "ref": {
+    "file": "data/meta_table.csv",
+    "key": "date",
+    "columns": [
+     "oki_sunrise",
+     "oki_sunset",
+     "oki_astro_dusk",
+     "oki_astro_dawn",
+     "oki_moonrise",
+     "oki_moonset",
+     "oki_moon_illum_pct"
+    ]
+   },
+   "note": "Ephemeris for the reference site, not a light measurement.",
+   "basis_detail": null
+  },
+  {
+   "id": "craggs-gbr-sun-moon-computed",
+   "kind": "light",
+   "name": "Cairns computed sun and moon times (same months)",
+   "location": {
+    "site_id": "lizard_island",
+    "name": "Lizard Island / Cairns, northern GBR",
+    "lat": -14.67,
+    "lon": 145.45
+   },
+   "granularity": "monthly",
+   "samples": 12,
+   "years": null,
+   "span": {
+    "start": "2016-01",
+    "end": "2016-12"
+   },
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "craggs_gbr_2016: Craggs et al. 2017 GBR mesocosm season table"
+   ],
+   "ref": {
+    "file": "data/pseudosync/pseudosync_reference.csv",
+    "key": [
+     "source_id",
+     "variable",
+     "native_month"
+    ],
+    "where": [
+     {
+      "source_id": "craggs_gbr_2016",
+      "variable": "sunrise_calc"
+     },
+     {
+      "source_id": "craggs_gbr_2016",
+      "variable": "sunset_calc"
+     },
+     {
+      "source_id": "craggs_gbr_2016",
+      "variable": "moonrise_calc"
+     },
+     {
+      "source_id": "craggs_gbr_2016",
+      "variable": "moonset_calc"
+     }
+    ]
+   },
+   "note": "Ephemeris for Cairns from dark_window.py.",
+   "basis_detail": [
+    "computed Cairns ephemeris (dark_window.py)"
+   ]
+  },
+  {
+   "id": "spawn-calendar-light",
+   "kind": "light",
+   "name": "Current spawn calendar (what the conductor follows today)",
+   "location": {
+    "site_id": "okinawa_ref",
+    "name": "Okinawa reference site",
+    "lat": 26.2,
+    "lon": 127.7
+   },
+   "granularity": "daily",
+   "samples": 365,
+   "years": null,
+   "span": {
+    "start": "2026-11-01",
+    "end": "2027-10-31"
+   },
+   "basis": "planned",
+   "water": null,
+   "sources": [
+    "spawn_calendar_2026-11-01.csv",
+    "cue_params.json"
+   ],
+   "ref": {
+    "file": "spawn_calendar_2026-11-01.csv",
+    "key": "date",
+    "columns": [
+     "white_on_utc",
+     "white_off_utc",
+     "blue_on_utc",
+     "blue_off_utc",
+     "moon_on_utc",
+     "moon_off_utc"
+    ]
+   },
+   "note": "Sun, blue and moon windows for the tank site with the calendar's season offset applied. Choosing this keeps today's behaviour.",
+   "basis_detail": null
+  },
+  {
+   "location": {
+    "site_id": "locale:taiwan",
+    "name": "Taiwan and coastal China, reference point",
+    "lat": 22.68,
+    "lon": 121.49
+   },
+   "locale": "taiwan",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "04-19",
+    "season_end": "07-28",
+    "season_peak": "06-03",
+    "n_nights": 121,
+    "species": 82,
+    "season_days": 101,
+    "daf_lo": 2.5,
+    "daf_hi": 8.7,
+    "R_season": 0.76,
+    "R_lunar": 0.87,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/taiwan/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-taiwan-sky",
+   "kind": "light",
+   "name": "Taiwan and coastal China: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/taiwan/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 22.68, 121.49, times in UTC+8, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, focused; 121 nights, 82 species): season 04-19 to 07-28, moon 2.5 to 8.7 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:taiwan",
+    "name": "Taiwan and coastal China, reference point",
+    "lat": 22.68,
+    "lon": 121.49
+   },
+   "locale": "taiwan",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "04-19",
+    "season_end": "07-28",
+    "season_peak": "06-03",
+    "n_nights": 121,
+    "species": 82,
+    "season_days": 101,
+    "daf_lo": 2.5,
+    "daf_hi": 8.7,
+    "R_season": 0.76,
+    "R_lunar": 0.87,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/taiwan/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-taiwan-sst",
+   "kind": "temp",
+   "name": "Taiwan and coastal China: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/taiwan/cue_table_2027.csv",
+    "data/external/oisst_locales/taiwan.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (22.625, 121.375), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:sunda",
+    "name": "Singapore and the Sunda Shelf, reference point",
+    "lat": 1.17,
+    "lon": 103.75
+   },
+   "locale": "sunda",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "03-29",
+    "season_end": "04-25",
+    "season_peak": "04-11",
+    "n_nights": 55,
+    "species": 83,
+    "season_days": 28,
+    "daf_lo": 2.0,
+    "daf_hi": 6.2,
+    "R_season": 0.84,
+    "R_lunar": 0.91,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/sunda/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-sunda-sky",
+   "kind": "light",
+   "name": "Singapore and the Sunda Shelf: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/sunda/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 1.17, 103.75, times in UTC+7, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, focused; 55 nights, 83 species): season 03-29 to 04-25, moon 2.0 to 6.2 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:sunda",
+    "name": "Singapore and the Sunda Shelf, reference point",
+    "lat": 1.17,
+    "lon": 103.75
+   },
+   "locale": "sunda",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "03-29",
+    "season_end": "04-25",
+    "season_peak": "04-11",
+    "n_nights": 55,
+    "species": 83,
+    "season_days": 28,
+    "daf_lo": 2.0,
+    "daf_hi": 6.2,
+    "R_season": 0.84,
+    "R_lunar": 0.91,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/sunda/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-sunda-sst",
+   "kind": "temp",
+   "name": "Singapore and the Sunda Shelf: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/sunda/cue_table_2027.csv",
+    "data/external/oisst_locales/sunda.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (1.125, 103.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:gbr",
+    "name": "Great Barrier Reef, reference point",
+    "lat": -18.99,
+    "lon": 146.85
+   },
+   "locale": "gbr",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "10-26",
+    "season_end": "12-11",
+    "season_peak": "11-17",
+    "n_nights": 72,
+    "species": 113,
+    "season_days": 47,
+    "daf_lo": 2.4,
+    "daf_hi": 6.3,
+    "R_season": 0.91,
+    "R_lunar": 0.94,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gbr/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-gbr-sky",
+   "kind": "light",
+   "name": "Great Barrier Reef: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/gbr/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -18.99, 146.85, times in UTC+10, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, focused; 72 nights, 113 species): season 10-26 to 12-11, moon 2.4 to 6.3 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:gbr",
+    "name": "Great Barrier Reef, reference point",
+    "lat": -18.99,
+    "lon": 146.85
+   },
+   "locale": "gbr",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "10-26",
+    "season_end": "12-11",
+    "season_peak": "11-17",
+    "n_nights": 72,
+    "species": 113,
+    "season_days": 47,
+    "daf_lo": 2.4,
+    "daf_hi": 6.3,
+    "R_season": 0.91,
+    "R_lunar": 0.94,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gbr/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-gbr-sst",
+   "kind": "temp",
+   "name": "Great Barrier Reef: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/gbr/cue_table_2027.csv",
+    "data/external/oisst_locales/gbr.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-18.875, 146.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:gbr",
+    "name": "Great Barrier Reef, reference point",
+    "lat": -18.99,
+    "lon": 146.85
+   },
+   "locale": "gbr",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "10-26",
+    "season_end": "12-11",
+    "season_peak": "11-17",
+    "n_nights": 72,
+    "species": 113,
+    "season_days": 47,
+    "daf_lo": 2.4,
+    "daf_hi": 6.3,
+    "R_season": 0.91,
+    "R_lunar": 0.94,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gbr/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "temp_clim_c"
+    ]
+   },
+   "id": "locale-gbr-reef-temp",
+   "kind": "temp",
+   "name": "Great Barrier Reef: reef water temperature climatology (in situ)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/gbr/cue_table_2027.csv"
+   ],
+   "note": "The reef's own water temperature (level 0). daily climatology in situ (Davies Reef AIMS 1998-2015, level 0) plus OISST (level 4)",
+   "basis_detail": [
+    "daily climatology in situ (Davies Reef AIMS 1998-2015, level 0) plus OISST (level 4)"
+   ],
+   "level": 0
+  },
+  {
+   "location": {
+    "site_id": "locale:red_sea_aqaba",
+    "name": "Gulf of Aqaba (Eilat), reference point",
+    "lat": 29.53,
+    "lon": 34.97
+   },
+   "locale": "red_sea_aqaba",
+   "window": {
+    "grade": "rich",
+    "focus": "broad",
+    "season_start": "06-12",
+    "season_end": "08-08",
+    "season_peak": "07-15",
+    "n_nights": 247,
+    "species": 17,
+    "season_days": 58,
+    "daf_lo": 28.7,
+    "daf_hi": 18.5,
+    "R_season": 0.92,
+    "R_lunar": 0.19,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/red_sea_aqaba/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-red_sea_aqaba-sky",
+   "kind": "light",
+   "name": "Gulf of Aqaba (Eilat): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/red_sea_aqaba/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 29.53, 34.97, times in UTC+2, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, broad; 247 nights, 17 species): season 06-12 to 08-08, moon 28.7 to 18.5 days after full. Broad: the locale mixes species that spawn in different seasons or moon phases; use the genus windows.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:red_sea_aqaba",
+    "name": "Gulf of Aqaba (Eilat), reference point",
+    "lat": 29.53,
+    "lon": 34.97
+   },
+   "locale": "red_sea_aqaba",
+   "window": {
+    "grade": "rich",
+    "focus": "broad",
+    "season_start": "06-12",
+    "season_end": "08-08",
+    "season_peak": "07-15",
+    "n_nights": 247,
+    "species": 17,
+    "season_days": 58,
+    "daf_lo": 28.7,
+    "daf_hi": 18.5,
+    "R_season": 0.92,
+    "R_lunar": 0.19,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/red_sea_aqaba/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-red_sea_aqaba-sst",
+   "kind": "temp",
+   "name": "Gulf of Aqaba (Eilat): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/red_sea_aqaba/cue_table_2027.csv",
+    "data/external/oisst_locales/red_sea_aqaba.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (29.375, 34.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:melanesia",
+    "name": "Melanesia (Fiji, Solomons, New Guinea), reference point",
+    "lat": -18.21,
+    "lon": 177.69
+   },
+   "locale": "melanesia",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "10-17",
+    "season_end": "11-29",
+    "season_peak": "11-11",
+    "n_nights": 51,
+    "species": 46,
+    "season_days": 44,
+    "daf_lo": 5.0,
+    "daf_hi": 7.7,
+    "R_season": 0.88,
+    "R_lunar": 0.92,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/melanesia/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-melanesia-sky",
+   "kind": "light",
+   "name": "Melanesia (Fiji, Solomons, New Guinea): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/melanesia/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -18.21, 177.69, times in UTC+12, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, focused; 51 nights, 46 species): season 10-17 to 11-29, moon 5.0 to 7.7 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:melanesia",
+    "name": "Melanesia (Fiji, Solomons, New Guinea), reference point",
+    "lat": -18.21,
+    "lon": 177.69
+   },
+   "locale": "melanesia",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "10-17",
+    "season_end": "11-29",
+    "season_peak": "11-11",
+    "n_nights": 51,
+    "species": 46,
+    "season_days": 44,
+    "daf_lo": 5.0,
+    "daf_hi": 7.7,
+    "R_season": 0.88,
+    "R_lunar": 0.92,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/melanesia/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-melanesia-sst",
+   "kind": "temp",
+   "name": "Melanesia (Fiji, Solomons, New Guinea): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/melanesia/cue_table_2027.csv",
+    "data/external/oisst_locales/melanesia.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-18.125, 177.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:temperate_japan",
+    "name": "Temperate Japan (Shikoku, Kyushu), reference point",
+    "lat": 32.77,
+    "lon": 132.73
+   },
+   "locale": "temperate_japan",
+   "window": {
+    "grade": "rich",
+    "focus": "broad",
+    "season_start": "07-08",
+    "season_end": "08-20",
+    "season_peak": "07-30",
+    "n_nights": 142,
+    "species": 39,
+    "season_days": 44,
+    "daf_lo": 3.5,
+    "daf_hi": 21.3,
+    "R_season": 0.96,
+    "R_lunar": 0.3,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/temperate_japan/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-temperate_japan-sky",
+   "kind": "light",
+   "name": "Temperate Japan (Shikoku, Kyushu): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/temperate_japan/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 32.77, 132.73, times in UTC+9, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, broad; 142 nights, 39 species): season 07-08 to 08-20, moon 3.5 to 21.3 days after full. Broad: the locale mixes species that spawn in different seasons or moon phases; use the genus windows.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:temperate_japan",
+    "name": "Temperate Japan (Shikoku, Kyushu), reference point",
+    "lat": 32.77,
+    "lon": 132.73
+   },
+   "locale": "temperate_japan",
+   "window": {
+    "grade": "rich",
+    "focus": "broad",
+    "season_start": "07-08",
+    "season_end": "08-20",
+    "season_peak": "07-30",
+    "n_nights": 142,
+    "species": 39,
+    "season_days": 44,
+    "daf_lo": 3.5,
+    "daf_hi": 21.3,
+    "R_season": 0.96,
+    "R_lunar": 0.3,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/temperate_japan/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-temperate_japan-sst",
+   "kind": "temp",
+   "name": "Temperate Japan (Shikoku, Kyushu): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/temperate_japan/cue_table_2027.csv",
+    "data/external/oisst_locales/temperate_japan.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (32.875, 132.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:red_sea_central",
+    "name": "Central Red Sea (Thuwal, Saudi Arabia), reference point",
+    "lat": 22.22,
+    "lon": 39.03
+   },
+   "locale": "red_sea_central",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "04-06",
+    "season_end": "06-10",
+    "season_peak": "05-17",
+    "n_nights": 49,
+    "species": 58,
+    "season_days": 66,
+    "daf_lo": 29.2,
+    "daf_hi": 6.2,
+    "R_season": 0.9,
+    "R_lunar": 0.8,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/red_sea_central/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-red_sea_central-sky",
+   "kind": "light",
+   "name": "Central Red Sea (Thuwal, Saudi Arabia): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/red_sea_central/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 22.22, 39.03, times in UTC+3, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, focused; 49 nights, 58 species): season 04-06 to 06-10, moon 29.2 to 6.2 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:red_sea_central",
+    "name": "Central Red Sea (Thuwal, Saudi Arabia), reference point",
+    "lat": 22.22,
+    "lon": 39.03
+   },
+   "locale": "red_sea_central",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "04-06",
+    "season_end": "06-10",
+    "season_peak": "05-17",
+    "n_nights": 49,
+    "species": 58,
+    "season_days": 66,
+    "daf_lo": 29.2,
+    "daf_hi": 6.2,
+    "R_season": 0.9,
+    "R_lunar": 0.8,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/red_sea_central/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-red_sea_central-sst",
+   "kind": "temp",
+   "name": "Central Red Sea (Thuwal, Saudi Arabia): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/red_sea_central/cue_table_2027.csv",
+    "data/external/oisst_locales/red_sea_central.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (22.125, 38.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:maldives_mar_apr",
+    "name": "Maldives, March to April season, reference point",
+    "lat": 5.29,
+    "lon": 73.11
+   },
+   "locale": "maldives_mar_apr",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "03-17",
+    "season_end": "04-17",
+    "season_peak": "04-05",
+    "n_nights": 40,
+    "species": 29,
+    "season_days": 32,
+    "daf_lo": 0.4,
+    "daf_hi": 6.3,
+    "R_season": 0.97,
+    "R_lunar": 0.88,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/maldives_mar_apr/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-maldives_mar_apr-sky",
+   "kind": "light",
+   "name": "Maldives, March to April season: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/maldives_mar_apr/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 5.29, 73.11, times in UTC+5, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, focused; 40 nights, 29 species): season 03-17 to 04-17, moon 0.4 to 6.3 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:maldives_mar_apr",
+    "name": "Maldives, March to April season, reference point",
+    "lat": 5.29,
+    "lon": 73.11
+   },
+   "locale": "maldives_mar_apr",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "03-17",
+    "season_end": "04-17",
+    "season_peak": "04-05",
+    "n_nights": 40,
+    "species": 29,
+    "season_days": 32,
+    "daf_lo": 0.4,
+    "daf_hi": 6.3,
+    "R_season": 0.97,
+    "R_lunar": 0.88,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/maldives_mar_apr/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-maldives_mar_apr-sst",
+   "kind": "temp",
+   "name": "Maldives, March to April season: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/maldives_mar_apr/cue_table_2027.csv",
+    "data/external/oisst_locales/maldives_mar_apr.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (5.375, 73.125), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:coral_triangle",
+    "name": "Philippines and Wallacea, reference point",
+    "lat": 6.51,
+    "lon": 120.01
+   },
+   "locale": "coral_triangle",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "03-16",
+    "season_end": "06-07",
+    "season_peak": "04-24",
+    "n_nights": 42,
+    "species": 48,
+    "season_days": 84,
+    "daf_lo": 28.4,
+    "daf_hi": 6.8,
+    "R_season": 0.81,
+    "R_lunar": 0.69,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/coral_triangle/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-coral_triangle-sky",
+   "kind": "light",
+   "name": "Philippines and Wallacea: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/coral_triangle/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 6.51, 120.01, times in UTC+8, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, focused; 42 nights, 48 species): season 03-16 to 06-07, moon 28.4 to 6.8 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:coral_triangle",
+    "name": "Philippines and Wallacea, reference point",
+    "lat": 6.51,
+    "lon": 120.01
+   },
+   "locale": "coral_triangle",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "03-16",
+    "season_end": "06-07",
+    "season_peak": "04-24",
+    "n_nights": 42,
+    "species": 48,
+    "season_days": 84,
+    "daf_lo": 28.4,
+    "daf_hi": 6.8,
+    "R_season": 0.81,
+    "R_lunar": 0.69,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/coral_triangle/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-coral_triangle-sst",
+   "kind": "temp",
+   "name": "Philippines and Wallacea: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/coral_triangle/cue_table_2027.csv",
+    "data/external/oisst_locales/coral_triangle.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (6.625, 120.125), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:maldives_oct_dec",
+    "name": "Maldives, October to December season, reference point",
+    "lat": 5.29,
+    "lon": 73.11
+   },
+   "locale": "maldives_oct_dec",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "10-17",
+    "season_end": "12-13",
+    "season_peak": "11-12",
+    "n_nights": 47,
+    "species": 18,
+    "season_days": 58,
+    "daf_lo": 28.7,
+    "daf_hi": 7.7,
+    "R_season": 0.92,
+    "R_lunar": 0.66,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/maldives_oct_dec/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-maldives_oct_dec-sky",
+   "kind": "light",
+   "name": "Maldives, October to December season: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/maldives_oct_dec/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 5.29, 73.11, times in UTC+5, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (rich, focused; 47 nights, 18 species): season 10-17 to 12-13, moon 28.7 to 7.7 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:maldives_oct_dec",
+    "name": "Maldives, October to December season, reference point",
+    "lat": 5.29,
+    "lon": 73.11
+   },
+   "locale": "maldives_oct_dec",
+   "window": {
+    "grade": "rich",
+    "focus": "focused",
+    "season_start": "10-17",
+    "season_end": "12-13",
+    "season_peak": "11-12",
+    "n_nights": 47,
+    "species": 18,
+    "season_days": 58,
+    "daf_lo": 28.7,
+    "daf_hi": 7.7,
+    "R_season": 0.92,
+    "R_lunar": 0.66,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/maldives_oct_dec/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-maldives_oct_dec-sst",
+   "kind": "temp",
+   "name": "Maldives, October to December season: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/maldives_oct_dec/cue_table_2027.csv",
+    "data/external/oisst_locales/maldives_oct_dec.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (5.375, 73.125), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:gulf_of_thailand_west",
+    "name": "Gulf of Thailand, west (Koh Tao, Koh Phangan), reference point",
+    "lat": 10.1,
+    "lon": 99.83
+   },
+   "locale": "gulf_of_thailand_west",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "03-07",
+    "season_end": "04-27",
+    "season_peak": "04-06",
+    "n_nights": 22,
+    "species": 30,
+    "season_days": 52,
+    "daf_lo": 3.1,
+    "daf_hi": 6.0,
+    "R_season": 0.78,
+    "R_lunar": 0.9,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gulf_of_thailand_west/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-gulf_of_thailand_west-sky",
+   "kind": "light",
+   "name": "Gulf of Thailand, west (Koh Tao, Koh Phangan): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/gulf_of_thailand_west/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 10.10, 99.83, times in UTC+7, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 22 nights, 30 species): season 03-07 to 04-27, moon 3.1 to 6.0 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:gulf_of_thailand_west",
+    "name": "Gulf of Thailand, west (Koh Tao, Koh Phangan), reference point",
+    "lat": 10.1,
+    "lon": 99.83
+   },
+   "locale": "gulf_of_thailand_west",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "03-07",
+    "season_end": "04-27",
+    "season_peak": "04-06",
+    "n_nights": 22,
+    "species": 30,
+    "season_days": 52,
+    "daf_lo": 3.1,
+    "daf_hi": 6.0,
+    "R_season": 0.78,
+    "R_lunar": 0.9,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gulf_of_thailand_west/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-gulf_of_thailand_west-sst",
+   "kind": "temp",
+   "name": "Gulf of Thailand, west (Koh Tao, Koh Phangan): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/gulf_of_thailand_west/cue_table_2027.csv",
+    "data/external/oisst_locales/gulf_of_thailand_west.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (10.125, 99.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:western_australia",
+    "name": "Western Australia, autumn season, reference point",
+    "lat": -20.5,
+    "lon": 116.7
+   },
+   "locale": "western_australia",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "03-09",
+    "season_end": "03-26",
+    "season_peak": "03-21",
+    "n_nights": 11,
+    "species": 52,
+    "season_days": 18,
+    "daf_lo": 8.0,
+    "daf_hi": 9.9,
+    "R_season": 0.99,
+    "R_lunar": 0.97,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/western_australia/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-western_australia-sky",
+   "kind": "light",
+   "name": "Western Australia, autumn season: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/western_australia/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -20.50, 116.70, times in UTC+8, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 11 nights, 52 species): season 03-09 to 03-26, moon 8.0 to 9.9 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:western_australia",
+    "name": "Western Australia, autumn season, reference point",
+    "lat": -20.5,
+    "lon": 116.7
+   },
+   "locale": "western_australia",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "03-09",
+    "season_end": "03-26",
+    "season_peak": "03-21",
+    "n_nights": 11,
+    "species": 52,
+    "season_days": 18,
+    "daf_lo": 8.0,
+    "daf_hi": 9.9,
+    "R_season": 0.99,
+    "R_lunar": 0.97,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/western_australia/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-western_australia-sst",
+   "kind": "temp",
+   "name": "Western Australia, autumn season: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/western_australia/cue_table_2027.csv",
+    "data/external/oisst_locales/western_australia.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-22.625, 113.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:gulf_of_thailand_east",
+    "name": "Gulf of Thailand, east (Rayong, Chonburi), reference point",
+    "lat": 12.6,
+    "lon": 101.69
+   },
+   "locale": "gulf_of_thailand_east",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "02-05",
+    "season_end": "04-10",
+    "season_peak": "03-01",
+    "n_nights": 23,
+    "species": 23,
+    "season_days": 65,
+    "daf_lo": 3.8,
+    "daf_hi": 5.8,
+    "R_season": 0.81,
+    "R_lunar": 0.92,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gulf_of_thailand_east/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-gulf_of_thailand_east-sky",
+   "kind": "light",
+   "name": "Gulf of Thailand, east (Rayong, Chonburi): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/gulf_of_thailand_east/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 12.60, 101.69, times in UTC+7, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 23 nights, 23 species): season 02-05 to 04-10, moon 3.8 to 5.8 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:gulf_of_thailand_east",
+    "name": "Gulf of Thailand, east (Rayong, Chonburi), reference point",
+    "lat": 12.6,
+    "lon": 101.69
+   },
+   "locale": "gulf_of_thailand_east",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "02-05",
+    "season_end": "04-10",
+    "season_peak": "03-01",
+    "n_nights": 23,
+    "species": 23,
+    "season_days": 65,
+    "daf_lo": 3.8,
+    "daf_hi": 5.8,
+    "R_season": 0.81,
+    "R_lunar": 0.92,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gulf_of_thailand_east/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-gulf_of_thailand_east-sst",
+   "kind": "temp",
+   "name": "Gulf of Thailand, east (Rayong, Chonburi): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/gulf_of_thailand_east/cue_table_2027.csv",
+    "data/external/oisst_locales/gulf_of_thailand_east.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (12.625, 101.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:palau_spring",
+    "name": "Palau, February to June season, reference point",
+    "lat": 7.34,
+    "lon": 134.55
+   },
+   "locale": "palau_spring",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "04-12",
+    "season_end": "06-12",
+    "season_peak": "05-02",
+    "n_nights": 23,
+    "species": 37,
+    "season_days": 62,
+    "daf_lo": 2.1,
+    "daf_hi": 5.9,
+    "R_season": 0.9,
+    "R_lunar": 0.94,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/palau_spring/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-palau_spring-sky",
+   "kind": "light",
+   "name": "Palau, February to June season: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/palau_spring/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 7.34, 134.55, times in UTC+9, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 23 nights, 37 species): season 04-12 to 06-12, moon 2.1 to 5.9 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:palau_spring",
+    "name": "Palau, February to June season, reference point",
+    "lat": 7.34,
+    "lon": 134.55
+   },
+   "locale": "palau_spring",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "04-12",
+    "season_end": "06-12",
+    "season_peak": "05-02",
+    "n_nights": 23,
+    "species": 37,
+    "season_days": 62,
+    "daf_lo": 2.1,
+    "daf_hi": 5.9,
+    "R_season": 0.9,
+    "R_lunar": 0.94,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/palau_spring/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-palau_spring-sst",
+   "kind": "temp",
+   "name": "Palau, February to June season: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/palau_spring/cue_table_2027.csv",
+    "data/external/oisst_locales/palau_spring.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (7.375, 134.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:caribbean_gulf",
+    "name": "Flower Garden Banks (Gulf of Mexico), reference point",
+    "lat": 27.9,
+    "lon": -93.58
+   },
+   "locale": "caribbean_gulf",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "08-09",
+    "season_end": "08-31",
+    "season_peak": "08-24",
+    "n_nights": 22,
+    "species": 7,
+    "season_days": 23,
+    "daf_lo": 6.6,
+    "daf_hi": 9.1,
+    "R_season": 0.99,
+    "R_lunar": 0.98,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/caribbean_gulf/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-caribbean_gulf-sky",
+   "kind": "light",
+   "name": "Flower Garden Banks (Gulf of Mexico): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/caribbean_gulf/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 27.90, -93.58, times in UTC-6, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 22 nights, 7 species): season 08-09 to 08-31, moon 6.6 to 9.1 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:caribbean_gulf",
+    "name": "Flower Garden Banks (Gulf of Mexico), reference point",
+    "lat": 27.9,
+    "lon": -93.58
+   },
+   "locale": "caribbean_gulf",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "08-09",
+    "season_end": "08-31",
+    "season_peak": "08-24",
+    "n_nights": 22,
+    "species": 7,
+    "season_days": 23,
+    "daf_lo": 6.6,
+    "daf_hi": 9.1,
+    "R_season": 0.99,
+    "R_lunar": 0.98,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/caribbean_gulf/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-caribbean_gulf-sst",
+   "kind": "temp",
+   "name": "Flower Garden Banks (Gulf of Mexico): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/caribbean_gulf/cue_table_2027.csv",
+    "data/external/oisst_locales/caribbean_gulf.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (27.875, -93.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:hawaii",
+    "name": "Hawaii, reference point",
+    "lat": 20.63,
+    "lon": -156.5
+   },
+   "locale": "hawaii",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "04-20",
+    "season_end": "07-31",
+    "season_peak": "05-27",
+    "n_nights": 28,
+    "species": 6,
+    "season_days": 103,
+    "daf_lo": 0.3,
+    "daf_hi": 6.3,
+    "R_season": 0.75,
+    "R_lunar": 0.67,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/hawaii/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-hawaii-sky",
+   "kind": "light",
+   "name": "Hawaii: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/hawaii/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 20.63, -156.50, times in UTC-10, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 28 nights, 6 species): season 04-20 to 07-31, moon 0.3 to 6.3 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:hawaii",
+    "name": "Hawaii, reference point",
+    "lat": 20.63,
+    "lon": -156.5
+   },
+   "locale": "hawaii",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "04-20",
+    "season_end": "07-31",
+    "season_peak": "05-27",
+    "n_nights": 28,
+    "species": 6,
+    "season_days": 103,
+    "daf_lo": 0.3,
+    "daf_hi": 6.3,
+    "R_season": 0.75,
+    "R_lunar": 0.67,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/hawaii/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-hawaii-sst",
+   "kind": "temp",
+   "name": "Hawaii: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/hawaii/cue_table_2027.csv",
+    "data/external/oisst_locales/hawaii.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (20.625, -156.375), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:marianas",
+    "name": "Marianas (Guam, Saipan), reference point",
+    "lat": 13.42,
+    "lon": 144.79
+   },
+   "locale": "marianas",
+   "window": {
+    "grade": "usable",
+    "focus": "broad",
+    "season_start": "07-03",
+    "season_end": "08-06",
+    "season_peak": "07-25",
+    "n_nights": 19,
+    "species": 13,
+    "season_days": 35,
+    "daf_lo": 27.2,
+    "daf_hi": 9.2,
+    "R_season": 0.95,
+    "R_lunar": 0.56,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/marianas/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-marianas-sky",
+   "kind": "light",
+   "name": "Marianas (Guam, Saipan): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/marianas/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 13.42, 144.79, times in UTC+10, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, broad; 19 nights, 13 species): season 07-03 to 08-06, moon 27.2 to 9.2 days after full. Broad: the locale mixes species that spawn in different seasons or moon phases; use the genus windows.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:marianas",
+    "name": "Marianas (Guam, Saipan), reference point",
+    "lat": 13.42,
+    "lon": 144.79
+   },
+   "locale": "marianas",
+   "window": {
+    "grade": "usable",
+    "focus": "broad",
+    "season_start": "07-03",
+    "season_end": "08-06",
+    "season_peak": "07-25",
+    "n_nights": 19,
+    "species": 13,
+    "season_days": 35,
+    "daf_lo": 27.2,
+    "daf_hi": 9.2,
+    "R_season": 0.95,
+    "R_lunar": 0.56,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/marianas/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-marianas-sst",
+   "kind": "temp",
+   "name": "Marianas (Guam, Saipan): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/marianas/cue_table_2027.csv",
+    "data/external/oisst_locales/marianas.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (13.375, 144.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:caribbean_reef",
+    "name": "Caribbean reef tract (Florida Keys, Belize, Panama, Curacao), reference point",
+    "lat": 25.13,
+    "lon": -80.29
+   },
+   "locale": "caribbean_reef",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "07-28",
+    "season_end": "09-03",
+    "season_peak": "08-20",
+    "n_nights": 31,
+    "species": 4,
+    "season_days": 38,
+    "daf_lo": 2.3,
+    "daf_hi": 4.9,
+    "R_season": 0.96,
+    "R_lunar": 0.97,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/caribbean_reef/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-caribbean_reef-sky",
+   "kind": "light",
+   "name": "Caribbean reef tract (Florida Keys, Belize, Panama, Curacao): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/caribbean_reef/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 25.13, -80.29, times in UTC-5, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 31 nights, 4 species): season 07-28 to 09-03, moon 2.3 to 4.9 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:caribbean_reef",
+    "name": "Caribbean reef tract (Florida Keys, Belize, Panama, Curacao), reference point",
+    "lat": 25.13,
+    "lon": -80.29
+   },
+   "locale": "caribbean_reef",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "07-28",
+    "season_end": "09-03",
+    "season_peak": "08-20",
+    "n_nights": 31,
+    "species": 4,
+    "season_days": 38,
+    "daf_lo": 2.3,
+    "daf_hi": 4.9,
+    "R_season": 0.96,
+    "R_lunar": 0.97,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/caribbean_reef/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-caribbean_reef-sst",
+   "kind": "temp",
+   "name": "Caribbean reef tract (Florida Keys, Belize, Panama, Curacao): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/caribbean_reef/cue_table_2027.csv",
+    "data/external/oisst_locales/caribbean_reef.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (25.125, -80.375), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:eastern_pacific",
+    "name": "Eastern Pacific, reference point",
+    "lat": 7.8,
+    "lon": -81.76
+   },
+   "locale": "eastern_pacific",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "01-25",
+    "season_end": "03-21",
+    "season_peak": "02-28",
+    "n_nights": 20,
+    "species": 3,
+    "season_days": 56,
+    "daf_lo": 1.6,
+    "daf_hi": 3.7,
+    "R_season": 0.78,
+    "R_lunar": 0.98,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/eastern_pacific/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-eastern_pacific-sky",
+   "kind": "light",
+   "name": "Eastern Pacific: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/eastern_pacific/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 7.80, -81.76, times in UTC-5, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 20 nights, 3 species): season 01-25 to 03-21, moon 1.6 to 3.7 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:eastern_pacific",
+    "name": "Eastern Pacific, reference point",
+    "lat": 7.8,
+    "lon": -81.76
+   },
+   "locale": "eastern_pacific",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "01-25",
+    "season_end": "03-21",
+    "season_peak": "02-28",
+    "n_nights": 20,
+    "species": 3,
+    "season_days": 56,
+    "daf_lo": 1.6,
+    "daf_hi": 3.7,
+    "R_season": 0.78,
+    "R_lunar": 0.98,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/eastern_pacific/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-eastern_pacific-sst",
+   "kind": "temp",
+   "name": "Eastern Pacific: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/eastern_pacific/cue_table_2027.csv",
+    "data/external/oisst_locales/eastern_pacific.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (7.875, -81.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:mascarene",
+    "name": "Reunion (Mascarene Islands), reference point",
+    "lat": -21.28,
+    "lon": 55.34
+   },
+   "locale": "mascarene",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "10-19",
+    "season_end": "01-29",
+    "season_peak": "12-15",
+    "n_nights": 15,
+    "species": 9,
+    "season_days": 103,
+    "daf_lo": 2.6,
+    "daf_hi": 6.1,
+    "R_season": 0.66,
+    "R_lunar": 0.95,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/mascarene/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-mascarene-sky",
+   "kind": "light",
+   "name": "Reunion (Mascarene Islands): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/mascarene/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -21.28, 55.34, times in UTC+4, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 15 nights, 9 species): season 10-19 to 01-29, moon 2.6 to 6.1 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:mascarene",
+    "name": "Reunion (Mascarene Islands), reference point",
+    "lat": -21.28,
+    "lon": 55.34
+   },
+   "locale": "mascarene",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "10-19",
+    "season_end": "01-29",
+    "season_peak": "12-15",
+    "n_nights": 15,
+    "species": 9,
+    "season_days": 103,
+    "daf_lo": 2.6,
+    "daf_hi": 6.1,
+    "R_season": 0.66,
+    "R_lunar": 0.95,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/mascarene/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-mascarene-sst",
+   "kind": "temp",
+   "name": "Reunion (Mascarene Islands): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/mascarene/cue_table_2027.csv",
+    "data/external/oisst_locales/mascarene.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-21.375, 55.375), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:palau_autumn",
+    "name": "Palau, July to January season, reference point",
+    "lat": 7.51,
+    "lon": 134.58
+   },
+   "locale": "palau_autumn",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "08-29",
+    "season_end": "09-23",
+    "season_peak": "09-13",
+    "n_nights": 5,
+    "species": 10,
+    "season_days": 26,
+    "daf_lo": 1.8,
+    "daf_hi": 7.4,
+    "R_season": 0.98,
+    "R_lunar": 0.85,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/palau_autumn/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-palau_autumn-sky",
+   "kind": "light",
+   "name": "Palau, July to January season: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/palau_autumn/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 7.51, 134.58, times in UTC+9, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (thin, focused; 5 nights, 10 species): season 08-29 to 09-23, moon 1.8 to 7.4 days after full. Thin: an outline only.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:palau_autumn",
+    "name": "Palau, July to January season, reference point",
+    "lat": 7.51,
+    "lon": 134.58
+   },
+   "locale": "palau_autumn",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "08-29",
+    "season_end": "09-23",
+    "season_peak": "09-13",
+    "n_nights": 5,
+    "species": 10,
+    "season_days": 26,
+    "daf_lo": 1.8,
+    "daf_hi": 7.4,
+    "R_season": 0.98,
+    "R_lunar": 0.85,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/palau_autumn/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-palau_autumn-sst",
+   "kind": "temp",
+   "name": "Palau, July to January season: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/palau_autumn/cue_table_2027.csv",
+    "data/external/oisst_locales/palau_autumn.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (7.625, 134.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:french_polynesia",
+    "name": "French Polynesia (Moorea), reference point",
+    "lat": -17.5,
+    "lon": -149.83
+   },
+   "locale": "french_polynesia",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "09-30",
+    "season_end": "10-29",
+    "season_peak": "10-21",
+    "n_nights": 12,
+    "species": 11,
+    "season_days": 30,
+    "daf_lo": 4.9,
+    "daf_hi": 11.6,
+    "R_season": 0.96,
+    "R_lunar": 0.77,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/french_polynesia/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-french_polynesia-sky",
+   "kind": "light",
+   "name": "French Polynesia (Moorea): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/french_polynesia/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -17.50, -149.83, times in UTC-10, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (usable, focused; 12 nights, 11 species): season 09-30 to 10-29, moon 4.9 to 11.6 days after full.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:french_polynesia",
+    "name": "French Polynesia (Moorea), reference point",
+    "lat": -17.5,
+    "lon": -149.83
+   },
+   "locale": "french_polynesia",
+   "window": {
+    "grade": "usable",
+    "focus": "focused",
+    "season_start": "09-30",
+    "season_end": "10-29",
+    "season_peak": "10-21",
+    "n_nights": 12,
+    "species": 11,
+    "season_days": 30,
+    "daf_lo": 4.9,
+    "daf_hi": 11.6,
+    "R_season": 0.96,
+    "R_lunar": 0.77,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/french_polynesia/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-french_polynesia-sst",
+   "kind": "temp",
+   "name": "French Polynesia (Moorea): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/french_polynesia/cue_table_2027.csv",
+    "data/external/oisst_locales/french_polynesia.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-17.375, -149.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:samoa_tonga",
+    "name": "American Samoa, reference point",
+    "lat": -14.28,
+    "lon": -170.7
+   },
+   "locale": "samoa_tonga",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "11-09",
+    "season_end": "11-12",
+    "season_peak": "11-08",
+    "n_nights": 5,
+    "species": 7,
+    "season_days": 4,
+    "daf_lo": 2.9,
+    "daf_hi": 4.9,
+    "R_season": 0.99,
+    "R_lunar": 0.97,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/samoa_tonga/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-samoa_tonga-sky",
+   "kind": "light",
+   "name": "American Samoa: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/samoa_tonga/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -14.28, -170.70, times in UTC-11, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (thin, focused; 5 nights, 7 species): season 11-09 to 11-12, moon 2.9 to 4.9 days after full. Thin: an outline only.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:samoa_tonga",
+    "name": "American Samoa, reference point",
+    "lat": -14.28,
+    "lon": -170.7
+   },
+   "locale": "samoa_tonga",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "11-09",
+    "season_end": "11-12",
+    "season_peak": "11-08",
+    "n_nights": 5,
+    "species": 7,
+    "season_days": 4,
+    "daf_lo": 2.9,
+    "daf_hi": 4.9,
+    "R_season": 0.99,
+    "R_lunar": 0.97,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/samoa_tonga/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-samoa_tonga-sst",
+   "kind": "temp",
+   "name": "American Samoa: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/samoa_tonga/cue_table_2027.csv",
+    "data/external/oisst_locales/samoa_tonga.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-14.375, -170.625), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:east_africa",
+    "name": "Kenya, Tanzania and Madagascar, reference point",
+    "lat": -22.08,
+    "lon": 43.23
+   },
+   "locale": "east_africa",
+   "window": {
+    "grade": "thin",
+    "focus": "broad",
+    "season_start": "09-09",
+    "season_end": "11-26",
+    "season_peak": "10-21",
+    "n_nights": 5,
+    "species": 9,
+    "season_days": 79,
+    "daf_lo": 4.9,
+    "daf_hi": 6.2,
+    "R_season": 0.74,
+    "R_lunar": 0.6,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/east_africa/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-east_africa-sky",
+   "kind": "light",
+   "name": "Kenya, Tanzania and Madagascar: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/east_africa/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -22.08, 43.23, times in UTC+3, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (thin, broad; 5 nights, 9 species): season 09-09 to 11-26, moon 4.9 to 6.2 days after full. Broad: the locale mixes species that spawn in different seasons or moon phases; use the genus windows. Thin: an outline only.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:east_africa",
+    "name": "Kenya, Tanzania and Madagascar, reference point",
+    "lat": -22.08,
+    "lon": 43.23
+   },
+   "locale": "east_africa",
+   "window": {
+    "grade": "thin",
+    "focus": "broad",
+    "season_start": "09-09",
+    "season_end": "11-26",
+    "season_peak": "10-21",
+    "n_nights": 5,
+    "species": 9,
+    "season_days": 79,
+    "daf_lo": 4.9,
+    "daf_hi": 6.2,
+    "R_season": 0.74,
+    "R_lunar": 0.6,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/east_africa/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-east_africa-sst",
+   "kind": "temp",
+   "name": "Kenya, Tanzania and Madagascar: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/east_africa/cue_table_2027.csv",
+    "data/external/oisst_locales/east_africa.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-22.125, 43.125), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:wa_spring",
+    "name": "Western Australia, spring season, reference point",
+    "lat": -14.07,
+    "lon": 121.77
+   },
+   "locale": "wa_spring",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "10-09",
+    "season_end": "10-22",
+    "season_peak": "10-15",
+    "n_nights": 4,
+    "species": 1,
+    "season_days": 14,
+    "daf_lo": 7.6,
+    "daf_hi": 9.3,
+    "R_season": 1.0,
+    "R_lunar": 0.99,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/wa_spring/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-wa_spring-sky",
+   "kind": "light",
+   "name": "Western Australia, spring season: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/wa_spring/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -14.07, 121.77, times in UTC+8, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (thin, focused; 4 nights, 1 species): season 10-09 to 10-22, moon 7.6 to 9.3 days after full. Thin: an outline only.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:wa_spring",
+    "name": "Western Australia, spring season, reference point",
+    "lat": -14.07,
+    "lon": 121.77
+   },
+   "locale": "wa_spring",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "10-09",
+    "season_end": "10-22",
+    "season_peak": "10-15",
+    "n_nights": 4,
+    "species": 1,
+    "season_days": 14,
+    "daf_lo": 7.6,
+    "daf_hi": 9.3,
+    "R_season": 1.0,
+    "R_lunar": 0.99,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/wa_spring/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-wa_spring-sst",
+   "kind": "temp",
+   "name": "Western Australia, spring season: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/wa_spring/cue_table_2027.csv",
+    "data/external/oisst_locales/wa_spring.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-14.125, 121.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:gulf_of_mannar",
+    "name": "Gulf of Mannar (south-east India), reference point",
+    "lat": 8.83,
+    "lon": 78.22
+   },
+   "locale": "gulf_of_mannar",
+   "window": {
+    "grade": "thin",
+    "focus": "broad",
+    "season_start": "03-08",
+    "season_end": "03-28",
+    "season_peak": "03-17",
+    "n_nights": 4,
+    "species": 1,
+    "season_days": 21,
+    "daf_lo": 9.6,
+    "daf_hi": 24.6,
+    "R_season": 0.99,
+    "R_lunar": 0.48,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gulf_of_mannar/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-gulf_of_mannar-sky",
+   "kind": "light",
+   "name": "Gulf of Mannar (south-east India): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/gulf_of_mannar/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 8.83, 78.22, times in UTC+5, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (thin, broad; 4 nights, 1 species): season 03-08 to 03-28, moon 9.6 to 24.6 days after full. Broad: the locale mixes species that spawn in different seasons or moon phases; use the genus windows. Thin: an outline only.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:gulf_of_mannar",
+    "name": "Gulf of Mannar (south-east India), reference point",
+    "lat": 8.83,
+    "lon": 78.22
+   },
+   "locale": "gulf_of_mannar",
+   "window": {
+    "grade": "thin",
+    "focus": "broad",
+    "season_start": "03-08",
+    "season_end": "03-28",
+    "season_peak": "03-17",
+    "n_nights": 4,
+    "species": 1,
+    "season_days": 21,
+    "daf_lo": 9.6,
+    "daf_hi": 24.6,
+    "R_season": 0.99,
+    "R_lunar": 0.48,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/gulf_of_mannar/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-gulf_of_mannar-sst",
+   "kind": "temp",
+   "name": "Gulf of Mannar (south-east India): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/gulf_of_mannar/cue_table_2027.csv",
+    "data/external/oisst_locales/gulf_of_mannar.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (8.875, 78.375), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:red_sea_north",
+    "name": "Northern Red Sea (Hurghada, NEOM), reference point",
+    "lat": 27.3,
+    "lon": 33.83
+   },
+   "locale": "red_sea_north",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "04-20",
+    "season_end": "05-03",
+    "season_peak": "04-27",
+    "n_nights": 3,
+    "species": 1,
+    "season_days": 14,
+    "daf_lo": 21.5,
+    "daf_hi": 26.9,
+    "R_season": 1.0,
+    "R_lunar": 0.89,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/red_sea_north/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-red_sea_north-sky",
+   "kind": "light",
+   "name": "Northern Red Sea (Hurghada, NEOM): computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/red_sea_north/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 27.30, 33.83, times in UTC+2, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (thin, focused; 3 nights, 1 species): season 04-20 to 05-03, moon 21.5 to 26.9 days after full. Thin: an outline only.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:red_sea_north",
+    "name": "Northern Red Sea (Hurghada, NEOM), reference point",
+    "lat": 27.3,
+    "lon": 33.83
+   },
+   "locale": "red_sea_north",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "04-20",
+    "season_end": "05-03",
+    "season_peak": "04-27",
+    "n_nights": 3,
+    "species": 1,
+    "season_days": 14,
+    "daf_lo": 21.5,
+    "daf_hi": 26.9,
+    "R_season": 1.0,
+    "R_lunar": 0.89,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/red_sea_north/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-red_sea_north-sst",
+   "kind": "temp",
+   "name": "Northern Red Sea (Hurghada, NEOM): sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/red_sea_north/cue_table_2027.csv",
+    "data/external/oisst_locales/red_sea_north.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (27.375, 33.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:arabian_gulf",
+    "name": "Arabian (Persian) Gulf, reference point",
+    "lat": 24.92,
+    "lon": 54.9
+   },
+   "locale": "arabian_gulf",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "04-07",
+    "season_end": "05-08",
+    "season_peak": "04-26",
+    "n_nights": 3,
+    "species": 2,
+    "season_days": 32,
+    "daf_lo": 27.5,
+    "daf_hi": 29.0,
+    "R_season": 0.97,
+    "R_lunar": 0.99,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/arabian_gulf/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-arabian_gulf-sky",
+   "kind": "light",
+   "name": "Arabian (Persian) Gulf: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/arabian_gulf/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point 24.92, 54.90, times in UTC+4, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (thin, focused; 3 nights, 2 species): season 04-07 to 05-08, moon 27.5 to 29.0 days after full. Thin: an outline only.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:arabian_gulf",
+    "name": "Arabian (Persian) Gulf, reference point",
+    "lat": 24.92,
+    "lon": 54.9
+   },
+   "locale": "arabian_gulf",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "04-07",
+    "season_end": "05-08",
+    "season_peak": "04-26",
+    "n_nights": 3,
+    "species": 2,
+    "season_days": 32,
+    "daf_lo": 27.5,
+    "daf_hi": 29.0,
+    "R_season": 0.97,
+    "R_lunar": 0.99,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/arabian_gulf/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-arabian_gulf-sst",
+   "kind": "temp",
+   "name": "Arabian (Persian) Gulf: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/arabian_gulf/cue_table_2027.csv",
+    "data/external/oisst_locales/arabian_gulf.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (24.875, 54.875), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  },
+  {
+   "location": {
+    "site_id": "locale:chagos",
+    "name": "Chagos Archipelago, reference point",
+    "lat": -5.33,
+    "lon": 72.22
+   },
+   "locale": "chagos",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "02-18",
+    "season_end": "02-18",
+    "season_peak": "02-18",
+    "n_nights": 1,
+    "species": 1,
+    "season_days": 1,
+    "daf_lo": 5.4,
+    "daf_hi": 5.4,
+    "R_season": 1.0,
+    "R_lunar": 1.0,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": null,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/chagos/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sunrise",
+     "sunset",
+     "astro_dusk",
+     "astro_dawn",
+     "moonrise",
+     "moonset",
+     "moon_illum_pct",
+     "watch"
+    ]
+   },
+   "id": "locale-chagos-sky",
+   "kind": "light",
+   "name": "Chagos Archipelago: computed sun and moon (2027)",
+   "granularity": "daily",
+   "samples": 365,
+   "basis": "computed",
+   "water": null,
+   "sources": [
+    "data/locales/chagos/cue_table_2027.csv",
+    "data/locales/locale_profiles.csv"
+   ],
+   "note": "Ephemeris (dark_window.py) at the reference point -5.33, 72.22, times in UTC+5, on the locale's own 2027 dates, not moved onto any other calendar. Observed spawning window (thin, focused; 1 nights, 1 species): season 02-18 to 02-18, moon 5.4 to 5.4 days after full. Thin: an outline only.",
+   "basis_detail": [
+    "computed sun and moon (dark_window.py)",
+    "watch flags from the locale's spawning window"
+   ]
+  },
+  {
+   "location": {
+    "site_id": "locale:chagos",
+    "name": "Chagos Archipelago, reference point",
+    "lat": -5.33,
+    "lon": 72.22
+   },
+   "locale": "chagos",
+   "window": {
+    "grade": "thin",
+    "focus": "focused",
+    "season_start": "02-18",
+    "season_end": "02-18",
+    "season_peak": "02-18",
+    "n_nights": 1,
+    "species": 1,
+    "season_days": 1,
+    "daf_lo": 5.4,
+    "daf_hi": 5.4,
+    "R_season": 1.0,
+    "R_lunar": 1.0,
+    "genus_windows": "data/locales/locale_genus_windows.csv"
+   },
+   "years": 10,
+   "span": {
+    "start": "2027-01-01",
+    "end": "2027-12-31"
+   },
+   "ref": {
+    "file": "data/locales/chagos/cue_table_2027.csv",
+    "key": "date",
+    "columns": [
+     "sst_clim_c"
+    ]
+   },
+   "id": "locale-chagos-sst",
+   "kind": "temp",
+   "name": "Chagos Archipelago: sea-surface temperature climatology (satellite)",
+   "granularity": "daily climatology",
+   "samples": 365,
+   "basis": "observed",
+   "water": true,
+   "sources": [
+    "data/locales/chagos/cue_table_2027.csv",
+    "data/external/oisst_locales/chagos.json"
+   ],
+   "note": "Satellite sea-surface temperature (level 4): the day-of-year mean of NOAA OISST v2.1 at the nearest 25 km sea cell (-5.375, 72.125), smoothed with a 15-day running mean. Good for shape and timing; the level can differ from the reef by a few tenths of a degree, so do not set a tank to it as if it were a reef reading.",
+   "basis_detail": [
+    "NOAA OISST v2.1 2011-2020"
+   ],
+   "level": 4
+  }
+ ]
+}

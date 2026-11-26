@@ -1,0 +1,104 @@
+{
+  "tau": 0.3,
+  "dz": 23000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 1.29,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at -21.28N 55.34E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 3.907,
+      "model_clear_par_kwh": 3.829,
+      "model_minus_power_pct": -2.0,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 3.701,
+      "model_clear_par_kwh": 3.654,
+      "model_minus_power_pct": -1.3,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 3.31,
+      "model_clear_par_kwh": 3.321,
+      "model_minus_power_pct": 0.3,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 2.8,
+      "model_clear_par_kwh": 2.81,
+      "model_minus_power_pct": 0.4,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 2.332,
+      "model_clear_par_kwh": 2.341,
+      "model_minus_power_pct": 0.4,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 2.099,
+      "model_clear_par_kwh": 2.094,
+      "model_minus_power_pct": -0.3,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 2.198,
+      "model_clear_par_kwh": 2.192,
+      "model_minus_power_pct": -0.3,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 2.567,
+      "model_clear_par_kwh": 2.592,
+      "model_minus_power_pct": 1.0,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 3.037,
+      "model_clear_par_kwh": 3.111,
+      "model_minus_power_pct": 2.4,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 3.478,
+      "model_clear_par_kwh": 3.534,
+      "model_minus_power_pct": 1.6,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 3.795,
+      "model_clear_par_kwh": 3.782,
+      "model_minus_power_pct": -0.3,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 3.945,
+      "model_clear_par_kwh": 3.86,
+      "model_minus_power_pct": -2.1,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "mascarene",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": -21.28,
+    "lon": 55.34,
+    "tz_h": 4
+  }
+}

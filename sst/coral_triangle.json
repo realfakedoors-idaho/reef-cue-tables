@@ -1,0 +1,16 @@
+{
+  "locale_id": "coral_triangle",
+  "ref_lat": 6.51,
+  "ref_lon": 120.01,
+  "cell_lat": 6.625,
+  "cell_lon": 120.125,
+  "probe_box_deg": 0.13,
+  "dataset": "OISST v2.1 (ncdcOisst21Agg_LonPM180, sst) via coastwatch.pfeg.noaa.gov ERDDAP",
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "rows": 3653,
+  "fetched_utc": "2026-11-06T21:45:27Z",
+  "level": 4
+}

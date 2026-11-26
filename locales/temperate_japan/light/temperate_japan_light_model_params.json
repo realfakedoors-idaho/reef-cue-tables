@@ -1,0 +1,104 @@
+{
+  "tau": 0.18,
+  "dz": 3000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 4.98,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at 32.77N 132.73E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 1.557,
+      "model_clear_par_kwh": 1.454,
+      "model_minus_power_pct": -6.6,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 1.955,
+      "model_clear_par_kwh": 1.952,
+      "model_minus_power_pct": -0.1,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 2.511,
+      "model_clear_par_kwh": 2.557,
+      "model_minus_power_pct": 1.8,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 3.017,
+      "model_clear_par_kwh": 3.177,
+      "model_minus_power_pct": 5.3,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 3.368,
+      "model_clear_par_kwh": 3.584,
+      "model_minus_power_pct": 6.4,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 3.493,
+      "model_clear_par_kwh": 3.759,
+      "model_minus_power_pct": 7.6,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 3.5,
+      "model_clear_par_kwh": 3.695,
+      "model_minus_power_pct": 5.6,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 3.284,
+      "model_clear_par_kwh": 3.386,
+      "model_minus_power_pct": 3.1,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 2.85,
+      "model_clear_par_kwh": 2.85,
+      "model_minus_power_pct": 0.0,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 2.254,
+      "model_clear_par_kwh": 2.21,
+      "model_minus_power_pct": -2.0,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 1.708,
+      "model_clear_par_kwh": 1.62,
+      "model_minus_power_pct": -5.1,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 1.438,
+      "model_clear_par_kwh": 1.333,
+      "model_minus_power_pct": -7.3,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "temperate_japan",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": 32.77,
+    "lon": 132.73,
+    "tz_h": 9
+  }
+}

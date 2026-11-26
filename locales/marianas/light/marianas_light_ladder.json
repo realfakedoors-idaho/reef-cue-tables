@@ -1,0 +1,66 @@
+{
+  "locale_id": "marianas",
+  "site": {
+    "lat": 13.42,
+    "lon": 144.79,
+    "tz_h": 10
+  },
+  "ref_depth_m": 4.0,
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "units": {
+    "par_clear_surface": "kWh/m2/day (POWER CLRSKY_SFC_PAR_TOT; model where blank)",
+    "par_surface_l1": "kWh/m2/day",
+    "kd_par": "1/m",
+    "par_depth_l1": "kWh/m2/day at ref_depth_m"
+  },
+  "levels": "data/light_abstraction_key.csv; the *_level columns give each value's level",
+  "level_reached": 1,
+  "days": 3653,
+  "surface_l1_days": 3653,
+  "depth_l1_days": 3530,
+  "kd_l1_months": 116,
+  "cloud_climatology_allsky_over_clearsky": {
+    "1": 0.83,
+    "2": 0.853,
+    "3": 0.884,
+    "4": 0.91,
+    "5": 0.902,
+    "6": 0.888,
+    "7": 0.787,
+    "8": 0.727,
+    "9": 0.714,
+    "10": 0.756,
+    "11": 0.866,
+    "12": 0.87
+  },
+  "k490_monthly_climatology_per_m": {
+    "1": 0.0224,
+    "2": 0.0225,
+    "3": 0.022,
+    "4": 0.0229,
+    "5": 0.022,
+    "6": 0.0222,
+    "7": 0.0224,
+    "8": 0.0234,
+    "9": 0.0235,
+    "10": 0.0225,
+    "11": 0.0222,
+    "12": 0.0221
+  },
+  "clear_fit": {
+    "tau": 0.14,
+    "dz": 3000.0,
+    "rms_monthly_error_pct": 2.96,
+    "flagged": false
+  },
+  "note": "clear-sky fit on the edge of its grid (tau 0.14, dz 3000.0)",
+  "caveats": [
+    "NASA POWER all-sky PAR is a satellite product (CERES SYN1deg, 1 degree cell), not a radiometer at the reef.",
+    "K490 is the median of the MODIS 4 km pixels in a 1 x 1 degree box around the reference point: a reef in clear water next to a turbid coast reads too murky, and shallow bright bottoms can bias it.",
+    "Kd(PAR) from K490 uses the Morel et al. (2007) form, quoted from memory: check it before relying on it.",
+    "Moonlight is not here: it stays a labelled model (level 4, astronomy)."
+  ]
+}

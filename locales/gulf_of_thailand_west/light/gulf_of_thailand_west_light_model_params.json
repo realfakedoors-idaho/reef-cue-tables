@@ -1,0 +1,104 @@
+{
+  "tau": 0.2,
+  "dz": 4000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 2.33,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at 10.1N 99.83E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 2.65,
+      "model_clear_par_kwh": 2.594,
+      "model_minus_power_pct": -2.1,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 2.836,
+      "model_clear_par_kwh": 2.891,
+      "model_minus_power_pct": 2.0,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 3.062,
+      "model_clear_par_kwh": 3.165,
+      "model_minus_power_pct": 3.4,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 3.22,
+      "model_clear_par_kwh": 3.327,
+      "model_minus_power_pct": 3.3,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 3.295,
+      "model_clear_par_kwh": 3.338,
+      "model_minus_power_pct": 1.3,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 3.264,
+      "model_clear_par_kwh": 3.308,
+      "model_minus_power_pct": 1.3,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 3.274,
+      "model_clear_par_kwh": 3.322,
+      "model_minus_power_pct": 1.5,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 3.323,
+      "model_clear_par_kwh": 3.345,
+      "model_minus_power_pct": 0.7,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 3.277,
+      "model_clear_par_kwh": 3.258,
+      "model_minus_power_pct": -0.6,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 3.052,
+      "model_clear_par_kwh": 3.018,
+      "model_minus_power_pct": -1.1,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 2.798,
+      "model_clear_par_kwh": 2.698,
+      "model_minus_power_pct": -3.6,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 2.606,
+      "model_clear_par_kwh": 2.511,
+      "model_minus_power_pct": -3.7,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "gulf_of_thailand_west",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": 10.1,
+    "lon": 99.83,
+    "tz_h": 7
+  }
+}

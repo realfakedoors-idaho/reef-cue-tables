@@ -1,0 +1,16 @@
+{
+  "locale_id": "red_sea_north",
+  "ref_lat": 27.3,
+  "ref_lon": 33.83,
+  "cell_lat": 27.375,
+  "cell_lon": 33.875,
+  "probe_box_deg": 0.13,
+  "dataset": "OISST v2.1 (ncdcOisst21Agg_LonPM180, sst) via coastwatch.pfeg.noaa.gov ERDDAP",
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "rows": 3653,
+  "fetched_utc": "2026-11-10T00:35:47Z",
+  "level": 4
+}

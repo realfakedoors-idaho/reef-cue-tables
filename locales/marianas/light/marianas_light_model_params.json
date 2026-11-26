@@ -1,0 +1,104 @@
+{
+  "tau": 0.14,
+  "dz": 3000.0,
+  "p": 0.7,
+  "k_par_lm_per_w": 245.0,
+  "esc_lux": 133800.0,
+  "rms_monthly_error_pct": 2.96,
+  "method": "grid search over tau and dz minimising the squared relative error of 12 monthly mean clear-sky PAR totals against NASA POWER CLRSKY_SFC_PAR_TOT (2011-2020) at 13.42N 144.79E",
+  "caveat": "POWER clear-sky PAR is itself a model, and K_PAR (lumens per PAR watt) is fixed, so tau and dz absorb any error in it. This pins the daytime curve to a published reference; it is not a calibration against an instrument.",
+  "monthly": [
+    {
+      "month": 1,
+      "power_clear_par_kwh": 2.769,
+      "model_clear_par_kwh": 2.65,
+      "model_minus_power_pct": -4.3,
+      "power_days": 310
+    },
+    {
+      "month": 2,
+      "power_clear_par_kwh": 3.053,
+      "model_clear_par_kwh": 2.996,
+      "model_minus_power_pct": -1.9,
+      "power_days": 283
+    },
+    {
+      "month": 3,
+      "power_clear_par_kwh": 3.357,
+      "model_clear_par_kwh": 3.336,
+      "model_minus_power_pct": -0.6,
+      "power_days": 310
+    },
+    {
+      "month": 4,
+      "power_clear_par_kwh": 3.52,
+      "model_clear_par_kwh": 3.577,
+      "model_minus_power_pct": 1.6,
+      "power_days": 300
+    },
+    {
+      "month": 5,
+      "power_clear_par_kwh": 3.541,
+      "model_clear_par_kwh": 3.651,
+      "model_minus_power_pct": 3.1,
+      "power_days": 310
+    },
+    {
+      "month": 6,
+      "power_clear_par_kwh": 3.521,
+      "model_clear_par_kwh": 3.651,
+      "model_minus_power_pct": 3.7,
+      "power_days": 300
+    },
+    {
+      "month": 7,
+      "power_clear_par_kwh": 3.516,
+      "model_clear_par_kwh": 3.653,
+      "model_minus_power_pct": 3.9,
+      "power_days": 310
+    },
+    {
+      "month": 8,
+      "power_clear_par_kwh": 3.505,
+      "model_clear_par_kwh": 3.626,
+      "model_minus_power_pct": 3.4,
+      "power_days": 310
+    },
+    {
+      "month": 9,
+      "power_clear_par_kwh": 3.41,
+      "model_clear_par_kwh": 3.466,
+      "model_minus_power_pct": 1.7,
+      "power_days": 300
+    },
+    {
+      "month": 10,
+      "power_clear_par_kwh": 3.143,
+      "model_clear_par_kwh": 3.152,
+      "model_minus_power_pct": 0.3,
+      "power_days": 310
+    },
+    {
+      "month": 11,
+      "power_clear_par_kwh": 2.852,
+      "model_clear_par_kwh": 2.772,
+      "model_minus_power_pct": -2.8,
+      "power_days": 300
+    },
+    {
+      "month": 12,
+      "power_clear_par_kwh": 2.673,
+      "model_clear_par_kwh": 2.556,
+      "model_minus_power_pct": -4.4,
+      "power_days": 310
+    }
+  ],
+  "locale_id": "marianas",
+  "flag_over_pct": 8.0,
+  "flagged": false,
+  "site": {
+    "lat": 13.42,
+    "lon": 144.79,
+    "tz_h": 10
+  }
+}

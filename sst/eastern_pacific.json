@@ -1,0 +1,16 @@
+{
+  "locale_id": "eastern_pacific",
+  "ref_lat": 7.8,
+  "ref_lon": -81.76,
+  "cell_lat": 7.875,
+  "cell_lon": -81.875,
+  "probe_box_deg": 0.13,
+  "dataset": "OISST v2.1 (ncdcOisst21Agg_LonPM180, sst) via coastwatch.pfeg.noaa.gov ERDDAP",
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "rows": 3653,
+  "fetched_utc": "2026-11-06T21:55:04Z",
+  "level": 4
+}

@@ -1,0 +1,16 @@
+{
+  "locale_id": "gulf_of_thailand_west",
+  "ref_lat": 10.1,
+  "ref_lon": 99.83,
+  "cell_lat": 10.125,
+  "cell_lon": 99.875,
+  "probe_box_deg": 0.13,
+  "dataset": "OISST v2.1 (ncdcOisst21Agg_LonPM180, sst) via coastwatch.pfeg.noaa.gov ERDDAP",
+  "period": [
+    "2011-01-01",
+    "2020-12-31"
+  ],
+  "rows": 3653,
+  "fetched_utc": "2026-11-09T21:57:49Z",
+  "level": 4
+}

@@ -1,0 +1,1828 @@
+{
+ "schema": "reef-cue-tables",
+ "schema_version": "1.0",
+ "generated_utc": "2026-11-26T08:03:17Z",
+ "source_commit": "3d656e7",
+ "locales": [
+  {
+   "id": "okinawa",
+   "name": "Ryukyu Islands (Okinawa), JAZA S. gigantea",
+   "grade": "reference",
+   "table": null,
+   "params": "reference/okinawa/cue_params.json"
+  },
+  {
+   "id": "taiwan",
+   "name": "Taiwan and coastal China",
+   "grade": "rich",
+   "table": "locales/taiwan/cue_table_2027.csv"
+  },
+  {
+   "id": "sunda",
+   "name": "Singapore and the Sunda Shelf",
+   "grade": "rich",
+   "table": "locales/sunda/cue_table_2027.csv"
+  },
+  {
+   "id": "okinawa",
+   "name": "Ryukyu Islands (Okinawa)",
+   "grade": "rich",
+   "table": null
+  },
+  {
+   "id": "gbr",
+   "name": "Great Barrier Reef",
+   "grade": "rich",
+   "table": "locales/gbr/cue_table_2027.csv"
+  },
+  {
+   "id": "red_sea_aqaba",
+   "name": "Gulf of Aqaba (Eilat)",
+   "grade": "rich",
+   "table": "locales/red_sea_aqaba/cue_table_2027.csv"
+  },
+  {
+   "id": "melanesia",
+   "name": "Melanesia (Fiji, Solomons, New Guinea)",
+   "grade": "rich",
+   "table": "locales/melanesia/cue_table_2027.csv"
+  },
+  {
+   "id": "temperate_japan",
+   "name": "Temperate Japan (Shikoku, Kyushu)",
+   "grade": "rich",
+   "table": "locales/temperate_japan/cue_table_2027.csv"
+  },
+  {
+   "id": "red_sea_central",
+   "name": "Central Red Sea (Thuwal, Saudi Arabia)",
+   "grade": "rich",
+   "table": "locales/red_sea_central/cue_table_2027.csv"
+  },
+  {
+   "id": "maldives_mar_apr",
+   "name": "Maldives, March to April season",
+   "grade": "rich",
+   "table": "locales/maldives_mar_apr/cue_table_2027.csv"
+  },
+  {
+   "id": "coral_triangle",
+   "name": "Philippines and Wallacea",
+   "grade": "rich",
+   "table": "locales/coral_triangle/cue_table_2027.csv"
+  },
+  {
+   "id": "maldives_oct_dec",
+   "name": "Maldives, October to December season",
+   "grade": "rich",
+   "table": "locales/maldives_oct_dec/cue_table_2027.csv"
+  },
+  {
+   "id": "gulf_of_thailand_west",
+   "name": "Gulf of Thailand, west (Koh Tao, Koh Phangan)",
+   "grade": "usable",
+   "table": "locales/gulf_of_thailand_west/cue_table_2027.csv"
+  },
+  {
+   "id": "western_australia",
+   "name": "Western Australia, autumn season",
+   "grade": "usable",
+   "table": "locales/western_australia/cue_table_2027.csv"
+  },
+  {
+   "id": "gulf_of_thailand_east",
+   "name": "Gulf of Thailand, east (Rayong, Chonburi)",
+   "grade": "usable",
+   "table": "locales/gulf_of_thailand_east/cue_table_2027.csv"
+  },
+  {
+   "id": "palau_spring",
+   "name": "Palau, February to June season",
+   "grade": "usable",
+   "table": "locales/palau_spring/cue_table_2027.csv"
+  },
+  {
+   "id": "caribbean_gulf",
+   "name": "Flower Garden Banks (Gulf of Mexico)",
+   "grade": "usable",
+   "table": "locales/caribbean_gulf/cue_table_2027.csv"
+  },
+  {
+   "id": "hawaii",
+   "name": "Hawaii",
+   "grade": "usable",
+   "table": "locales/hawaii/cue_table_2027.csv"
+  },
+  {
+   "id": "marianas",
+   "name": "Marianas (Guam, Saipan)",
+   "grade": "usable",
+   "table": "locales/marianas/cue_table_2027.csv"
+  },
+  {
+   "id": "caribbean_reef",
+   "name": "Caribbean reef tract (Florida Keys, Belize, Panama, Curacao)",
+   "grade": "usable",
+   "table": "locales/caribbean_reef/cue_table_2027.csv"
+  },
+  {
+   "id": "eastern_pacific",
+   "name": "Eastern Pacific",
+   "grade": "usable",
+   "table": "locales/eastern_pacific/cue_table_2027.csv"
+  },
+  {
+   "id": "mascarene",
+   "name": "Reunion (Mascarene Islands)",
+   "grade": "usable",
+   "table": "locales/mascarene/cue_table_2027.csv"
+  },
+  {
+   "id": "palau_autumn",
+   "name": "Palau, July to January season",
+   "grade": "thin",
+   "table": "locales/palau_autumn/cue_table_2027.csv"
+  },
+  {
+   "id": "french_polynesia",
+   "name": "French Polynesia (Moorea)",
+   "grade": "usable",
+   "table": "locales/french_polynesia/cue_table_2027.csv"
+  },
+  {
+   "id": "samoa_tonga",
+   "name": "American Samoa",
+   "grade": "thin",
+   "table": "locales/samoa_tonga/cue_table_2027.csv"
+  },
+  {
+   "id": "east_africa",
+   "name": "Kenya, Tanzania and Madagascar",
+   "grade": "thin",
+   "table": "locales/east_africa/cue_table_2027.csv"
+  },
+  {
+   "id": "wa_spring",
+   "name": "Western Australia, spring season",
+   "grade": "thin",
+   "table": "locales/wa_spring/cue_table_2027.csv"
+  },
+  {
+   "id": "gulf_of_mannar",
+   "name": "Gulf of Mannar (south-east India)",
+   "grade": "thin",
+   "table": "locales/gulf_of_mannar/cue_table_2027.csv"
+  },
+  {
+   "id": "red_sea_north",
+   "name": "Northern Red Sea (Hurghada, NEOM)",
+   "grade": "thin",
+   "table": "locales/red_sea_north/cue_table_2027.csv"
+  },
+  {
+   "id": "arabian_gulf",
+   "name": "Arabian (Persian) Gulf",
+   "grade": "thin",
+   "table": "locales/arabian_gulf/cue_table_2027.csv"
+  },
+  {
+   "id": "chagos",
+   "name": "Chagos Archipelago",
+   "grade": "thin",
+   "table": "locales/chagos/cue_table_2027.csv"
+  }
+ ],
+ "files": [
+  {
+   "path": "arc_catalog.json",
+   "kind": "arc_catalog",
+   "install": "data/arc_catalog.json",
+   "sha256": "7a34b9be4ef51ac9ba496a51af2846e88d5fc641aaee8aaaf4e34e5bf032266c",
+   "bytes": 103479
+  },
+  {
+   "path": "data_manifest.json",
+   "kind": "manifest",
+   "install": "data/data_manifest.json",
+   "sha256": "ff8f69ba944a4cf8df2bebe1af743cbdc4709b1853cf14d3762324e5e5f3af7c",
+   "bytes": 17601
+  },
+  {
+   "path": "locales/README.md",
+   "kind": "doc",
+   "install": null,
+   "sha256": "f72092d967fa6a3081baf5d4ff4cd6d102fc984be818c3f643fc1ca4d1b3f036",
+   "bytes": 4328
+  },
+  {
+   "path": "locales/added_records.csv",
+   "kind": "records",
+   "install": "data/locales/added_records.csv",
+   "sha256": "83b452052039a8e8f5a2ce9015202ff54e9707c12d5d6bd669fc36a3f47d3030",
+   "bytes": 160450
+  },
+  {
+   "path": "locales/light_ladder_summary.csv",
+   "kind": "locale_meta",
+   "install": "data/locales/light_ladder_summary.csv",
+   "sha256": "8289c65dc1903452e048a6f758e5dd35c11a19669835e1db467cd30e1466c1de",
+   "bytes": 3578
+  },
+  {
+   "path": "locales/locale_genus_windows.csv",
+   "kind": "genus_windows",
+   "install": "data/locales/locale_genus_windows.csv",
+   "sha256": "0c5eab40d2f894e0316ea0de853d66c4ec33beacb9830c074703b17c82082d1b",
+   "bytes": 9148
+  },
+  {
+   "path": "locales/locale_profiles.csv",
+   "kind": "profiles",
+   "install": "data/locales/locale_profiles.csv",
+   "sha256": "b7a26a5829398e885d049e0bd80e2a9dc696917cb1baae3cb1e1ad2e44ecc6e8",
+   "bytes": 11746
+  },
+  {
+   "path": "locales/locale_species_windows.csv",
+   "kind": "species_windows",
+   "install": "data/locales/locale_species_windows.csv",
+   "sha256": "bf27dc5007d136150d1e0cfda4f43067fd0b13b9f07b9202ebac2e99beddbc53",
+   "bytes": 102208
+  },
+  {
+   "path": "locales/locales.csv",
+   "kind": "locale_defs",
+   "install": "data/pseudosync/locales.csv",
+   "sha256": "fd77ee95f86433fc097c897fcabb69b7f4e4f036d223cd26f8f13ee259520394",
+   "bytes": 7469
+  },
+  {
+   "path": "locales/temp_logger_pairing.csv",
+   "kind": "locale_meta",
+   "install": "data/locales/temp_logger_pairing.csv",
+   "sha256": "58a60ddc44ea12d145a8717b6e56b67f8546e5057897eecb2e63a9bd8d38be96",
+   "bytes": 5256
+  },
+  {
+   "path": "locales/temp_loggers.csv",
+   "kind": "locale_meta",
+   "install": "data/locales/temp_loggers.csv",
+   "sha256": "3483fc38f163a5e6cb587f2bfe5491e6eb71d33435ce9d524b91b96f7fd3d9b5",
+   "bytes": 4476
+  },
+  {
+   "path": "locales/arabian_gulf/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/arabian_gulf/cue_table_2027.csv",
+   "sha256": "58d33173982508fde5b7501026e5d90780a6a8210d47056f2e11758f44c0271d",
+   "bytes": 33100
+  },
+  {
+   "path": "locales/arabian_gulf/light/arabian_gulf_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/arabian_gulf/light/arabian_gulf_light_ladder.json",
+   "sha256": "7e9860ae59af0f252a1925f86e0f2bf241fafb261a263f61a2ce8d8d54a2c0bf",
+   "bytes": 1730
+  },
+  {
+   "path": "locales/arabian_gulf/light/arabian_gulf_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/arabian_gulf/light/arabian_gulf_light_ladder_daily.csv",
+   "sha256": "d525983b0a13a85b6c3ab8e347570f2f08495ca746c136db7f5e2e7b7c25e9aa",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/arabian_gulf/light/arabian_gulf_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/arabian_gulf/light/arabian_gulf_light_model_params.json",
+   "sha256": "a62f517d6bb32779a2af4e704712f5e404e054fcd7ece05866985906807ebcb5",
+   "bytes": 2669
+  },
+  {
+   "path": "locales/arabian_gulf/light/arabian_gulf_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/arabian_gulf/light/arabian_gulf_water_attenuation_monthly.csv",
+   "sha256": "34512dffba44a3f221f8b0514794c1c3f9fc32a3d8fc9c45a8aa9ba75ca199cc",
+   "bytes": 872
+  },
+  {
+   "path": "locales/caribbean_gulf/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/caribbean_gulf/cue_table_2027.csv",
+   "sha256": "871887bdda331ae96517f8b5fbbffc6bd778755cdccbdb19208eab0b11d17eb5",
+   "bytes": 40352
+  },
+  {
+   "path": "locales/caribbean_gulf/light/caribbean_gulf_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/caribbean_gulf/light/caribbean_gulf_light_ladder.json",
+   "sha256": "a2338f07e17da907f30ac9231d6e1c47e049831e7f4313304b75ed56d2193754",
+   "bytes": 1794
+  },
+  {
+   "path": "locales/caribbean_gulf/light/caribbean_gulf_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/caribbean_gulf/light/caribbean_gulf_light_ladder_daily.csv",
+   "sha256": "c02c46485a33bc520fbbf415af1aa1de114d381ab999b3e40c444ecc06758d73",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/caribbean_gulf/light/caribbean_gulf_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/caribbean_gulf/light/caribbean_gulf_light_model_params.json",
+   "sha256": "9cabf99b8d9b2f63e1863a9d457945eb47469f205d74895125c14a2d20d965f9",
+   "bytes": 2678
+  },
+  {
+   "path": "locales/caribbean_gulf/light/caribbean_gulf_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/caribbean_gulf/light/caribbean_gulf_water_attenuation_monthly.csv",
+   "sha256": "32226a0340d0ef231c2f80357a98e47b1cb2fc33a20fd7f9b5ef2de3bee9475b",
+   "bytes": 873
+  },
+  {
+   "path": "locales/caribbean_reef/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/caribbean_reef/cue_table_2027.csv",
+   "sha256": "fd5779de2fc51b2d2e17f2d484fb61b5c932ffd11e2a92ab496b32cfa9c12814",
+   "bytes": 40694
+  },
+  {
+   "path": "locales/caribbean_reef/light/caribbean_reef_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/caribbean_reef/light/caribbean_reef_light_ladder.json",
+   "sha256": "89e3c6dbba1a8c188bf7be26571145ff18e0dd7608f5f8b30784e1d3da4d15bb",
+   "bytes": 1850
+  },
+  {
+   "path": "locales/caribbean_reef/light/caribbean_reef_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/caribbean_reef/light/caribbean_reef_light_ladder_daily.csv",
+   "sha256": "1097b15f3fe676dc2fea69f3e61ba91f2f8326c3508d2782371ab148124db17f",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/caribbean_reef/light/caribbean_reef_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/caribbean_reef/light/caribbean_reef_light_model_params.json",
+   "sha256": "ec00bd5a446cd4f3fa9029fcc26720f1f57b0c44878e7dc54fa550a9ba45e596",
+   "bytes": 2676
+  },
+  {
+   "path": "locales/caribbean_reef/light/caribbean_reef_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/caribbean_reef/light/caribbean_reef_water_attenuation_monthly.csv",
+   "sha256": "b7c5580ce26d3d632922c6483241a1557a00a5e3f1ca90b8cc984ad90cf8a7c4",
+   "bytes": 873
+  },
+  {
+   "path": "locales/chagos/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/chagos/cue_table_2027.csv",
+   "sha256": "e62751622d459af9c5f6fc96ecbd277edc92a05fba18f38e9fd9cc2d245e0029",
+   "bytes": 33121
+  },
+  {
+   "path": "locales/chagos/light/chagos_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/chagos/light/chagos_light_ladder.json",
+   "sha256": "ef14ee07ff199b1b17c16e2c3cc7aabfbde4219a1292974d41852cce3c75b953",
+   "bytes": 1723
+  },
+  {
+   "path": "locales/chagos/light/chagos_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/chagos/light/chagos_light_ladder_daily.csv",
+   "sha256": "626ef807a497ee8577591c660b99c1a787268310cba6a7c22686683d49884d2c",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/chagos/light/chagos_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/chagos/light/chagos_light_model_params.json",
+   "sha256": "f6e2a9948e6b8018c8af29e7f6c932aa763e8e505d075e5419c3331a7ccde591",
+   "bytes": 2673
+  },
+  {
+   "path": "locales/chagos/light/chagos_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/chagos/light/chagos_water_attenuation_monthly.csv",
+   "sha256": "d1317491213c48d8fe9e847146683e6c93dc1066250a36c5115a92b4d90fd53a",
+   "bytes": 873
+  },
+  {
+   "path": "locales/coral_triangle/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/coral_triangle/cue_table_2027.csv",
+   "sha256": "927d6e57ec18b8b6e8fac98a5a9fc5edcaf58fb6a8272c329b7b9a0a1978aa47",
+   "bytes": 40205
+  },
+  {
+   "path": "locales/coral_triangle/light/coral_triangle_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/coral_triangle/light/coral_triangle_light_ladder.json",
+   "sha256": "5331aabca2ef948a835408e61812d51868eb77da69540176df084068623a478c",
+   "bytes": 1734
+  },
+  {
+   "path": "locales/coral_triangle/light/coral_triangle_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/coral_triangle/light/coral_triangle_light_ladder_daily.csv",
+   "sha256": "093107aea521a11339a9686aafbdd659d8513c790a807d7341257a1957d4acef",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/coral_triangle/light/coral_triangle_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/coral_triangle/light/coral_triangle_light_model_params.json",
+   "sha256": "33f299349f53d4a2251642242312d097954009ccec8f69fbff0782a0653c332e",
+   "bytes": 2673
+  },
+  {
+   "path": "locales/coral_triangle/light/coral_triangle_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/coral_triangle/light/coral_triangle_water_attenuation_monthly.csv",
+   "sha256": "4c18728360d1bb4842f702b67ca7e28c62974a4b033659756865001f41aa6e55",
+   "bytes": 873
+  },
+  {
+   "path": "locales/east_africa/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/east_africa/cue_table_2027.csv",
+   "sha256": "38f9e027716c522c55d6c11fb005ed2fb6ea85fca81d388686c4599dd0db652b",
+   "bytes": 33089
+  },
+  {
+   "path": "locales/east_africa/light/east_africa_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/east_africa/light/east_africa_light_ladder.json",
+   "sha256": "38a5aa8d6b188ab5eaf556cc735317099af5398db2e83058147eb68f8d3e2571",
+   "bytes": 1786
+  },
+  {
+   "path": "locales/east_africa/light/east_africa_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/east_africa/light/east_africa_light_ladder_daily.csv",
+   "sha256": "65a6cdf8f3d837edc9f36139aa317459655a0288504b82d1abba189fe630b69b",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/east_africa/light/east_africa_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/east_africa/light/east_africa_light_model_params.json",
+   "sha256": "7af4f027ddf386ffb57b8f94e615abf2b2f62e2cd44d2c7b3a4f0eb70bfcc123",
+   "bytes": 2681
+  },
+  {
+   "path": "locales/east_africa/light/east_africa_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/east_africa/light/east_africa_water_attenuation_monthly.csv",
+   "sha256": "8702c2893063971b15de04a0a92c5123efe487c979657209515ad3c19f2ec2f9",
+   "bytes": 873
+  },
+  {
+   "path": "locales/eastern_pacific/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/eastern_pacific/cue_table_2027.csv",
+   "sha256": "9a35833471eb215257f19ca81456343614439b4f836187e3a194cdfbdf0560f8",
+   "bytes": 38513
+  },
+  {
+   "path": "locales/eastern_pacific/light/eastern_pacific_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/eastern_pacific/light/eastern_pacific_light_ladder.json",
+   "sha256": "319fc3c976ce9aee7ae3668f6787a76eed8b0a5ebce3335370741288f7533cf3",
+   "bytes": 1734
+  },
+  {
+   "path": "locales/eastern_pacific/light/eastern_pacific_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/eastern_pacific/light/eastern_pacific_light_ladder_daily.csv",
+   "sha256": "ef663a277334462bfc09b9b080ef3b61ced7053661a4eee6d7b877c6f2ec0032",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/eastern_pacific/light/eastern_pacific_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/eastern_pacific/light/eastern_pacific_light_model_params.json",
+   "sha256": "475130250b094b9f79b2f59689647e02729a7aa8bbb3a12b21027a33d69302d6",
+   "bytes": 2675
+  },
+  {
+   "path": "locales/eastern_pacific/light/eastern_pacific_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/eastern_pacific/light/eastern_pacific_water_attenuation_monthly.csv",
+   "sha256": "12681f658362037d8653b282ec702ff98fcfebbd394aea17ad5f03b41d4d9e1e",
+   "bytes": 873
+  },
+  {
+   "path": "locales/french_polynesia/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/french_polynesia/cue_table_2027.csv",
+   "sha256": "4975c2b64395915bc33aef0c665d40e363df8e49b3e91f06c0998317d6505a84",
+   "bytes": 38468
+  },
+  {
+   "path": "locales/french_polynesia/temp_ladder_2027.csv",
+   "kind": "temp_ladder",
+   "install": "data/locales/french_polynesia/temp_ladder_2027.csv",
+   "sha256": "38aaeb86ac2ead5e928aaf6a477caebfeef274ef4460e21de4606c593938ed2c",
+   "bytes": 18123
+  },
+  {
+   "path": "locales/french_polynesia/light/french_polynesia_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/french_polynesia/light/french_polynesia_light_ladder.json",
+   "sha256": "7daadbed28c17c171306e20da5857f02408bbbb28214b9e8f80fd87bef4ca6b0",
+   "bytes": 1743
+  },
+  {
+   "path": "locales/french_polynesia/light/french_polynesia_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/french_polynesia/light/french_polynesia_light_ladder_daily.csv",
+   "sha256": "24a44d85a9dd42d05e76443cdca8cfcac5551107f59ed1d8b41b28e04a143872",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/french_polynesia/light/french_polynesia_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/french_polynesia/light/french_polynesia_light_model_params.json",
+   "sha256": "49d42eb912866ccd14f08b6aed381e1d23b0927d6c648354eb1375d8ad7a6eaa",
+   "bytes": 2684
+  },
+  {
+   "path": "locales/french_polynesia/light/french_polynesia_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/french_polynesia/light/french_polynesia_water_attenuation_monthly.csv",
+   "sha256": "770474e90d0a0adecec3a7546f7ef8e6efef07c52eedb35e52d84466c8ea178a",
+   "bytes": 873
+  },
+  {
+   "path": "locales/gbr/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/gbr/cue_table_2027.csv",
+   "sha256": "faea6408255e8045f048ffd979cfe1e5b450b8656b7d2363a7be6f251382680f",
+   "bytes": 42102
+  },
+  {
+   "path": "locales/gbr/temp_ladder_2027.csv",
+   "kind": "temp_ladder",
+   "install": "data/locales/gbr/temp_ladder_2027.csv",
+   "sha256": "2e63a6de71213fba1b2eb94f9784fd4b46b332d23e3af8b3b469ac2459907cd2",
+   "bytes": 15565
+  },
+  {
+   "path": "locales/gbr/light/gbr_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/gbr/light/gbr_light_ladder.json",
+   "sha256": "4f99a412855cae6a54c69859e6fa8fa5ee29a11ee734cc501acd0bb524b674e7",
+   "bytes": 1780
+  },
+  {
+   "path": "locales/gbr/light/gbr_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/gbr/light/gbr_light_ladder_daily.csv",
+   "sha256": "c6bc4efa88ca304904d503591cb8e2fffe19f0ef4cc681cbac2e94053ecfe5f9",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/gbr/light/gbr_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/gbr/light/gbr_light_model_params.json",
+   "sha256": "396e8f00fcbf0554cad423099286bea1c0295125f855af4d48760b845c5efe3a",
+   "bytes": 2673
+  },
+  {
+   "path": "locales/gbr/light/gbr_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/gbr/light/gbr_water_attenuation_monthly.csv",
+   "sha256": "cd18c8fbe46667d030e37e1501e4d691f2288a63ed13b4725063c0baaea75c21",
+   "bytes": 873
+  },
+  {
+   "path": "locales/gulf_of_mannar/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/gulf_of_mannar/cue_table_2027.csv",
+   "sha256": "64f27e29400d9712cfcdbb8b18783b58f43667469e9583311c53d02fcd9657a2",
+   "bytes": 33113
+  },
+  {
+   "path": "locales/gulf_of_mannar/light/gulf_of_mannar_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_mannar/light/gulf_of_mannar_light_ladder.json",
+   "sha256": "c807bf96f5d1bade290032ea6f56b93cde8b800b9078ebaad634292a88dcd579",
+   "bytes": 1849
+  },
+  {
+   "path": "locales/gulf_of_mannar/light/gulf_of_mannar_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/gulf_of_mannar/light/gulf_of_mannar_light_ladder_daily.csv",
+   "sha256": "22b1102d5285dc0579bf5d7d64aa104294c42aa29dc773178b5fd37a66be2478",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/gulf_of_mannar/light/gulf_of_mannar_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_mannar/light/gulf_of_mannar_light_model_params.json",
+   "sha256": "b051674686f4c7c4d0020745b6535fd862b592bb8632416b5b1acf512bc94bde",
+   "bytes": 2675
+  },
+  {
+   "path": "locales/gulf_of_mannar/light/gulf_of_mannar_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_mannar/light/gulf_of_mannar_water_attenuation_monthly.csv",
+   "sha256": "b252c0d4b40c68d429eba105400e12ff4518156517549e33c68508fe534f1f7a",
+   "bytes": 873
+  },
+  {
+   "path": "locales/gulf_of_thailand_east/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/gulf_of_thailand_east/cue_table_2027.csv",
+   "sha256": "25df40f04b0f9e8be7b345237277161082b526f1a9a13e16bb959249d8c22d53",
+   "bytes": 40327
+  },
+  {
+   "path": "locales/gulf_of_thailand_east/light/gulf_of_thailand_east_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_thailand_east/light/gulf_of_thailand_east_light_ladder.json",
+   "sha256": "7727a936c203d1810d1f789e7a2325116f5bcc98b74832469588ede55cd3e6f9",
+   "bytes": 1799
+  },
+  {
+   "path": "locales/gulf_of_thailand_east/light/gulf_of_thailand_east_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/gulf_of_thailand_east/light/gulf_of_thailand_east_light_ladder_daily.csv",
+   "sha256": "eb150c1e1793a9fd758f75e9c73402cddbc0853213930371611545a1c3547d1f",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/gulf_of_thailand_east/light/gulf_of_thailand_east_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_thailand_east/light/gulf_of_thailand_east_light_model_params.json",
+   "sha256": "1129e72eeeb6bf1d02187f8ec4f95ef9d9f1abeb8bc76b579f4adb1ba77a6ce5",
+   "bytes": 2680
+  },
+  {
+   "path": "locales/gulf_of_thailand_east/light/gulf_of_thailand_east_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_thailand_east/light/gulf_of_thailand_east_water_attenuation_monthly.csv",
+   "sha256": "f4ac458b81268bfa832cb65ff9bd7a38f03deb9c4a32fd98bb27a924751cdbe9",
+   "bytes": 873
+  },
+  {
+   "path": "locales/gulf_of_thailand_west/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/gulf_of_thailand_west/cue_table_2027.csv",
+   "sha256": "a7a945a49c376350dfd73ab30f988ac79218d5b17096a28dabdf31b90a0a3495",
+   "bytes": 40314
+  },
+  {
+   "path": "locales/gulf_of_thailand_west/light/gulf_of_thailand_west_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_thailand_west/light/gulf_of_thailand_west_light_ladder.json",
+   "sha256": "63df54541a2417c93c34abf779ab450e7ff0f1eea0bd72b3a528a1a4354a49bf",
+   "bytes": 1740
+  },
+  {
+   "path": "locales/gulf_of_thailand_west/light/gulf_of_thailand_west_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/gulf_of_thailand_west/light/gulf_of_thailand_west_light_ladder_daily.csv",
+   "sha256": "e7883be3fbcd5718d6fe0040325636da878eed66ac9c00f8768c9b9fe1697063",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/gulf_of_thailand_west/light/gulf_of_thailand_west_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_thailand_west/light/gulf_of_thailand_west_light_model_params.json",
+   "sha256": "e331142dcefdd902db75587bf963e5981a449afb94532e259612873543921b2c",
+   "bytes": 2680
+  },
+  {
+   "path": "locales/gulf_of_thailand_west/light/gulf_of_thailand_west_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/gulf_of_thailand_west/light/gulf_of_thailand_west_water_attenuation_monthly.csv",
+   "sha256": "664761e679941866e83f7d9119103df42c88ccfd76cb2ec722970b6c9089d149",
+   "bytes": 873
+  },
+  {
+   "path": "locales/hawaii/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/hawaii/cue_table_2027.csv",
+   "sha256": "437c0b36731bf6499c7dc6225c54e877ab7d4d76f8c6c582a6d96f66ee27261d",
+   "bytes": 39845
+  },
+  {
+   "path": "locales/hawaii/light/hawaii_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/hawaii/light/hawaii_light_ladder.json",
+   "sha256": "1fea55fe193f079a59242598ab6d81a4a0ec4f2b73f4ed57ec5512d3b96c20c8",
+   "bytes": 1788
+  },
+  {
+   "path": "locales/hawaii/light/hawaii_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/hawaii/light/hawaii_light_ladder_daily.csv",
+   "sha256": "dd63abdf9bca6ef9b83f75798f94ebee4fcb5a4292f5e0811f502e2b42c0d6e8",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/hawaii/light/hawaii_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/hawaii/light/hawaii_light_model_params.json",
+   "sha256": "bc3cb1091dd4bab64db08af86ac9066240be6b55e15623256cc14f8a97e0f5ce",
+   "bytes": 2673
+  },
+  {
+   "path": "locales/hawaii/light/hawaii_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/hawaii/light/hawaii_water_attenuation_monthly.csv",
+   "sha256": "c501ac729198e9113f402a442a2892e6821b97265688460102afee0e961459c7",
+   "bytes": 873
+  },
+  {
+   "path": "locales/maldives_mar_apr/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/maldives_mar_apr/cue_table_2027.csv",
+   "sha256": "afd36c322bac43fcd39bdc56d94d41afbf328fd2b787da3898c3abeabbdf899f",
+   "bytes": 40296
+  },
+  {
+   "path": "locales/maldives_mar_apr/light/maldives_mar_apr_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/maldives_mar_apr/light/maldives_mar_apr_light_ladder.json",
+   "sha256": "12947b002e8722ff31d5186c3c31720dea3e735021ba6c31ca912a7cecd3a1b5",
+   "bytes": 1737
+  },
+  {
+   "path": "locales/maldives_mar_apr/light/maldives_mar_apr_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/maldives_mar_apr/light/maldives_mar_apr_light_ladder_daily.csv",
+   "sha256": "ac47c3245fef73f3c2d78990a36cf69320b332f4c4d4564090871a1980c80f65",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/maldives_mar_apr/light/maldives_mar_apr_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/maldives_mar_apr/light/maldives_mar_apr_light_model_params.json",
+   "sha256": "64344a8d93d3ef78d408e08e0d2148991f6cec67250d06ffbdce2e277654e7ce",
+   "bytes": 2677
+  },
+  {
+   "path": "locales/maldives_mar_apr/light/maldives_mar_apr_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/maldives_mar_apr/light/maldives_mar_apr_water_attenuation_monthly.csv",
+   "sha256": "cafe5550cb44e8966b0965f129121b124c98c7c5f9e24687840cb0a281f25501",
+   "bytes": 873
+  },
+  {
+   "path": "locales/maldives_oct_dec/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/maldives_oct_dec/cue_table_2027.csv",
+   "sha256": "53723ef9fc47208c3b9f9a2af702ee17a7a8678855535e0356cd4cfcaf6daab2",
+   "bytes": 40228
+  },
+  {
+   "path": "locales/maldives_oct_dec/light/maldives_oct_dec_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/maldives_oct_dec/light/maldives_oct_dec_light_ladder.json",
+   "sha256": "bd68eee5f444cfaeecc0cada4c19558f61bb77044e64281816018df02a03c081",
+   "bytes": 1737
+  },
+  {
+   "path": "locales/maldives_oct_dec/light/maldives_oct_dec_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/maldives_oct_dec/light/maldives_oct_dec_light_ladder_daily.csv",
+   "sha256": "ac47c3245fef73f3c2d78990a36cf69320b332f4c4d4564090871a1980c80f65",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/maldives_oct_dec/light/maldives_oct_dec_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/maldives_oct_dec/light/maldives_oct_dec_light_model_params.json",
+   "sha256": "09163cbd49eb59794f71f84ef4d61f2a5c1c318c6959765aad8f3270a70b6cac",
+   "bytes": 2677
+  },
+  {
+   "path": "locales/maldives_oct_dec/light/maldives_oct_dec_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/maldives_oct_dec/light/maldives_oct_dec_water_attenuation_monthly.csv",
+   "sha256": "cafe5550cb44e8966b0965f129121b124c98c7c5f9e24687840cb0a281f25501",
+   "bytes": 873
+  },
+  {
+   "path": "locales/marianas/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/marianas/cue_table_2027.csv",
+   "sha256": "e871cf79cbd0ac82d8235bbe574bbafaaa04de4b0d30c12b9507d0d4cf1d9315",
+   "bytes": 40588
+  },
+  {
+   "path": "locales/marianas/light/marianas_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/marianas/light/marianas_light_ladder.json",
+   "sha256": "791afae7acebf75a8b8c3c3dc24add473b63e617c981332771b26a88c31f3f2c",
+   "bytes": 1787
+  },
+  {
+   "path": "locales/marianas/light/marianas_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/marianas/light/marianas_light_ladder_daily.csv",
+   "sha256": "412f9471328967a1c67ebcdef88a9aaf6618b64e57f8e38945fbb879ec1614f1",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/marianas/light/marianas_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/marianas/light/marianas_light_model_params.json",
+   "sha256": "db0d565c2c8701e75687fe025503e97e7a5216a8381a8291aa8a807652ae31b9",
+   "bytes": 2672
+  },
+  {
+   "path": "locales/marianas/light/marianas_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/marianas/light/marianas_water_attenuation_monthly.csv",
+   "sha256": "ec22388332282b2608525c971d729e0ab256959b75ab843ea63df5401e225fc5",
+   "bytes": 873
+  },
+  {
+   "path": "locales/mascarene/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/mascarene/cue_table_2027.csv",
+   "sha256": "c5c5030e09e82989a46a81473d2c0703b0f94bd5e4d7ff487a01c14e89916652",
+   "bytes": 40248
+  },
+  {
+   "path": "locales/mascarene/light/mascarene_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/mascarene/light/mascarene_light_ladder.json",
+   "sha256": "08c348be0658830fafd272344931917e4c9133f311c05e52c6a88a4e8048cd72",
+   "bytes": 1729
+  },
+  {
+   "path": "locales/mascarene/light/mascarene_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/mascarene/light/mascarene_light_ladder_daily.csv",
+   "sha256": "137f83a011ccbdaaec1a66c889f70fbdaad3cb81f28b47f987c4f26272eecd30",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/mascarene/light/mascarene_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/mascarene/light/mascarene_light_model_params.json",
+   "sha256": "a4278f746fea71ce989c8d811b4902f232cb003dfec45d9cfeadab009f5e7fa9",
+   "bytes": 2671
+  },
+  {
+   "path": "locales/mascarene/light/mascarene_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/mascarene/light/mascarene_water_attenuation_monthly.csv",
+   "sha256": "178fbcc0194d80432e1392ae1e200570acfb49aa9ce9db45e99b221492ab805e",
+   "bytes": 873
+  },
+  {
+   "path": "locales/melanesia/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/melanesia/cue_table_2027.csv",
+   "sha256": "c59d7e80c19d764753b4bc0ceb47a19e7974afa38613c46a57422f0e0f08e74a",
+   "bytes": 40340
+  },
+  {
+   "path": "locales/melanesia/light/melanesia_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/melanesia/light/melanesia_light_ladder.json",
+   "sha256": "8345be4858d0d74ffcf109cbd6e5914b7f191ea26fc412b7fbb9488e6e05244e",
+   "bytes": 1732
+  },
+  {
+   "path": "locales/melanesia/light/melanesia_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/melanesia/light/melanesia_light_ladder_daily.csv",
+   "sha256": "96af79c9e742580225d74108b6e1fd1483f1d712b1416b66a2805e5af4c50294",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/melanesia/light/melanesia_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/melanesia/light/melanesia_light_model_params.json",
+   "sha256": "d00990303b14b1fa9795ca815e099103816f247aab955d893db33139ee442541",
+   "bytes": 2673
+  },
+  {
+   "path": "locales/melanesia/light/melanesia_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/melanesia/light/melanesia_water_attenuation_monthly.csv",
+   "sha256": "b878a4fc66d96f82cf7ce06c8024d97f10a5ecf2d26a6456bdd89d95be3b4d11",
+   "bytes": 873
+  },
+  {
+   "path": "locales/palau_autumn/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/palau_autumn/cue_table_2027.csv",
+   "sha256": "4a5504b0e1cc63a84c7e472e0ce341756d67b59f6906e90a49faa3ee4d795a5c",
+   "bytes": 34943
+  },
+  {
+   "path": "locales/palau_autumn/light/palau_autumn_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/palau_autumn/light/palau_autumn_light_ladder.json",
+   "sha256": "28cbc7a394fa8aab4e8f67c4cc3e37f2b3527f01ac4a54d03e4426e6d2b4a81c",
+   "bytes": 1732
+  },
+  {
+   "path": "locales/palau_autumn/light/palau_autumn_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/palau_autumn/light/palau_autumn_light_ladder_daily.csv",
+   "sha256": "34ec018afdaf2fad4cc4b4979f1f994d83874f559d5fb9baad1d5e6f37c76564",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/palau_autumn/light/palau_autumn_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/palau_autumn/light/palau_autumn_light_model_params.json",
+   "sha256": "ccc586d55393c1c93d45830a76fce3ecfecb2a26db2a735a328dfc47f54d97c8",
+   "bytes": 2674
+  },
+  {
+   "path": "locales/palau_autumn/light/palau_autumn_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/palau_autumn/light/palau_autumn_water_attenuation_monthly.csv",
+   "sha256": "10871a04e5b9d74f305b86da7cd38c03ccdd189e95a2a509cfb58fec87ad645e",
+   "bytes": 873
+  },
+  {
+   "path": "locales/palau_spring/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/palau_spring/cue_table_2027.csv",
+   "sha256": "6ae1daf845d93371d48035d63f41a516c08c7043a908965feeb51b0ff1e15a41",
+   "bytes": 40300
+  },
+  {
+   "path": "locales/palau_spring/light/palau_spring_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/palau_spring/light/palau_spring_light_ladder.json",
+   "sha256": "8ea74d31bea12b51af5b3c5a72614aceadc93c02552e8d4d662c3ae9e5694fda",
+   "bytes": 1734
+  },
+  {
+   "path": "locales/palau_spring/light/palau_spring_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/palau_spring/light/palau_spring_light_ladder_daily.csv",
+   "sha256": "4662ca2e579101c6e1b7ddab3760568871304382b7be33f8ac993bb5f42c6b58",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/palau_spring/light/palau_spring_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/palau_spring/light/palau_spring_light_model_params.json",
+   "sha256": "e6163f70e68e72341c36770f1fb3ef253227bcb1eb92f3884e9c2c90b41b6634",
+   "bytes": 2673
+  },
+  {
+   "path": "locales/palau_spring/light/palau_spring_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/palau_spring/light/palau_spring_water_attenuation_monthly.csv",
+   "sha256": "3b83a41b2353f36dbb0e603c077fb2e2ad3a5f82cc3dcab4c852a870e8d959c3",
+   "bytes": 873
+  },
+  {
+   "path": "locales/red_sea_aqaba/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/red_sea_aqaba/cue_table_2027.csv",
+   "sha256": "e4118cffbb1db05fbf9e4d8da70db70c35c9e99f8668806559074109c951a49e",
+   "bytes": 40060
+  },
+  {
+   "path": "locales/red_sea_aqaba/light/red_sea_aqaba_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_aqaba/light/red_sea_aqaba_light_ladder.json",
+   "sha256": "7376b1e9ded76fd72425bca3f56441bd8eec4286e788ba37245b92f71cae8947",
+   "bytes": 1733
+  },
+  {
+   "path": "locales/red_sea_aqaba/light/red_sea_aqaba_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/red_sea_aqaba/light/red_sea_aqaba_light_ladder_daily.csv",
+   "sha256": "1aafa30c5da8dbd2e23f69767aa2f8def10f50bac47a5be4473e7d9878362307",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/red_sea_aqaba/light/red_sea_aqaba_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_aqaba/light/red_sea_aqaba_light_model_params.json",
+   "sha256": "d00d9f9d837761e08fabc82483a9e0ee7c8032bba7a596be372a00534a22112d",
+   "bytes": 2673
+  },
+  {
+   "path": "locales/red_sea_aqaba/light/red_sea_aqaba_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_aqaba/light/red_sea_aqaba_water_attenuation_monthly.csv",
+   "sha256": "6c7d19fa0d8e7f661a74a7b802d036a5fb290da1746955fb5517d88b493b0b5d",
+   "bytes": 873
+  },
+  {
+   "path": "locales/red_sea_central/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/red_sea_central/cue_table_2027.csv",
+   "sha256": "ccebadde8775c1207eb646367e5516623afd837b1f1a46ccdb51e1e989b31dd8",
+   "bytes": 40243
+  },
+  {
+   "path": "locales/red_sea_central/light/red_sea_central_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_central/light/red_sea_central_light_ladder.json",
+   "sha256": "ae529a347f5d808627bc237673985d6ada336dbc2d2c9b36cecf4c62c4f3f0e3",
+   "bytes": 1795
+  },
+  {
+   "path": "locales/red_sea_central/light/red_sea_central_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/red_sea_central/light/red_sea_central_light_ladder_daily.csv",
+   "sha256": "2c9a952fd5a10ea793f547676a3ab53d07f4a0a6206612c7e6f35ca19e64dcb1",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/red_sea_central/light/red_sea_central_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_central/light/red_sea_central_light_model_params.json",
+   "sha256": "34b27e6777386fa566acdae141f3414b8c97f2e512d5604356bbf5b3fd37ae20",
+   "bytes": 2677
+  },
+  {
+   "path": "locales/red_sea_central/light/red_sea_central_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_central/light/red_sea_central_water_attenuation_monthly.csv",
+   "sha256": "1d5968f7ebf8fa7963135c73b45ccedfac8bf6866114b6c4d1e1e4d113e689b4",
+   "bytes": 870
+  },
+  {
+   "path": "locales/red_sea_north/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/red_sea_north/cue_table_2027.csv",
+   "sha256": "9eef98056f6b29cf60f7bc47f18b5483a875fccb55d06838ca8c670ca374dbee",
+   "bytes": 33097
+  },
+  {
+   "path": "locales/red_sea_north/light/red_sea_north_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_north/light/red_sea_north_light_ladder.json",
+   "sha256": "073f4f1ef9ea2966e34581886f1ad6b06d607c88b1d675d6a2f4436a2d8d7ea3",
+   "bytes": 1793
+  },
+  {
+   "path": "locales/red_sea_north/light/red_sea_north_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/red_sea_north/light/red_sea_north_light_ladder_daily.csv",
+   "sha256": "3da2cf2a2286a08f2aa0f7a7f6588edb3eade02e368c407c7cbf656de91d05c7",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/red_sea_north/light/red_sea_north_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_north/light/red_sea_north_light_model_params.json",
+   "sha256": "5fdb06f9f9c40450de3d8ab149bffb250595ae37235d424d78427ffa6e49bfd2",
+   "bytes": 2667
+  },
+  {
+   "path": "locales/red_sea_north/light/red_sea_north_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/red_sea_north/light/red_sea_north_water_attenuation_monthly.csv",
+   "sha256": "00abd651d3ff08f094f5ba813d7dff69bb5bfca653a5f6664f0db4e0726b1f6b",
+   "bytes": 873
+  },
+  {
+   "path": "locales/samoa_tonga/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/samoa_tonga/cue_table_2027.csv",
+   "sha256": "82808d3cc585a8294facedd3b0670781fd1f77a377ac33bdf8351ada9c62fba7",
+   "bytes": 34950
+  },
+  {
+   "path": "locales/samoa_tonga/light/samoa_tonga_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/samoa_tonga/light/samoa_tonga_light_ladder.json",
+   "sha256": "c6c6dbc6984c6834513702647b2a718293d4022e1c81581030b1f75dab1a1063",
+   "bytes": 1735
+  },
+  {
+   "path": "locales/samoa_tonga/light/samoa_tonga_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/samoa_tonga/light/samoa_tonga_light_ladder_daily.csv",
+   "sha256": "2de8ec27ae57be3e17bad90e4df72d39e17f63f495fd3a9f38c9bf33badea3bd",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/samoa_tonga/light/samoa_tonga_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/samoa_tonga/light/samoa_tonga_light_model_params.json",
+   "sha256": "e9141f0917597ff297f017e5c8e715022e63dba137b06158436857c998d7efa6",
+   "bytes": 2680
+  },
+  {
+   "path": "locales/samoa_tonga/light/samoa_tonga_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/samoa_tonga/light/samoa_tonga_water_attenuation_monthly.csv",
+   "sha256": "55e49ef9c9a9ccd6bd2bc37fbd989a2c9283d51a7f749ec71c0bfe2594694650",
+   "bytes": 873
+  },
+  {
+   "path": "locales/sunda/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/sunda/cue_table_2027.csv",
+   "sha256": "5fcee3f1b2802ad9cb869f35faba66def5ed75d1a4acc197cc6e38fdc32b262b",
+   "bytes": 40335
+  },
+  {
+   "path": "locales/sunda/light/sunda_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/sunda/light/sunda_light_ladder.json",
+   "sha256": "5d5f4079f1f0d336c2e71e757600a2664f2687e8a66c85beb15da6ee11b2240b",
+   "bytes": 1725
+  },
+  {
+   "path": "locales/sunda/light/sunda_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/sunda/light/sunda_light_ladder_daily.csv",
+   "sha256": "20c87e0bfee0aa94bdf449f987a7232ff8f5ef8dc69bfcce8f759b95b02f20e7",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/sunda/light/sunda_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/sunda/light/sunda_light_model_params.json",
+   "sha256": "bbc3c06ccbc8c75a4c34a641e1cf175c4b1afcc5eaf25234695544693351870a",
+   "bytes": 2670
+  },
+  {
+   "path": "locales/sunda/light/sunda_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/sunda/light/sunda_water_attenuation_monthly.csv",
+   "sha256": "d35884a5dade32da7a146f52f65882f817eb3ae1a88c2ba0559a6464875cab81",
+   "bytes": 871
+  },
+  {
+   "path": "locales/taiwan/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/taiwan/cue_table_2027.csv",
+   "sha256": "ead384e73622873598d896e22b138fcba3a18daa42416ced1907709e8bb58b06",
+   "bytes": 40201
+  },
+  {
+   "path": "locales/taiwan/light/taiwan_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/taiwan/light/taiwan_light_ladder.json",
+   "sha256": "9f8e1527bae25acff5d2e04927adfdbc3fa0b4a319a75aa3af516046cd158ca1",
+   "bytes": 1727
+  },
+  {
+   "path": "locales/taiwan/light/taiwan_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/taiwan/light/taiwan_light_ladder_daily.csv",
+   "sha256": "8791778d26ff29b5c0b8d92c52e0e3b122f36680a563f426777886b29549749c",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/taiwan/light/taiwan_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/taiwan/light/taiwan_light_model_params.json",
+   "sha256": "ac1fd7e519bdf2061735b2e602fed1ee5205a5701001388db90706579df6676e",
+   "bytes": 2671
+  },
+  {
+   "path": "locales/taiwan/light/taiwan_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/taiwan/light/taiwan_water_attenuation_monthly.csv",
+   "sha256": "898b61b5dce6b92864b07e54fca469e01b3a908dfb9eb57a73c91c3da9a4a9e3",
+   "bytes": 872
+  },
+  {
+   "path": "locales/temperate_japan/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/temperate_japan/cue_table_2027.csv",
+   "sha256": "b3b166e4c4feb10828a1f76c4dd294f193e49595709a14cd789eb45a55e9075f",
+   "bytes": 40111
+  },
+  {
+   "path": "locales/temperate_japan/light/temperate_japan_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/temperate_japan/light/temperate_japan_light_ladder.json",
+   "sha256": "8401a701b41cb6dc70d024af74669562975758dc3eb8e4ae7889b46842fe609f",
+   "bytes": 1795
+  },
+  {
+   "path": "locales/temperate_japan/light/temperate_japan_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/temperate_japan/light/temperate_japan_light_ladder_daily.csv",
+   "sha256": "954357c4883f44568f0e4b1483ecc634851f8c3d4737359e0738301d2cde6734",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/temperate_japan/light/temperate_japan_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/temperate_japan/light/temperate_japan_light_model_params.json",
+   "sha256": "7789275644a3ea7567708106c7a35da3106a2020d299ba02227e0e8215a35f7b",
+   "bytes": 2675
+  },
+  {
+   "path": "locales/temperate_japan/light/temperate_japan_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/temperate_japan/light/temperate_japan_water_attenuation_monthly.csv",
+   "sha256": "66a5712df31ef11b007843bda3fcb9eb97bed1e40e052442cce063c4c6d6b975",
+   "bytes": 873
+  },
+  {
+   "path": "locales/wa_spring/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/wa_spring/cue_table_2027.csv",
+   "sha256": "c8f061a71009afd9910ac8789d95214e20b93691fb5b7c17a7e869054ea605a0",
+   "bytes": 33117
+  },
+  {
+   "path": "locales/wa_spring/light/wa_spring_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/wa_spring/light/wa_spring_light_ladder.json",
+   "sha256": "a2a76537e01da45c553b7e90064969117722c47afc0dcc508b2d97c41943adbb",
+   "bytes": 1789
+  },
+  {
+   "path": "locales/wa_spring/light/wa_spring_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/wa_spring/light/wa_spring_light_ladder_daily.csv",
+   "sha256": "c58b840b9a49b7f23c4d51543a9cf0bfe4eb35b623925bed22dbf5a2a8e24f3f",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/wa_spring/light/wa_spring_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/wa_spring/light/wa_spring_light_model_params.json",
+   "sha256": "7fbebe86e5e560a1926b3e8e6de4ef9242c84f0ad7faeec74c6a0a69363839e9",
+   "bytes": 2677
+  },
+  {
+   "path": "locales/wa_spring/light/wa_spring_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/wa_spring/light/wa_spring_water_attenuation_monthly.csv",
+   "sha256": "d82f270870f9608f98010104b469233592dad4eeaeea9cc02a732059289a1f1e",
+   "bytes": 873
+  },
+  {
+   "path": "locales/western_australia/cue_table_2027.csv",
+   "kind": "cue_table",
+   "install": "data/locales/western_australia/cue_table_2027.csv",
+   "sha256": "5aa3f124b7ba7e5180068356690afc93c0c832ed59bcc88a6e9e9a884110c2db",
+   "bytes": 40369
+  },
+  {
+   "path": "locales/western_australia/light/western_australia_light_ladder.json",
+   "kind": "light_model",
+   "install": "data/locales/western_australia/light/western_australia_light_ladder.json",
+   "sha256": "ef1f6c7e05b9e013c75fcde534f82a4dea1b5932a0c7cbc8648ba2d324b67188",
+   "bytes": 1791
+  },
+  {
+   "path": "locales/western_australia/light/western_australia_light_ladder_daily.csv",
+   "kind": "light_ladder",
+   "install": "data/locales/western_australia/light/western_australia_light_ladder_daily.csv",
+   "sha256": "56573fc6d4b13a80042f128ae15c7c35fa98c025ce27936394febf7296f41f92",
+   "bytes": 164490
+  },
+  {
+   "path": "locales/western_australia/light/western_australia_light_model_params.json",
+   "kind": "light_model",
+   "install": "data/locales/western_australia/light/western_australia_light_model_params.json",
+   "sha256": "bb4a972267c7685e17594841d9fb566c20be5035723caee91d3a04579825fe9e",
+   "bytes": 2680
+  },
+  {
+   "path": "locales/western_australia/light/western_australia_water_attenuation_monthly.csv",
+   "kind": "light_model",
+   "install": "data/locales/western_australia/light/western_australia_water_attenuation_monthly.csv",
+   "sha256": "0bcb4f60982779f2bcf99338909f24f3578ad38c9a72399f17517bc072f3a0b3",
+   "bytes": 873
+  },
+  {
+   "path": "reference/okinawa/arc_selection.json",
+   "kind": "arc_selection",
+   "install": "data/arc_selection.json",
+   "sha256": "3825e547b101d7aa7e24c48b711842d455fb78c640bdd9418b154c65ad54c3ba",
+   "bytes": 101
+  },
+  {
+   "path": "reference/okinawa/cue_params.json",
+   "kind": "reference_params",
+   "install": "data/reference/cue_params.json",
+   "sha256": "155ec1cb6381eb12989210e04a5e197891ecfbfb05cec0fc2ca3d20f4e547edd",
+   "bytes": 1176
+  },
+  {
+   "path": "reference/okinawa/okinawa_light_clearsky_spawn_year_10min.csv",
+   "kind": "light_series",
+   "install": "data/okinawa_light/okinawa_light_clearsky_spawn_year_10min.csv",
+   "sha256": "470f45c7087858e98abafda29fbefdb829584f3eb6e69c46a1b9802c7356b3b1",
+   "bytes": 3329145
+  },
+  {
+   "path": "reference/okinawa/spawn_calendar_2026-11-01.csv",
+   "kind": "calendar",
+   "install": "data/spawn_calendar_2026-11-01.csv",
+   "sha256": "64d7dc8cafe0fed21e1d792b712c260f34b2c71e62665760ac6e85a01cc9e5f8",
+   "bytes": 343051
+  },
+  {
+   "path": "reference/okinawa/spawn_calendar_2026-11-01.meta.json",
+   "kind": "calendar_meta",
+   "install": "data/spawn_calendar_2026-11-01.meta.json",
+   "sha256": "94e225f80308f8807007f1a8fe9f46d7959a0058d86303d61c9dc70802b63eef",
+   "bytes": 1529
+  },
+  {
+   "path": "sst/arabian_gulf.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/arabian_gulf.csv",
+   "sha256": "e91133a7c7b7d70a2731cf2bfcf7905c0be4c866d3a930a707799f3e19da0866",
+   "bytes": 61753
+  },
+  {
+   "path": "sst/arabian_gulf.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/arabian_gulf.json",
+   "sha256": "ea14dc6f3958fb8f516a281c0f8b6f0af23a9f73229655ab219a566f3b8e54cc",
+   "bytes": 361
+  },
+  {
+   "path": "sst/caribbean.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/caribbean.csv",
+   "sha256": "6fcea15b9d5cd2a6d837b069c3bc4cf19e10b2010a79c356c333f175c9e76105",
+   "bytes": 61758
+  },
+  {
+   "path": "sst/caribbean.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/caribbean.json",
+   "sha256": "0ecb77511201ed5617c6b69dad80b0deded6ec65c610b065082ec8b4d69c1c13",
+   "bytes": 361
+  },
+  {
+   "path": "sst/caribbean_gulf.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/caribbean_gulf.csv",
+   "sha256": "ffc0d6eb31a99e18be8bbb1ef86174a58003a54ecff78fa8b16d80bceaeddc90",
+   "bytes": 61725
+  },
+  {
+   "path": "sst/caribbean_gulf.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/caribbean_gulf.json",
+   "sha256": "37abcac590b3a88ed22738e5443359d62ff02eb578d0693df47b7b12343849eb",
+   "bytes": 365
+  },
+  {
+   "path": "sst/caribbean_reef.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/caribbean_reef.csv",
+   "sha256": "7be6c604f67db36d20bb3696a8cc26fa6d1cee8680622709d7390f32494f4df1",
+   "bytes": 61760
+  },
+  {
+   "path": "sst/caribbean_reef.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/caribbean_reef.json",
+   "sha256": "795b3bf07dc8c26010ee66c6868decd880869b09c712eba8d064486e19ff39e3",
+   "bytes": 366
+  },
+  {
+   "path": "sst/chagos.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/chagos.csv",
+   "sha256": "0e21b7bd1d871b2800dd8acdcda5dd5a11fc179fd7a9c84e19c7ced4283af82b",
+   "bytes": 61745
+  },
+  {
+   "path": "sst/chagos.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/chagos.json",
+   "sha256": "10cfcb7be08cabf693cb40259244dcc652cb09252ec71281cd0362a016720b50",
+   "bytes": 356
+  },
+  {
+   "path": "sst/coral_triangle.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/coral_triangle.csv",
+   "sha256": "749ca29a7c5e74db899d67fe1784a385c17c0a780c7b7ebab343f86adf25d626",
+   "bytes": 61719
+  },
+  {
+   "path": "sst/coral_triangle.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/coral_triangle.json",
+   "sha256": "b314bf63a70f3246df625008211c42302cf48bf946bbc0bf431fe5d195774a98",
+   "bytes": 364
+  },
+  {
+   "path": "sst/east_africa.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/east_africa.csv",
+   "sha256": "f39be7eaa371f5894603dcda10f7a8bfce125db833836b0aa4ba1c1833a71cd5",
+   "bytes": 61757
+  },
+  {
+   "path": "sst/east_africa.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/east_africa.json",
+   "sha256": "1ea965a4f2de5e170bc8381874b481b1a9374c89b2102198e933512c3b330dc3",
+   "bytes": 363
+  },
+  {
+   "path": "sst/eastern_pacific.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/eastern_pacific.csv",
+   "sha256": "1eed0fe9ba5098a3d844dbef9ee2575580126921949e98f313db9cda4aab57cb",
+   "bytes": 61723
+  },
+  {
+   "path": "sst/eastern_pacific.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/eastern_pacific.json",
+   "sha256": "c7d4698ff628b3b35856427405ff490c074dd574a96edbee6de167b134a8df49",
+   "bytes": 364
+  },
+  {
+   "path": "sst/french_polynesia.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/french_polynesia.csv",
+   "sha256": "27726c2720062f21074448d49a9713d01361ff9d769f111a61434d93c503fa31",
+   "bytes": 61713
+  },
+  {
+   "path": "sst/french_polynesia.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/french_polynesia.json",
+   "sha256": "382a2edaba70065ca4af317548cae2b90362583e3dd5f9726c6ed4d5880d4d70",
+   "bytes": 371
+  },
+  {
+   "path": "sst/gbr.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/gbr.csv",
+   "sha256": "84e190830a335e5ae727c7d19907b8c2c22e65ee116d0bca061831de75ecb0f8",
+   "bytes": 61718
+  },
+  {
+   "path": "sst/gbr.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/gbr.json",
+   "sha256": "b19b6f4f66e5fb3c251e075071e844fec26d1fa52592a30a1e09c400262a05bb",
+   "bytes": 357
+  },
+  {
+   "path": "sst/gulf_of_mannar.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/gulf_of_mannar.csv",
+   "sha256": "3bf6b4604ffe2a3bfda57b1a4142681ce0df02021d3f5d8eb56ad29af0206398",
+   "bytes": 61718
+  },
+  {
+   "path": "sst/gulf_of_mannar.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/gulf_of_mannar.json",
+   "sha256": "22ca62769b6b61f32d5031bc722ad744e69524e9c59cc90a507e088ce8b47902",
+   "bytes": 362
+  },
+  {
+   "path": "sst/gulf_of_thailand.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/gulf_of_thailand.csv",
+   "sha256": "a8e07202c0d0911fa670098aa0cd85c6ea1c76a2f104bfb9e154e48af01d795a",
+   "bytes": 61721
+  },
+  {
+   "path": "sst/gulf_of_thailand.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/gulf_of_thailand.json",
+   "sha256": "8864681aad171e7a971a631b699ee560005ea14a1c36af8ab5cb47a942838e53",
+   "bytes": 366
+  },
+  {
+   "path": "sst/gulf_of_thailand_east.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/gulf_of_thailand_east.csv",
+   "sha256": "3154b2881965cea804d44add8f3d35b737fb614f09ff000f64074c8a1d52fcc6",
+   "bytes": 61743
+  },
+  {
+   "path": "sst/gulf_of_thailand_east.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/gulf_of_thailand_east.json",
+   "sha256": "28f223d19f4702233e2a59af6900b9a79e016d58b0409dc71366da833d276654",
+   "bytes": 372
+  },
+  {
+   "path": "sst/gulf_of_thailand_west.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/gulf_of_thailand_west.csv",
+   "sha256": "2b010786ebbfac6bde385bcec4bfbb0d4777064673c70c5e6ae61b50d65f8e2e",
+   "bytes": 61735
+  },
+  {
+   "path": "sst/gulf_of_thailand_west.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/gulf_of_thailand_west.json",
+   "sha256": "f6b5b8684912a7a6228e36506134f66d7164f8a32e8c45aaa7f52be308b5ca25",
+   "bytes": 370
+  },
+  {
+   "path": "sst/hawaii.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/hawaii.csv",
+   "sha256": "6f4b7aa1610ba253b5ddfc867fe58e79349d098289bba05a38d7ac78cb7f68d6",
+   "bytes": 61748
+  },
+  {
+   "path": "sst/hawaii.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/hawaii.json",
+   "sha256": "6881db480c2a43ad0fc40544138294801688a92d4409e705c23fef46c5f3dafc",
+   "bytes": 359
+  },
+  {
+   "path": "sst/indian_ocean.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/indian_ocean.csv",
+   "sha256": "3b7d03a4c7914f5c884a6cf61f5425a3b4173f602b580da273df062fa4a5d49d",
+   "bytes": 61761
+  },
+  {
+   "path": "sst/indian_ocean.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/indian_ocean.json",
+   "sha256": "a048c3b4ad26c9a88846207450eb6d8d3285cb091365bc90fa43c4c5435bc6bb",
+   "bytes": 360
+  },
+  {
+   "path": "sst/maldives_mar_apr.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/maldives_mar_apr.csv",
+   "sha256": "3b7d03a4c7914f5c884a6cf61f5425a3b4173f602b580da273df062fa4a5d49d",
+   "bytes": 61761
+  },
+  {
+   "path": "sst/maldives_mar_apr.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/maldives_mar_apr.json",
+   "sha256": "e14d85a9849d228942317d2eb01e8401a976a3f952b38194c49c977f84aaff61",
+   "bytes": 364
+  },
+  {
+   "path": "sst/maldives_oct_dec.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/maldives_oct_dec.csv",
+   "sha256": "3b7d03a4c7914f5c884a6cf61f5425a3b4173f602b580da273df062fa4a5d49d",
+   "bytes": 61761
+  },
+  {
+   "path": "sst/maldives_oct_dec.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/maldives_oct_dec.json",
+   "sha256": "61713fd619dc394076bf2584116df6dd77e6aa4001e55f7a961289321058e619",
+   "bytes": 364
+  },
+  {
+   "path": "sst/marianas.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/marianas.csv",
+   "sha256": "c455b99c7e5b4aaa6e8c4f03796e18e5bf21898fdf1bd3dcaa39fca7a28677fe",
+   "bytes": 61766
+  },
+  {
+   "path": "sst/marianas.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/marianas.json",
+   "sha256": "270a8a280113b953ce55d6e68f766a0c7d5e7501057f371179344fe8f6ff7881",
+   "bytes": 360
+  },
+  {
+   "path": "sst/mascarene.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/mascarene.csv",
+   "sha256": "eae99061edf821177bd36e127ba5c94408ab27f09ec7d0e263952ebc489d27f8",
+   "bytes": 61747
+  },
+  {
+   "path": "sst/mascarene.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/mascarene.json",
+   "sha256": "c0732078efdf18f61d73e1034b69608a1163c3882bbb7420ba14491b15aa865a",
+   "bytes": 361
+  },
+  {
+   "path": "sst/melanesia.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/melanesia.csv",
+   "sha256": "a9780ff8da26f83db35475a2401ed837d3514454dd94c3ff47e855c90435764f",
+   "bytes": 61763
+  },
+  {
+   "path": "sst/melanesia.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/melanesia.json",
+   "sha256": "eb084aa3d2e5dc270418982ac5e522057e7a51b4cad1f3ebc1101a6fd231ac37",
+   "bytes": 363
+  },
+  {
+   "path": "sst/micronesia.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/micronesia.csv",
+   "sha256": "19e615e38a0515e6d04a96a7002966d2448377feb3c3ffb1262dc8367c6d5a3b",
+   "bytes": 61740
+  },
+  {
+   "path": "sst/micronesia.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/micronesia.json",
+   "sha256": "f9f802202a8bd3fe150aa7787a2d9e567a1db02566012c088af0f19e00310b5b",
+   "bytes": 360
+  },
+  {
+   "path": "sst/palau_autumn.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/palau_autumn.csv",
+   "sha256": "19e615e38a0515e6d04a96a7002966d2448377feb3c3ffb1262dc8367c6d5a3b",
+   "bytes": 61740
+  },
+  {
+   "path": "sst/palau_autumn.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/palau_autumn.json",
+   "sha256": "41d528200e075f2d916e07e17f9e41e84bac8995e4affa0cd05fadbbea7e56ae",
+   "bytes": 362
+  },
+  {
+   "path": "sst/palau_spring.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/palau_spring.csv",
+   "sha256": "8ce7891639bf96d8f1414eb5c9faff007b5be409f16a1df7b965c9c660f7c8c8",
+   "bytes": 61755
+  },
+  {
+   "path": "sst/palau_spring.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/palau_spring.json",
+   "sha256": "7c1b9217ffd1919deb2d2182e77e272f7feac78c32a69f4080cfb8dba8dc5a90",
+   "bytes": 362
+  },
+  {
+   "path": "sst/polynesia.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/polynesia.csv",
+   "sha256": "6f4b7aa1610ba253b5ddfc867fe58e79349d098289bba05a38d7ac78cb7f68d6",
+   "bytes": 61748
+  },
+  {
+   "path": "sst/polynesia.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/polynesia.json",
+   "sha256": "7f7e8c0e099840c8f95f9eabfdbc66cbb33bed3e9727840f55d2f5fbfb009b0d",
+   "bytes": 362
+  },
+  {
+   "path": "sst/red_sea.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/red_sea.csv",
+   "sha256": "06d8002f0aa819a12bef966675b52385ff5ca2d0835a26f304db8025507dc741",
+   "bytes": 61762
+  },
+  {
+   "path": "sst/red_sea.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/red_sea.json",
+   "sha256": "5d8d70ccad39946e88db7ccf09297e8c930aacd1d16124af0e27568f923c2de7",
+   "bytes": 357
+  },
+  {
+   "path": "sst/red_sea_aqaba.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/red_sea_aqaba.csv",
+   "sha256": "06d8002f0aa819a12bef966675b52385ff5ca2d0835a26f304db8025507dc741",
+   "bytes": 61762
+  },
+  {
+   "path": "sst/red_sea_aqaba.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/red_sea_aqaba.json",
+   "sha256": "770141a10f56acaa8d4322ce9f5cfa739c486d13ac9a71f5ea91389ba04ea078",
+   "bytes": 363
+  },
+  {
+   "path": "sst/red_sea_central.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/red_sea_central.csv",
+   "sha256": "1c3bf6c05b886107ebf582e5aa3b3506b494f69d35c5fde91fe4c4da24fb4a29",
+   "bytes": 61776
+  },
+  {
+   "path": "sst/red_sea_central.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/red_sea_central.json",
+   "sha256": "34c0655630da6e18f302ccf1fc63d81d8d7fb8244a96dc57da0d5e2d86b6c284",
+   "bytes": 365
+  },
+  {
+   "path": "sst/red_sea_north.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/red_sea_north.csv",
+   "sha256": "cf193eaa15f2d3d5c4c2ea3f30bc9436a05811fb840b38ae12caa425d24603e2",
+   "bytes": 61764
+  },
+  {
+   "path": "sst/red_sea_north.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/red_sea_north.json",
+   "sha256": "3cb3d3edaf018b631756f7933a85c02637dad0dca23a671e5c35ffdd3047f8a3",
+   "bytes": 362
+  },
+  {
+   "path": "sst/samoa_tonga.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/samoa_tonga.csv",
+   "sha256": "f7427cda41038a5ebfa68c4e1075c02f578e69601a791c0019a89156d5329937",
+   "bytes": 61743
+  },
+  {
+   "path": "sst/samoa_tonga.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/samoa_tonga.json",
+   "sha256": "92471d7db704a06b47c4ce3ab80c318cfaa4e8698bd0f14da79eb1e2b5d1d65b",
+   "bytes": 366
+  },
+  {
+   "path": "sst/sunda.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/sunda.csv",
+   "sha256": "deb43f074c3c1a5e23644ae8885143529cc2aed8536ca8d3a759274dcb25d136",
+   "bytes": 61742
+  },
+  {
+   "path": "sst/sunda.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/sunda.json",
+   "sha256": "e5669d65deeb496df6a9aef9c3d4f006f306bfb7dd1b2cc493a60cf32d5b0aed",
+   "bytes": 355
+  },
+  {
+   "path": "sst/taiwan.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/taiwan.csv",
+   "sha256": "f501dda0efa38dc2eff1cf4fe226275f8144fd89ca8c5c006f91b69684f994db",
+   "bytes": 61720
+  },
+  {
+   "path": "sst/taiwan.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/taiwan.json",
+   "sha256": "fea58fadd15baa5b55ee0a50e0be46587c6d1493986d9cc89d843a77dcbb69c4",
+   "bytes": 358
+  },
+  {
+   "path": "sst/temperate_japan.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/temperate_japan.csv",
+   "sha256": "296c460060156116e2d8d53093edb511fa04fe6bef81efffd184e47a6f623472",
+   "bytes": 61761
+  },
+  {
+   "path": "sst/temperate_japan.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/temperate_japan.json",
+   "sha256": "d0954b8bfb2a3bfe1eb22319835716ad5ae6c40fb1cabf584fe3d34c7c088cd5",
+   "bytes": 367
+  },
+  {
+   "path": "sst/wa_spring.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/wa_spring.csv",
+   "sha256": "37143446bd7a9c57b81c51d6407c1f58dabfcfc86eddb7d9f064875b5a2d0386",
+   "bytes": 61752
+  },
+  {
+   "path": "sst/wa_spring.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/wa_spring.json",
+   "sha256": "ba24e9e0e36f22f018b82c6c4ba9e82f110b31e69bf2f0d97995d185bfdd784d",
+   "bytes": 363
+  },
+  {
+   "path": "sst/western_australia.csv",
+   "kind": "sst",
+   "install": "data/external/oisst_locales/western_australia.csv",
+   "sha256": "9b7771678686715629ef62c1041c2f0c8a039a2e4889193699e69616544ae169",
+   "bytes": 61739
+  },
+  {
+   "path": "sst/western_australia.json",
+   "kind": "sst_meta",
+   "install": "data/external/oisst_locales/western_australia.json",
+   "sha256": "f727d5b1e7d71b3bd39bd9d69cf7409bfb5057a29bb432fb3546797076f1b8b7",
+   "bytes": 370
+  }
+ ]
+}

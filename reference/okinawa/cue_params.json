@@ -1,0 +1,54 @@
+{
+  "max_step_c_per_day": 0.1,
+  "offset_schedule": [
+    {
+      "from": "2026-11-01",
+      "offset_days": -208
+    }
+  ],
+  "photoperiod": {
+    "blue_after_sunset_min": 0,
+    "blue_before_sunrise_min": 0
+  },
+  "reference_site": {
+    "lat": 26.2,
+    "lon": 127.7,
+    "name": "Okinawa (Motobu/Naha)",
+    "tz_offset_h": 9
+  },
+  "safety_band_c": [
+    23.0,
+    29.0
+  ],
+  "season_gate_c": 26.1,
+  "sst_fit": {
+    "harmonics": [
+      {
+        "cos": -2.173769,
+        "k": 1,
+        "sin": -2.830031
+      }
+    ],
+    "loyo_rmse_c": 0.6639,
+    "mean": 24.837323,
+    "period_days": 365.25,
+    "rmse_c": 0.6262,
+    "source": "figure4_output/temperature_trace.csv",
+    "unit": "C"
+  },
+  "tank_site": {
+    "lat": 26.2,
+    "lon": 127.7,
+    "name": "Okinawa reference site (set your tank's own site on the onboarding page)",
+    "tz": "Asia/Tokyo"
+  },
+  "watch": {
+    "days_after_full_max": 9,
+    "days_after_full_min": 6,
+    "end_after_sunset_min": 180,
+    "season_end": "07-05",
+    "season_source": "JAZA spawns 2020-2022 (Jun 2 - Jul 2) +/- 3 days; Okinawa and S. gigantea only",
+    "season_start": "05-30",
+    "start_before_sunset_min": 120
+  }
+}
