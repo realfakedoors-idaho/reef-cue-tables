@@ -54,11 +54,14 @@ gulf_of_thailand_west,Acropora,4,thin,focused,8,03-03,04-25,54,03-21,0.69,3.1,6.
 gulf_of_thailand_west,Lobophyllia,2,thin,focused,8,03-24,04-27,35,04-06,0.96,3.4,5.4,2.0,4.4,0.99,8,49,113,152
 melanesia,Acropora,35,rich,focused,48,10-17,11-30,45,11-12,0.88,4.6,7.2,2.6,5.7,0.91,46,63,186,234
 eastern_pacific,Pavona,3,usable,focused,20,01-25,03-21,56,02-28,0.78,1.6,3.7,2.1,2.9,0.98,1,,,
-caribbean_gulf,Orbicella,3,usable,focused,18,08-09,08-29,21,08-23,0.99,6.6,8.6,2.0,7.4,0.98,17,79,121,205
-caribbean_gulf,Pseudodiploria,1,usable,focused,12,08-18,09-10,24,08-27,0.99,6.6,8.1,1.5,7.7,0.98,11,64,109,143
+caribbean_gulf,Orbicella,3,usable,focused,19,08-09,08-29,21,08-23,0.99,6.6,8.6,2.0,7.4,0.98,18,78,116,203
+caribbean_gulf,Pseudodiploria,1,usable,focused,13,08-18,09-10,24,08-26,0.99,6.6,8.1,1.5,7.7,0.98,12,64,106,141
 caribbean_gulf,Stephanocoenia,1,thin,focused,9,08-11,08-30,20,08-22,0.99,6.8,8.1,1.3,7.5,0.99,9,95,155,201
-caribbean_reef,Acropora,3,usable,focused,23,07-28,09-03,38,08-17,0.97,1.9,4.6,2.7,3.6,0.97,16,146,160,179
-caribbean_reef,Dendrogyra,1,thin,focused,8,08-13,09-11,30,08-28,0.98,2.4,4.2,1.8,3.5,0.99,0,,,
+caribbean_reef,Acropora,3,rich,focused,45,07-25,08-21,28,08-12,0.98,1.9,4.9,3.0,3.7,0.96,20,135,158,169
+caribbean_reef,Orbicella,2,usable,focused,13,08-07,09-05,30,08-21,0.98,5.9,7.3,1.4,6.5,0.99,1,,,
+caribbean_reef,Dendrogyra,1,usable,focused,10,08-06,09-02,28,08-25,0.97,2.9,4.2,1.3,3.4,0.99,2,,,
+caribbean_reef,Montastraea,1,thin,focused,9,08-09,09-09,32,08-24,0.98,5.8,7.5,1.7,6.6,0.99,0,,,
+caribbean_reef,Diploria,1,thin,focused,9,04-16,05-22,37,05-12,0.96,9.8,11.2,1.3,10.5,0.99,0,,,
 red_sea_aqaba,Platygyra,1,rich,broad,118,06-15,07-17,33,07-06,0.97,1.5,21.2,19.7,14.1,0.21,100,-44,-40,70
 red_sea_aqaba,Galaxea,1,rich,broad,104,07-07,08-24,49,07-28,0.95,1.7,20.5,18.8,6.6,0.21,88,56,67,80
 red_sea_aqaba,Acropora,8,rich,broad,40,05-24,07-12,50,06-21,0.94,23.1,8.5,15.0,1.3,0.49,15,16,16,54
@@ -72,8 +75,8 @@ red_sea_central,Goniastrea,3,usable,focused,15,04-12,06-11,61,05-15,0.91,1.5,6.2
 red_sea_central,Porites,4,thin,focused,8,04-27,06-08,43,05-13,0.96,1.5,5.2,3.7,2.8,0.95,8,89,146,215
 red_sea_central,Montipora,5,thin,focused,8,06-05,07-05,31,06-18,0.96,29.2,2.2,2.5,0.7,0.94,8,94,113,154
 red_sea_central,Galaxea,2,thin,focused,8,05-16,06-16,32,06-05,0.96,1.9,7.2,5.3,3.5,0.87,8,55,57,118
-maldives_oct_dec,Acropora,12,usable,broad,36,10-17,11-25,40,11-11,0.94,28.7,8.7,9.5,4.5,0.59,29,20,130,157
-maldives_mar_apr,Acropora,19,usable,focused,26,03-20,04-18,30,04-08,0.97,0.4,5.5,5.2,2.9,0.88,26,20,144,182
+maldives_oct_dec,Acropora,13,rich,broad,55,10-23,11-28,37,11-12,0.95,27.7,7.7,9.5,4.1,0.58,29,20,130,157
+maldives_mar_apr,Acropora,19,usable,focused,31,03-20,04-21,33,04-10,0.97,29.0,5.5,6.0,3.3,0.73,26,20,144,182
 maldives_mar_apr,Cyphastrea,2,thin,focused,9,03-19,04-19,32,04-03,0.98,5.3,7.5,2.3,6.2,0.98,9,85,98,127
 maldives_mar_apr,Goniastrea,2,thin,focused,8,03-27,04-22,27,04-07,0.98,0.5,3.5,3.0,2.0,0.95,8,76,104,128
 mascarene,Acropora,1,thin,focused,8,10-19,11-09,22,11-02,0.98,1.7,3.8,2.1,3.3,0.98,8,-78,-27,12
@@ -88,4 +91,5 @@ temperate_japan,Cyphastrea,3,usable,broad,10,07-12,07-30,19,07-28,0.98,4.3,17.3,
 temperate_japan,Montipora,4,usable,broad,10,08-20,09-04,16,08-27,0.99,18.9,4.0,14.5,22.6,0.39,10,78,86,112
 temperate_japan,Paragoniastrea,2,thin,focused,9,07-16,08-16,32,07-25,0.98,5.3,11.3,6.0,8.2,0.79,9,11,99,138
 palau_spring,Acropora,10,usable,focused,15,03-30,05-11,43,05-01,0.91,3.0,6.8,3.9,4.7,0.93,13,42,149,182
+palau_spring,Porites,3,thin,focused,9,04-09,05-20,42,05-02,0.96,3.2,4.6,1.5,3.8,0.99,9,67,139,174
 marianas,Acropora,10,usable,broad,18,07-03,08-05,34,07-23,0.98,27.2,9.2,11.5,5.6,0.55,16,129,142,268

@@ -1,8 +1,8 @@
 {
  "schema": "reef-cue-tables",
  "schema_version": "1.0",
- "generated_utc": "2026-11-26T08:03:17Z",
- "source_commit": "3d656e7",
+ "generated_utc": "2026-11-27T01:39:12Z",
+ "source_commit": "10f8b02",
  "locales": [
   {
    "id": "okinawa",
@@ -78,6 +78,12 @@
    "table": "locales/maldives_oct_dec/cue_table_2027.csv"
   },
   {
+   "id": "caribbean_reef",
+   "name": "Caribbean reef tract (Florida Keys, Belize, Panama, Curacao)",
+   "grade": "rich",
+   "table": "locales/caribbean_reef/cue_table_2027.csv"
+  },
+  {
    "id": "gulf_of_thailand_west",
    "name": "Gulf of Thailand, west (Koh Tao, Koh Phangan)",
    "grade": "usable",
@@ -90,16 +96,16 @@
    "table": "locales/western_australia/cue_table_2027.csv"
   },
   {
-   "id": "gulf_of_thailand_east",
-   "name": "Gulf of Thailand, east (Rayong, Chonburi)",
-   "grade": "usable",
-   "table": "locales/gulf_of_thailand_east/cue_table_2027.csv"
-  },
-  {
    "id": "palau_spring",
    "name": "Palau, February to June season",
    "grade": "usable",
    "table": "locales/palau_spring/cue_table_2027.csv"
+  },
+  {
+   "id": "gulf_of_thailand_east",
+   "name": "Gulf of Thailand, east (Rayong, Chonburi)",
+   "grade": "usable",
+   "table": "locales/gulf_of_thailand_east/cue_table_2027.csv"
   },
   {
    "id": "caribbean_gulf",
@@ -120,22 +126,16 @@
    "table": "locales/marianas/cue_table_2027.csv"
   },
   {
-   "id": "caribbean_reef",
-   "name": "Caribbean reef tract (Florida Keys, Belize, Panama, Curacao)",
+   "id": "mascarene",
+   "name": "Reunion (Mascarene Islands)",
    "grade": "usable",
-   "table": "locales/caribbean_reef/cue_table_2027.csv"
+   "table": "locales/mascarene/cue_table_2027.csv"
   },
   {
    "id": "eastern_pacific",
    "name": "Eastern Pacific",
    "grade": "usable",
    "table": "locales/eastern_pacific/cue_table_2027.csv"
-  },
-  {
-   "id": "mascarene",
-   "name": "Reunion (Mascarene Islands)",
-   "grade": "usable",
-   "table": "locales/mascarene/cue_table_2027.csv"
   },
   {
    "id": "palau_autumn",
@@ -162,16 +162,16 @@
    "table": "locales/east_africa/cue_table_2027.csv"
   },
   {
-   "id": "wa_spring",
-   "name": "Western Australia, spring season",
-   "grade": "thin",
-   "table": "locales/wa_spring/cue_table_2027.csv"
-  },
-  {
    "id": "gulf_of_mannar",
    "name": "Gulf of Mannar (south-east India)",
    "grade": "thin",
    "table": "locales/gulf_of_mannar/cue_table_2027.csv"
+  },
+  {
+   "id": "wa_spring",
+   "name": "Western Australia, spring season",
+   "grade": "thin",
+   "table": "locales/wa_spring/cue_table_2027.csv"
   },
   {
    "id": "red_sea_north",
@@ -204,8 +204,8 @@
    "path": "data_manifest.json",
    "kind": "manifest",
    "install": "data/data_manifest.json",
-   "sha256": "ff8f69ba944a4cf8df2bebe1af743cbdc4709b1853cf14d3762324e5e5f3af7c",
-   "bytes": 17601
+   "sha256": "8ee1e566cea3eae757a46cc8e9b6eb65b3c3af20bcc3f011888abdbc46bab4c9",
+   "bytes": 17614
   },
   {
    "path": "locales/README.md",
@@ -218,8 +218,8 @@
    "path": "locales/added_records.csv",
    "kind": "records",
    "install": "data/locales/added_records.csv",
-   "sha256": "83b452052039a8e8f5a2ce9015202ff54e9707c12d5d6bd669fc36a3f47d3030",
-   "bytes": 160450
+   "sha256": "3a21dff09eb9a17bd3b9e80fee0cf7836d6fb9960d4d8e7b7e6198d47a06d056",
+   "bytes": 212564
   },
   {
    "path": "locales/light_ladder_summary.csv",
@@ -232,22 +232,22 @@
    "path": "locales/locale_genus_windows.csv",
    "kind": "genus_windows",
    "install": "data/locales/locale_genus_windows.csv",
-   "sha256": "0c5eab40d2f894e0316ea0de853d66c4ec33beacb9830c074703b17c82082d1b",
-   "bytes": 9148
+   "sha256": "d45fa68639c58cbd1c4c8eb87de872cdb9584b28655009003882e049acfef815",
+   "bytes": 9534
   },
   {
    "path": "locales/locale_profiles.csv",
    "kind": "profiles",
    "install": "data/locales/locale_profiles.csv",
-   "sha256": "b7a26a5829398e885d049e0bd80e2a9dc696917cb1baae3cb1e1ad2e44ecc6e8",
-   "bytes": 11746
+   "sha256": "3850dd157d75e2df07e7fbe1f45d4a16973f859a0a5e7398b3e0459b0006498e",
+   "bytes": 11749
   },
   {
    "path": "locales/locale_species_windows.csv",
    "kind": "species_windows",
    "install": "data/locales/locale_species_windows.csv",
-   "sha256": "bf27dc5007d136150d1e0cfda4f43067fd0b13b9f07b9202ebac2e99beddbc53",
-   "bytes": 102208
+   "sha256": "9f3a00079a07ed4884b951ab71f45168d9b4a3b37ef4cd11e3456a5933899598",
+   "bytes": 103691
   },
   {
    "path": "locales/locales.csv",
@@ -344,8 +344,8 @@
    "path": "locales/caribbean_reef/cue_table_2027.csv",
    "kind": "cue_table",
    "install": "data/locales/caribbean_reef/cue_table_2027.csv",
-   "sha256": "fd5779de2fc51b2d2e17f2d484fb61b5c932ffd11e2a92ab496b32cfa9c12814",
-   "bytes": 40694
+   "sha256": "74de8b59ccbcc83d92e7fe1a00bed0f1025ddf83c491ced29b31ea68db27a9f3",
+   "bytes": 40292
   },
   {
    "path": "locales/caribbean_reef/light/caribbean_reef_light_ladder.json",
@@ -743,8 +743,8 @@
    "path": "locales/maldives_mar_apr/cue_table_2027.csv",
    "kind": "cue_table",
    "install": "data/locales/maldives_mar_apr/cue_table_2027.csv",
-   "sha256": "afd36c322bac43fcd39bdc56d94d41afbf328fd2b787da3898c3abeabbdf899f",
-   "bytes": 40296
+   "sha256": "f6fa4983f5dd243881dba3e17c852fedb3eaa02569dd9862147c6bb6352c9df3",
+   "bytes": 40281
   },
   {
    "path": "locales/maldives_mar_apr/light/maldives_mar_apr_light_ladder.json",
@@ -778,8 +778,8 @@
    "path": "locales/maldives_oct_dec/cue_table_2027.csv",
    "kind": "cue_table",
    "install": "data/locales/maldives_oct_dec/cue_table_2027.csv",
-   "sha256": "53723ef9fc47208c3b9f9a2af702ee17a7a8678855535e0356cd4cfcaf6daab2",
-   "bytes": 40228
+   "sha256": "11ad4fd5af167a44909a866ae4a64f2008529988b7460156c9992d76a7c4d64d",
+   "bytes": 40244
   },
   {
    "path": "locales/maldives_oct_dec/light/maldives_oct_dec_light_ladder.json",
@@ -848,8 +848,8 @@
    "path": "locales/mascarene/cue_table_2027.csv",
    "kind": "cue_table",
    "install": "data/locales/mascarene/cue_table_2027.csv",
-   "sha256": "c5c5030e09e82989a46a81473d2c0703b0f94bd5e4d7ff487a01c14e89916652",
-   "bytes": 40248
+   "sha256": "b282c87776fb4e4d9f0443a833a5e45b11fc5679e6f2b93b2d1864c0f6d78039",
+   "bytes": 40613
   },
   {
    "path": "locales/mascarene/light/mascarene_light_ladder.json",
@@ -953,8 +953,8 @@
    "path": "locales/palau_spring/cue_table_2027.csv",
    "kind": "cue_table",
    "install": "data/locales/palau_spring/cue_table_2027.csv",
-   "sha256": "6ae1daf845d93371d48035d63f41a516c08c7043a908965feeb51b0ff1e15a41",
-   "bytes": 40300
+   "sha256": "6b902cb2bbfc572127b82ae582c53605d206cda8ad39a2ca0f27031571734cbf",
+   "bytes": 40317
   },
   {
    "path": "locales/palau_spring/light/palau_spring_light_ladder.json",

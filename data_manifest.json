@@ -1,14 +1,14 @@
 {
- "pinned_utc": "2026-11-10T21:07:52Z",
- "commit": "54e23bf",
+ "pinned_utc": "2026-11-27T01:38:39Z",
+ "commit": "c78eec0",
  "audit": {
-  "report": "report.json",
+  "report": "cue_audit_report_ab.json",
   "rows": 10585,
   "locales": 29,
-  "tiers": "ABC",
+  "tiers": "AB",
   "n_defects": 0,
-  "usno_units": 299,
-  "usno_upper95_defect_rate": 0.01
+  "usno_units": null,
+  "usno_upper95_defect_rate": null
  },
  "hash": "sha256 over the bytes with CRLF folded to LF",
  "files": {
@@ -178,8 +178,8 @@
    "audited": false
   },
   "data/locales/caribbean_reef/cue_table_2027.csv": {
-   "sha256": "fd5779de2fc51b2d2e17f2d484fb61b5c932ffd11e2a92ab496b32cfa9c12814",
-   "bytes": 40694,
+   "sha256": "74de8b59ccbcc83d92e7fe1a00bed0f1025ddf83c491ced29b31ea68db27a9f3",
+   "bytes": 40292,
    "audited": true
   },
   "data/locales/caribbean_reef/light/caribbean_reef_light_ladder_daily.csv": {
@@ -298,13 +298,13 @@
    "audited": false
   },
   "data/locales/locale_profiles.csv": {
-   "sha256": "b7a26a5829398e885d049e0bd80e2a9dc696917cb1baae3cb1e1ad2e44ecc6e8",
-   "bytes": 11746,
+   "sha256": "3850dd157d75e2df07e7fbe1f45d4a16973f859a0a5e7398b3e0459b0006498e",
+   "bytes": 11749,
    "audited": true
   },
   "data/locales/maldives_mar_apr/cue_table_2027.csv": {
-   "sha256": "afd36c322bac43fcd39bdc56d94d41afbf328fd2b787da3898c3abeabbdf899f",
-   "bytes": 40296,
+   "sha256": "f6fa4983f5dd243881dba3e17c852fedb3eaa02569dd9862147c6bb6352c9df3",
+   "bytes": 40281,
    "audited": true
   },
   "data/locales/maldives_mar_apr/light/maldives_mar_apr_light_ladder_daily.csv": {
@@ -313,8 +313,8 @@
    "audited": false
   },
   "data/locales/maldives_oct_dec/cue_table_2027.csv": {
-   "sha256": "53723ef9fc47208c3b9f9a2af702ee17a7a8678855535e0356cd4cfcaf6daab2",
-   "bytes": 40228,
+   "sha256": "11ad4fd5af167a44909a866ae4a64f2008529988b7460156c9992d76a7c4d64d",
+   "bytes": 40244,
    "audited": true
   },
   "data/locales/maldives_oct_dec/light/maldives_oct_dec_light_ladder_daily.csv": {
@@ -333,8 +333,8 @@
    "audited": false
   },
   "data/locales/mascarene/cue_table_2027.csv": {
-   "sha256": "c5c5030e09e82989a46a81473d2c0703b0f94bd5e4d7ff487a01c14e89916652",
-   "bytes": 40248,
+   "sha256": "b282c87776fb4e4d9f0443a833a5e45b11fc5679e6f2b93b2d1864c0f6d78039",
+   "bytes": 40613,
    "audited": true
   },
   "data/locales/mascarene/light/mascarene_light_ladder_daily.csv": {
@@ -363,8 +363,8 @@
    "audited": false
   },
   "data/locales/palau_spring/cue_table_2027.csv": {
-   "sha256": "6ae1daf845d93371d48035d63f41a516c08c7043a908965feeb51b0ff1e15a41",
-   "bytes": 40300,
+   "sha256": "6b902cb2bbfc572127b82ae582c53605d206cda8ad39a2ca0f27031571734cbf",
+   "bytes": 40317,
    "audited": true
   },
   "data/locales/palau_spring/light/palau_spring_light_ladder_daily.csv": {
