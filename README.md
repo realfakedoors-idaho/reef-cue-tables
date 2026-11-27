@@ -9,7 +9,7 @@ the root. The controller downloads only `main`, so the page never reaches a tank
 The reef cue tables built from these records:
 [reef-cue-tables](https://github.com/realfakedoors-idaho/reef-cue-tables).
 
-Built from commit `10f8b02` of the project repository by
+Built from commit `a4cd7b8` of the project repository by
 `scripts/build_master_sync.py`, which refuses to build when any cited source or
 data column lacks a licence, terms link or attribution. The page ends with a
 "Data, licences and status" footer.
