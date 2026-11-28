@@ -34,6 +34,21 @@ README.)
    on spawning reefs, from loggers, to replace the flat daily offsets.
 5. **Audit and correct.** Check a table against your own records or the
    sources and report what is off (`AUDIT.md` has the method).
+6. **Two-season and split spawning.** Some species spawn in two seasons about
+   six months apart (Western Australia, the Maldives, Palau, Singapore); others
+   split one season across two full moons in some years. Work out a spawning
+   pattern per species and reef from the dated nights (one season, two
+   seasons, split, monthly brooder, unknown), give a reef with two seasons two
+   windows, and add a moon rule for split years.
+7. **A standard pull request format.** One format for changes to the tables
+   and to the captive and wild spawning records, in two strengths. **Adding**
+   (loose): new nights, reefs or aquarium spawns with the required facts
+   (species, date, site, start time if known, captive or wild, citation,
+   licence) and the format check passing; reviewers fix small gaps. **Editing**
+   (strict): any change to a value already here; one change per pull request,
+   old and new value, the reason and source for each, the audit re-run and
+   `data_manifest.json` re-pinned. Deliver it as pull request templates and an
+   automatic check.
 
 After any change: `python tools/cue_schema.py index .` then
 `python tools/cue_schema.py validate .`
@@ -64,7 +79,7 @@ python tools/cue_schema.py index .      # after adding or changing a file
 python tools/cue_schema.py validate .
 ```
 
-Column meanings, grades and gaps: `locales/README.md`. Built from commit `644b25b`
+Column meanings, grades and gaps: `locales/README.md`. Built from commit `059cc13`
 of the project repository.
 
 ## Limits

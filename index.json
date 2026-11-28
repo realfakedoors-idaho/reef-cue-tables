@@ -1,8 +1,8 @@
 {
  "schema": "reef-cue-tables",
  "schema_version": "1.0",
- "generated_utc": "2026-11-27T03:28:40Z",
- "source_commit": "644b25b",
+ "generated_utc": "2026-11-28T00:16:09Z",
+ "source_commit": "059cc13",
  "locales": [
   {
    "id": "okinawa",
