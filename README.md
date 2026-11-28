@@ -79,7 +79,7 @@ python tools/cue_schema.py index .      # after adding or changing a file
 python tools/cue_schema.py validate .
 ```
 
-Column meanings, grades and gaps: `locales/README.md`. Built from commit `059cc13`
+Column meanings, grades and gaps: `locales/README.md`. Built from commit `59ff0c1`
 of the project repository.
 
 ## Limits
